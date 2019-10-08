@@ -47,12 +47,87 @@ function closeModal(){
     document.getElementById("myModal").style.display = "none"; //show the modal on button click
 }
 
+//Toggle Opacity of the Basilisk Image
+function toggleBasilisk(){
+    var imgBB = document.getElementById("basiliskInvB");
+    var imgBT = document.getElementById("basiliskInvT");
+    imgBB.classList.toggle("m-fadeOut");
+    imgBT.classList.toggle("m-fadeIn");
+}
+
+//Toggle Opacity of the Dragon Image
+function toggleDragon(){
+    var imgDB = document.getElementById("dragonInvB");
+    var imgDT = document.getElementById("dragonInvT");
+    imgDB.classList.toggle("m-fadeOut");
+    imgDT.classList.toggle("m-fadeIn");
+}
+
+//Toggle Opacity of the Phoenix Image
+function togglePhoenix(){
+    var imgPB = document.getElementById("phoenixInvB");
+    var imgPT = document.getElementById("phoenixInvT");
+    imgPB.classList.toggle("m-fadeOut");
+    imgPT.classList.toggle("m-fadeIn");
+}
+
+//Toggle Opacity of the Hydrus Image
+function toggleHydrus(){
+    var imgHB = document.getElementById("hydrusInvB");
+    var imgHT = document.getElementById("hydrusInvT");
+    imgHB.classList.toggle("m-fadeOut");
+    imgHT.classList.toggle("m-fadeIn");
+}
+
+//Toggle Opacity of the Phoenix Image
+function toggleUnicorn(){
+    var imgUB = document.getElementById("unicornInvB");
+    var imgUT = document.getElementById("unicornInvT");
+    imgUB.classList.toggle("m-fadeOut");
+    imgUT.classList.toggle("m-fadeIn");
+}
+
 //------------------------------------------------------------------------------------------------
 //----------------------------- ENTER ANIMALS FUNCTIONS ------------------------------------------
 //------------------------------------------------------------------------------------------------
 function goPrologue() {
-    document.getElementsByClassName("bodyTextD")[0].style.display="none";
-    document.getElementsByClassName("bodyTextD")[1].style.display="none";
+    // var bodyTextDElems = document.getElementsByClassName("bodyTextD");
+    // for (var i = 0; i < bodyTextDElems.length; i++){
+    //     document.getElementsByClassName("bodyTextD")[i].style.display = "none";
+    // }
+
+    // var bodyTextUElems = document.getElementsByClassName("bodyTextU");
+    // for (var i = 0; i < bodyTextUElems.length; i++){
+    //     document.getElementsByClassName("bodyTextU")[i].style.display = "none";
+    // }
+    //document.getElementsByClassName("bodyTextD")[0].style.display="none";
+    //document.getElementsByClassName("bodyTextD")[1].style.display="none";
+    document.getElementsByClassName("D3aa")[0].style.display="none";
+    document.getElementsByClassName("D3aa")[1].style.display="none";
+    document.getElementsByClassName("D4aba")[0].style.display="none";
+    document.getElementsByClassName("D4aba")[1].style.display="none";
+    document.getElementsByClassName("D3ba")[0].style.display="none";
+    document.getElementsByClassName("D3ba")[1].style.display="none";
+    document.getElementsByClassName("D4bba")[0].style.display="none";
+    document.getElementsByClassName("D4bba")[1].style.display="none";
+    document.getElementsByClassName("D7acbaba")[0].style.display="none";
+    document.getElementsByClassName("D7acbaba")[1].style.display="none";
+    document.getElementsByClassName("D3ca")[0].style.display="none";
+    document.getElementsByClassName("D3ca")[1].style.display="none";
+    document.getElementsByClassName("D4cba")[0].style.display="none";
+    document.getElementsByClassName("D4cba")[1].style.display="none";
+    document.getElementsByClassName("D4cca")[0].style.display="none";
+    document.getElementsByClassName("D4cca")[1].style.display="none";
+    document.getElementsByClassName("D5ccbb")[0].style.display="none";
+    document.getElementsByClassName("D5ccbb")[1].style.display="none";
+    document.getElementsByClassName("D6ccbaa")[0].style.display="none";
+    document.getElementsByClassName("D6ccbaa")[1].style.display="none";
+    document.getElementsByClassName("D6ccbab")[0].style.display="none";
+    document.getElementsByClassName("D6ccbab")[1].style.display="none";
+    document.getElementsByClassName("D7ccbaca")[0].style.display="none";
+    document.getElementsByClassName("D7ccbaca")[1].style.display="none";
+
+
     document.getElementsByClassName("U2c")[0].style.display="none";
     document.getElementsByClassName("U2c")[1].style.display="none";
     document.getElementsByClassName("U3bc")[0].style.display="none";
@@ -106,8 +181,6 @@ function enterUnicorn(){
 function enterDragon(){
     document.getElementsByClassName("prologue")[0].style.display="none";
     document.getElementsByClassName("prologue")[1].style.display="none";
-    document.getElementsByClassName("bodyTextU")[0].style.display="none";
-    document.getElementsByClassName("bodyTextU")[1].style.display="none";
     document.getElementsByClassName("U6babca")[0].style.display="none";
     document.getElementsByClassName("U6babca")[1].style.display="none";
     document.getElementsByClassName("U6babcc")[0].style.display="none";
@@ -116,8 +189,10 @@ function enterDragon(){
     document.getElementsByClassName("U6acbba")[1].style.display="none";
     document.getElementsByClassName("U6acbbc")[0].style.display="none";
     document.getElementsByClassName("U6acbbc")[1].style.display="none";
+    var someX = document.getElementsByClassName("D1");
     document.getElementById("myProgressD").style.display = "block"; //show dragon progress bar
     document.getElementsByClassName("D1")[0].style.display="block";
+
     document.getElementsByClassName("D1")[1].style.display="block";
 }
 
@@ -696,23 +771,20 @@ function loseGame() {
 //-------------------------------------------------------------------------------------------------
 //------------------------------- PROGRESS BAR ----------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-var width = 0;
-function move(increment) {
-    var elem = document.getElementById("myBar");   
-    
+var widthD = 0;
+function move(increment, reset) {
+    if (reset == true){widthD = 0;}
+    var elem = document.getElementById("myBarD");
+    widthD = widthD + increment; 
+    elem.style.width = widthD + '%'; 
+    elem.innerHTML = widthD * 1  + '%';
+  }
 
-    width= width + increment; 
-    elem.style.width = width + '%'; 
-    elem.innerHTML = width * 1  + '%';
-
-   // var id = setInterval(frame, 10);
-   // function frame() {
-  //    if (width >= 100) {
-   //     clearInterval(id);
-  //    } else {
-  //      width++; 
-  //      elem.style.width = width + '%'; 
-  //      elem.innerHTML =  * 1  + '%';
-  //    }
-  //  }
+var widthU = 0;
+function moveU(increment, reset) {
+    if (reset == true){widthU = 0;}
+    var elem = document.getElementById("myBarU");
+    widthU = widthU + increment; 
+    elem.style.width = widthU + '%'; 
+    elem.innerHTML = widthU * 1  + '%';
   }

@@ -164,7 +164,7 @@ body{
 .title {  
     font-family: 'Alegreya', serif;
     color: black;
-    background-color: peru;
+    background-color: rgb(243, 184, 184);
     height: 16vh;
     text-align: center;
 }  
@@ -182,7 +182,7 @@ body{
     height: 56vh;
     font-family: 'Lato', sans-serif;
     padding: 2vh 1vh;
-    background-color: aqua;
+    background-color: rgb(175, 175, 175);
 }
 
 #pathway{
@@ -204,7 +204,11 @@ body{
     border: solid green;
 }
 
-
+.videoEmbed{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 
 #inventory{
     position: relative;
@@ -215,67 +219,125 @@ body{
     border: solid blueviolet;
 }
 
-.basiliskInv{
+#basiliskInv{
     position: absolute;
     height: 25%;
     width: 95%;
 }
-#basiliskInvP{
+#basiliskInvB{
     position: absolute;
     right: 40%;
     width: 80%;
     top:-50%;
 }
 
-.dragonInv{
+#basiliskInvT{
+    position: absolute;
+    right: 40%;
+    width: 80%;
+    top:-50%;
+}
+
+.m-fadeOut {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 700ms;
+  }
+  .m-fadeIn {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 700ms;
+  }
+
+/*
+#basiliskInv img {
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+
+#basiliskInv img.transparent {
+    opacity:0;
+}
+*/
+
+
+#dragonInv{
     position: absolute;
     top: 15%;
     height: 25%;
     width: 95%;
 }
-#dragonInvP{
+#dragonInvB{
+    position: absolute;
+    left: 35%;
+    width: 80%;
+    top:-50%;
+}
+#dragonInvT{
     position: absolute;
     left: 35%;
     width: 80%;
     top:-50%;
 }
 
-.phoenixInv{
+#phoenixInv{
     position: absolute;
     top: 35%;
     height: 25%;
     width: 95%;
 }
 
-#phoenixInvP{
+#phoenixInvB{
     position: absolute;
     right: 45%;
     width: 55%;
     top:-20%;
 }
 
-.hydrusInv{
+#phoenixInvT{
+    position: absolute;
+    right: 45%;
+    width: 55%;
+    top:-20%;
+}
+
+#hydrusInv{
     position: absolute;
     top: 55%;
     height: 25%;
     width: 95%;
 }
 
-#hydrusInvP{
+#hydrusInvB{
     position: absolute;
     left: 40%;
     width: 80%;
     top:-50%;
 }
 
-.unicornInv{
+#hydrusInvT{
+    position: absolute;
+    left: 40%;
+    width: 80%;
+    top:-50%;
+}
+
+#unicornInv{
     position: absolute;
     top: 75%;
     height: 25%;
     width: 95%;
 }
 
-#unicornInvP{
+#unicornInvB{
+    position: absolute;
+    right: 40%;
+    width: 60%;
+    top:-50%;
+}
+#unicornInvT{
     position: absolute;
     right: 40%;
     width: 60%;
@@ -433,14 +495,7 @@ body{
     width: 100%;
     background-color: #ddd;
 }
-
-#myProgressU {
-    display: none;
-    width: 100%;
-    background-color: #ddd;
-}
-
-#myBar {
+#myBarD {
     width: 0%;
     height: 30px;
     background-color: #4CAF50;
@@ -448,6 +503,23 @@ body{
     line-height: 30px;
     color: white;
   }
+
+
+#myProgressU {
+    display: none;
+    width: 100%;
+    background-color: turquoise;
+}
+#myBarU {
+    width: 0%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+  }
+
+
 
 
 

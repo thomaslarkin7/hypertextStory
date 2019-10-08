@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="styles.css">
+            <link href="https://fonts.googleapis.com/css?family=Alegreya:700|Lato&display=swap" rel="stylesheet">
+            
+            <title>Hypertext Story Example</title>
+    </head>
+    <body>
+        <!------------------------------------------------------------------------------>
+        <!-----------------------------LOAD SCREEN START-------------------------------->
+        <!------------------------------------------------------------------------------>
+        <div id="loadOverlay">
+            <div id="overlayText">
+                <strong>A Fantastic Bestiary</strong>
+            </div>
+            <div id="overlayBlurb">
+                Blurb about the premise of the game, what was a bestiary? When were they written? etc.
+            </div>
+            <div id="imgBanner">
+                <div class= "imgBannerCol">
+                    <img id = "basiliskB" src="basiliskB.png" alt="The Basilisk, a flying animal with large wings 
+                    and a long neck">
+                </div>
+                <div class= "imgBannerCol">
+                    <img id = "dragonB" src="dragonB.png" alt="The Dragon, a flying reptilian animal.">
+                </div>
+                <div class = "imgBannerCol">
+                    <img id = "phoenixB" src="phoenixB.png" alt="The Phoenix, a brightly coloured flying animal.">
+                </div>
+                <div class = "imgBannerCol">
+                    <img id = "hydrusB" src="hydrusB.png" alt="The Hydrus.">
+                </div>
+                <div class = "imgBannerCol">
+                    <img id = "unicornB" src="unicornB.png" alt="The Unicorn.">
+                </div>
+        
+            </div>
+            <div id = "buttonBanner">
+                    <button type = "button" id = "buttonIntro" onclick = "modalPopup()">INSTRUCTIONS</button>
+                    <button type = "button" id = "buttonIntro" class = "buttonEnglish" onclick = "english()">START</button>
+                    <button type = "button" id = "buttonIntro" class = "buttonMandarin" onclick = "mandarin()">开始(INCOMPLETE)</button>
+                </div>
+            <div id="author">Jared Auer, May Poole, Qian Zhang, Ruixue Wu, Thomas Larkin, Vick Gwyn, Wen Ren</div>
+        </div>
+        <!------------------------------------------------------------------------------>
+        <!-----------------------------LOAD SCREEN END---------------------------------->
+        <!------------------------------------------------------------------------------>
+
+
+
+        <!------------------------------------------------------------------------------>
+        <!----------------------- Modal Popup Instructions ----------------------------->
+        <!------------------------------------------------------------------------------>
+        <div id="myModal" class="modal">
+        <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p><strong>How to play the game</strong><br><br>
+                    NEED TO ADD INTRUCTION TEXT HERE <br><br>
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
+                    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
+                    sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
+                    voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+                    consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et 
+                    dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum 
+                    exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
+                    consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse 
+                    quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla 
+                    pariatur?"
+                </p>
+            </div>
+        </div>
+
+
+        <!------------------------------------------------------------------------------>
+        <!--------------------------START ENGLISH LANGUAGE DIV-------------------------->
+        <!------------------------------------------------------------------------------>
+        
+        <div id = "englishScript"> 
+        <div class="container">
+            
+                <div class = "title">
+                    <font size = "30">A Fantastic Bestiary</font><br>
+                    <font size = "5">Read along. Decide your path. Document five fantastical creatures to complete the 
+                        adventure.</font>
+                </div>
+            <div class = "content">
+                <div id="pathway">
+                    Which paths have you chosen to get here?
+                </div>
+                <!--------------------------------------------------------------------->
+                <!--------------------- PROLOGUE--------------------------------------->
+                <!--------------------------------------------------------------------->
+                <div id = "bodytext" class = "prologue">
+                        <p><font size="6">Narrative Introduction</font><br>
+                        </p>
+                        <p>You receive a letter from a mysterious distant uncle known as Philip de Thaun, who 
+                            propositions you with a mission of great importance. His life’s work has been the 
+                            cataloging of fantastical creatures. In his old age however, his ability to chase 
+                            down these beasts has waned. He charges you with continuing his work: to document 
+                            the remaining creatures on his list. An initial tip from Uncle Philip as well as 
+                            clues you pick up along the way will guide you in pursuing these creatures. By the 
+                            end of the game you have written a bestiary of your own (the source material) using 
+                            all the information you gathered along the way.<br><br>
+                            Choose an animal below to begin this quest.
+                        </p>
+                </div>
+
+<!-------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------- BEGIN UNICORN NARRATIVE --------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------->
+
+                <div class = "bodyTextU">
+                <!--------------------------------------------------------------------->
+                <!--------------------- UNICORN LEVEL 1 ------------------------------->
+                <!--------------------------------------------------------------------->
+                <div id = "bodytext" class = "U1">
+                        <p><font size="6">The Quest Begins</font><br>
+                            The first creature on Great Uncle Philip’s list a Unicorn, a horse-like creature with 
+                            a single horn growing from the top of its head. In a note scribble down the side of the 
+                            letter, next to the creature’s name, Uncle Philip writes “a very swift creature; 
+                            neither principlaities, nor powers, nor thrones, nor dominations could keep up with him.”
+                            <br><br>
+                            Cryptic. But you notice the language alludes to a higher power. Should you seek the help of…
+                        </p>
+                </div>
+                <!--------------------------------------------------------------------->
+                <!--------------------- UNICORN LEVEL 2 ------------------------------->
+                <!--------------------------------------------------------------------->
+                <div id = "bodytext" class = "U2a">
+                        <p><font size="6">The King</font><br>
+                            You make your way through the winding streets of Westminster, the stenches of humanity 
+                            assaulting your nose as you go. Your plan is to address the King directly, but you can’t 
+                            make your way through the castle gates with the title of a lowly artist. As a disguise, 
+                            you decide on…
+                            <br><br>
+                            A member of the aristocracy<br>
+                            An alchemist<br>
+                            A member of the clergy
+                            </p>
+                </div>
+                <div id = "bodytext" class = "U2b">
+                        <p><font size="6">The Monk</font><br>
+                            You travel to the monastery. It takes three days and you are very tired by the end of the 
+                            journey. As you approach the holy building a monk by the name of David spots you, bringing 
+                            you inside for food and shelter. As you eat you begin to speak with David, telling him of 
+                            your missions and  showing him Philip’s note written on the letter. He stares for a moment, 
+                            pondering its meaning.
+                            <br><br>
+                            “It is my opinion, dear friend, that your Uncle may be referring to something of a divine 
+                            nature. In all my years of pouring over the texts I have seen but one entity that is above 
+                            all of these dominions…”
+                            <br><br>
+                            “And that is?”
+                            <br><br>
+                            “And that is God himself my friend. I cannot tell you how to catch he who knows and sees 
+                            all, it would be against my sacred beliefs. There is a woman I know of, a witch, whose 
+                            dark knowledge may assist you, but I cannot in good conscience give you her name.”
+                            <br><br>
+                            “I understand. Sorry for wasting your time.”
+                            Brother David leaves the room briefly. You look around and notice a few books on a table 
+                            in the corner. You race to the small stack and quickly study the cover of each work. You 
+                            hear David’s footsteps reapproaching the room and decide you can only take one book, which 
+                            do you take?
+                            <br><br>
+                            The book with an upside down pentagram and wanted poster for a scraggly-looking woman stuffed 
+                            inside the cover<br>
+                            The book that appears to have the very creature you seek in gold filigree across the top and 
+                            bottom of its cover<br>
+                            The diary and address book of Brother David
+                        </p>
+                </div>
+                <div id = "bodytext" class = "U2c">
+                        <p><font size="6">The Doctor</font><br>
+                            Your neighbour, the village’s only doctor, is always the first person who comes to mind 
+                            when you need help. You rap on the old man’s door three times, after which you hear the 
+                            soft sound of his shuffling footsteps makes their way to the door. He greets you warmly 
+                            and invites you inside.
+                            <br><br>
+                            “You know, my child, I am in need of an apprentice.” He says after you exchange some 
+                            pleasantries. “I wouldn’t be able to pay you much, but I would be able to teach you the 
+                            ways of my trade before I pass on. I never fathered any children, so one day I could leave 
+                            my business to you.”
+                            <br><br>
+                            You ponder the idea for a while. You’ve always liked your old neighbour, he’s been kind 
+                            to you, treating you like his very own child. You accept his offer, and the quest for those 
+                            fantastical creatures fades from your mind. 
+                        </p>
+                </div>
+                <!--------------------------------------------------------------------->
+                <!--------------------- UNICORN LEVEL 3 ------------------------------->
+                <!--------------------------------------------------------------------->
+                <div id = "bodytext" class = "U3aa">
+                        <p><font size="6">Aristocrat Disguise</font><br>
+                            You walk past a wealthy bath house, where many men and women were busy cleaning themselves 
+                            and socialising. You make your way around the back, ensuring that your presence goes 
+                            unnoticed. One of the rear windows is open, and hanging from the sill is a fine outfit, one 
+                            fit for a member of the aristocracy. Glancing over both shoulders to check you are alone, 
+                            you proceed to pull the garment from its perch and begin to dress yourself. At that moment 
+                            you hear a shriek from inside the bath house - before you know it, a head has popped out 
+                            from the window above you yelling Thief! Thief! You try to run but the garb you had been 
+                            trying so frantically to put on catches beneath your feet, causing you to trip. Before you 
+                            manage to make it back to your feet, you are surrounded. 
+                            <br>
+                            </p>
+                </div>
+                <div id = "bodytext" class = "U3ab">
+                        <p><font size="6">The Alchemist Disguise</font><br>
+                            As you make you way closer to the castle you pass a travelling showman, he’s asleep by his cart. 
+                            You see this as an opportunity to create your disguise. Moving quietly so as to not wake the man, 
+                            you rip the red show curtain from its railing and drape it over your shoulders. In the back of the 
+                            cart you notice all sorts of props… this pretend spellbook should be perfect!
+                            <br><br>
+                            Your alchemist costume is rudimentary at best but good enough to get you through the castle gates. 
+                            You take a moment to absorb your new grand surroundings before continuing on your way. A servant boy 
+                            passes by you, eyeing you with curiosity. To diffuse any suspicions the boy might have, you ask him…
+                            <br><br>
+                            A member of the aristocracy<br>
+                            An alchemist<br>
+                            A member of the clergy
+                            </p>
+                </div>
+                <div id = "bodytext" class = "U3ac">
+                        <p><font size="6">The Clergy Disguise</font><br>
+                            You elect to disguise yourself as a member of the clergy, purchasing for yourself a brown 
+                            cloak and set of rosary beads from a local merchant. You are spotted almost immediately by 
+                            another holy man and directed to go and join the brothers at the scriptorium. You oblige 
+                            and follow the man, eventually arriving at a large room full of books, scrolls, pots of ink 
+                            and men all writing in a reverent silence.
+                            <br><br>
+                            Your gaze is drawn to a stack of papers on one of the writing tables, naturally you go and 
+                            inspect. There’s works on all manner of supernatural creatures: faeries, phoenixes, dragons 
+                            and the like, as well as… ah! Unicorns. You pick up a curious piece of paper that has been 
+                            folded three times…
+                            <br><br>
+                            [UNICORN BROCHURE POP UP]
+                            <br><br>
+                            That was helpful. You can see that much of the brothers’ work here is centred around many of 
+                            the beasts on your list, as well as a slew of others. The room is simply full of information 
+                            on fantastical creatures. 
+                            <br><br>
+                            All at once the room is filled with the booming voice of a man yelling, “All rise for the 
+                            entry of his majesty, King Henry!”
+                            <br><br>
+                            The aura of light coming from the doorway that leads into the scriptorium is obscured by a 
+                            girthy man with fiery red hair. The monarch began to make his way around the room slowly, 
+                            inspecting the careful work of the brothers.
+                            <br><br>
+                            “Very fine work indeed, my friends. All this will surely aide me greatly in the capture of 
+                            these incredible creatures, the taxidermied remains of which will grace my great hall as 
+                            tremendous hunting trophies, as well as signs of my immense power.”
+                            <br><br>
+                            The thought of this sickens you, but you still need help with your quest. You decide to…
+                            <br><br>
+                            Chastise the King for wanting to help the creatures<br>
+                            Offer up a hunting technique to the King<br>
+                            Offer confessional to the King
+                            </p>
+                </div>
+                <div id = "bodytext" class = "U3ba">
+                        <p><font size="6">The Pentagram and Wanted Poster</font><br>
+                        Your logic tells you that the woman in the wanted poster is the witch brother David spoke of, 
+                        so you snatch the book and make your way out of the monastery’s back door. Running as fast 
+                        as your legs will take you, you follow a trail from the monastery to the nearest town. 
+                        <br><br>
+                        It’s growing dark quickly so you decide to settle in for the evening at the local tavern. 
+                        The place is packed to the walls with men and women seeking merriment and dancing partners. 
+                        Hoping to join in, you hail one of the beer maidens to fetch you a drink and something to eat. 
+                        While you wait for your order you open the book and examine the wanted poster. Lost in your 
+                        work, you don’t notice an old woman sit down beside you. 
+                        <br><br>
+                        “I don’t suppose you’re a witch hunter, are you friend?”
+                        <br><br>
+                        You glance to your right at the woman, she has on a dark cloak that covers most of her face.
+                        <br><br>
+                        “No, I don’t suppose I am. I’m seeking the help of the woman in this poster for a… quest.” You 
+                        say, kicking yourself for being so honest.
+                        <br><br>
+                        “Well… I hear she is very powerful. If you come with me, I can take you to her.”
+                        <br><br>
+                        Forgetting the meal you have on its way, you leave the tavern with the woman. She leads you this 
+                        way and that through the streets, until you can’t remember which way you came from. She stops 
+                        abruptly at a small door, before passing through it. You follow her inside and the door slams 
+                        behind you, leaving you alone with the old woman in the candlelight. 
+                        <br><Br>
+                        “I apologise to the mystery, you see I have to conceal my identity in public. That wanted poster 
+                        is up all over town and has a surprisingly uncanny likeness to myself, I’m almost impressed with 
+                        the artist’s handywork.” As she says this, she removes her cloak and reveals herself to indeed be 
+                        the woman from the poster.
+                        <br><br>
+                        “Now for the information you seek, for you see child I saw you coming in my mind’s eye and understand
+                         the quest you are on to be that of continuing one Philip de Thaun’s work, am I mistaken?”
+                        “No ma’am, you are not.”
+                        <br><br>
+                        With a smile on her face, she gestures for you to have a seat. 
+                        <br><br>
+                        “Now luckily for you darling, I am somewhat of an expert on the matter of fantastical creatures. It 
+                        just so happens that I’m experimenting with a new form of grimoire to catalogue these things. I call
+                         it a brochure, care to take a look?”
+                         <br><br>
+                        You nod your head, a little confused. She hands you what looks like a piece of paper that’s been 
+                        folded three times.
+                        <br><br>
+                        POP UP OF ‘BROCHURE’ WITH INFORMATION ABOUT THE UNICORN
+                        <br><br>
+                        “Ma’am, this is fantastic! Do you mind if I keep it?”
+                        <br><br>
+                        Thinking for a moment, she says, “I’m sorry darling, but that’s the only one I have . Maybe if I can 
+                        find a way to make lots of copies of it you could have one but I… I just don’t want to part with my work.”
+                        <br><br>
+                        Desperate to continue your quest, you…
+                        <br>
+                        Push the old lady over, stealing the brochure and running away as fast as you can with the new information.
+                        <br>
+                        Offer to do a trade with the woman, citing your skills as an artist. 
+                </div>
+                <div id = "bodytext" class = "U3bb">
+                        <p><font size="6">The Filigreed Book</font><br>
+                        You decide to take the book that has the depiction of the creature you seek, after all, 
+                        surely that holds the most useful information. You stuff the book inside your coat and wait 
+                        for brother David to return, as though nothing had happened. The monk remains with you awhile 
+                        and offers for you to stay the night, an invitation you readily accept as the weather outside 
+                        has turned foul. 
+                        <br><br>
+                        LATER
+                        <br><br>
+                        After you’ve washed for the evening, you make your way into bed. You keep a lit candle by your 
+                        bedside to assist your reading. When you open the book, you...
+                        <br><br>
+                        Notice a woman’s address written inside the cover, with the words ‘Witch, Expert’ next to it.
+                        <br>
+                        Notice that there is a chapter specifically on unicorns.
+                        <br>
+                        Feel guilty about stealing the generous monk’s possessions and decide to return the book in the 
+                        morning. 
+                </div>
+                <div id = "bodytext" class = "U3bc">
+                        <p><font size="6">The Diary</font><br>
+                        You grab the monk’s diary and stuff it into your coat before he returns. After supping with brother 
+                        David you thank him for being such a gracious host and tell him you must take your leave of him and 
+                        return home. Following a trail behind the monastery, you make your way to a small wooded area where 
+                        you won’t be disturbed. There, you sit and open the diary in your lap. Pilfering through the pages 
+                        you are initially confused… then terrified. It wasn’t a diary at all, it was a manual for conducting 
+                        satanic rituals. Each page was full of Latin verse designed to summon numerous demons, incubi and 
+                        succubi. You can’t stop flipping back and forth through the pages, until you come across one that has a 
+                        method for human sacrifice. On seeing that, you snap the book shut and decide to bury it. Right before 
+                        you stand up however you hear a hissing voice coming from behind you…
+                        <br><br>
+                        “It was a shame you had to leave so soon. I see you read my book. At least now you know what happens next.”
+                </div>
+                <!--------------------------------------------------------------------->
+                <!--------------------- UNICORN LEVEL 4 ------------------------------->
+                <!--------------------------------------------------------------------->
+                <div id = "bodytext" class = "U4aba">
+                        <p><font size="6">The Privy</font><br>
+                        The boy shows you to a garderobe in the castle. You thank him and wait for him to leave before 
+                        settling in for… well you know what. As you take your set above the hole in the wooden plank 
+                        you hear a creak. Then you hear a crack. The next thing you know the entire apparatus has fallen
+                        into the moat below, taking you, your *waste* and part of the castle wall with it. 
+                        <br>
+                </div>
+                <div id = "bodytext" class = "U4abb">
+                        <p><font size="6">The Laboratory</font><br>
+                        The servant boy takes you to the royal laboratory, high in the castle. Once alone there, you 
+                        begin to rifle through old books and scrolls. In a stack of papers on the desk, you find one 
+                        that has been folded three times…
+                        <br><br>
+                        [UNICORN BROCHURE POP UP]
+                        <br><br>
+                        That was helpful! You continue to go through the royal alchemist’s things, being careful not 
+                        to knock over any of his glass distilling apparatus. On the highest shelf in the corner of the 
+                        room you find a book of potions. Aided by the old library ladder, you pluck the book gently 
+                        from its dusty perch. You open the weighty tome and flick through its translucent pages. You 
+                        see a few potion options that may be of use to you, which do you decide to create?
+                        <br><br>
+                        A speed potion
+                        <br>
+                        A sleeping potion
+                        <br>
+                        A charisma potion
+                        
+                </div>
+                <div id = "bodytext" class = "U4abc">
+                        <p><font size="6">The King</font><br>
+                        The boy takes you to the King’s counsel room, where he and many other members of the court are 
+                        conversing about taxes, land and the Norman invasion of times gone by. You walk timidly into 
+                        the room and as people notice your presence they grow quiet. 
+                        <br><br>
+                        “And who might you be there, child?”
+                        <br><br>
+                        Slightly afraid, you reply, “A friend, your majesty.”
+                        <br><br>
+                        You see the King notice the prop spellbook under your arm and walks over to examine it.
+                        <br><br>
+                        “Ah, you’re the alchemist from Normandy I sent for! I never would have guessed, I couldn’t hear 
+                        it in your accent.”
+                        <br><br>
+                        Thinking quickly you reply, “Not exactly sire, I am said alchemist’s apprentice, he sent me in 
+                        his stead. I was raised here in Britain so I don’t have the French accent.”
+                        <br><br>
+                        The King appears slightly displeased that the person standing in front of him is no more than an 
+                        apprentice, he was hoping for an expert.
+                        <br><br>
+                        “Well I hope you don’t mind me asking, but may I see the contents of your book there? For 
+                        verification purposes.”
+                        <br><br>
+                        Without thinking you hand the book to the King, who opens it and begins to flip through the 
+                        pages. You see an enraged look growing across his face.
+                        <br><br>
+                        “It appears..” the King bellows, “...that the person standing before us is an imposter, most 
+                        likely trying to pilfer me for money! The book I hold in my hands is entirely blank, except 
+                        for the ornate cover. Guards, seize this con artist!”
+                        <br><br>
+                        
+                </div>
+                <div id = "bodytext" class = "U4baa">
+                        <p><font size="6">Push her over</font><br>
+                        You push the woman as hard as you can, hoping she’ll fall to the ground, allowing for you to 
+                        make a swift getaway with the… brochure. Unfortunately, it appears she has enchanted feet that 
+                        plant her firmly on the ground at all times. Infuriated at your rude behaviour she casts a hex 
+                        on you, causing you to turn inside out.
+                        <br>
+                </div>
+                <div id = "bodytext" class = "U4bab">
+                        <p><font size="6">You Trade</font><br>
+                        “You know, I happen to be an artist. I could help you reproduce your work many times over, 
+                        so you have copies to share with people. Perhaps I could offer my services in exchange for 
+                        some help?”
+                        <br><br>
+                        After briefly considering, the witch responds, “Why that sounds fantastic to me! How about 
+                        this: in exchange for your services, which I won’t engage you for until your quest is complete, 
+                        I shall offer you one of three sacred objects to assist you on your journey.”
+                        <br><br>
+                        The witch lays out some options on her crafting table, which do you choose?
+                        <br><br>
+                        An enchanted spear
+                        <br>
+                        Magic spices
+                        <br>
+                        Charisma potion
+                        
+                </div>
+                <div id = "bodytext" class = "U4bba">
+                        <p><font size="6">Return the Book</font><br>
+                        You notice a woman’s name and address written inside the cover of the book. Next to her details 
+                        are the words, ‘Witch, Expert’. How interesting. It must be for the woman that brother David 
+                        spoke of. You remember the wanted poster in the book with the pentagram. In the dead of night 
+                        you sneak downstairs to retrieve the poster from the other book. Folding it carefully, you put 
+                        it in your pocket for later and return upstairs to your bed chamber. You will set out for the 
+                        nearby town in the morning.<br><br>
+                        [PROCEED to BEGINNING of WITCH STORYLINE]
+                        <br>
+                </div>
+                <div id = "bodytext" class = "U4bbb">
+                        <p><font size="6">Read the Unicorn Chapter</font><br>
+                        You turn to the chapter on Unicorns. Truth be told there is little there you didn’t already 
+                        know. The one useful piece of information that you gleaned from its pages was that Unicorns 
+                        cannot be caught by traditional means, and that they have striking similarities in their nature 
+                        to Jesus Christ. You fail to see how this is beneficial to you and in a huff of futility, decide 
+                        to consult someone else for advice in the morning. 
+                        <br><br>
+                        [BACK to KING/MONK/DOCTOR mechanic]
+                        <br>
+                </div>
+                <div id = "bodytext" class = "U4bbc">
+                        <p><font size="6">Women's Address</font><br>
+                            You notice a woman’s name and address written inside the cover of the book. Next to her 
+                            details are the words, ‘Witch, Expert’. How interesting. It must be for the woman that 
+                            brother David spoke of. You remember the wanted poster in the book with the pentagram. 
+                            In the dead of night you sneak downstairs to retrieve the poster from the other book. 
+                            Folding it carefully, you put it in your pocket for later and return upstairs to your bed 
+                            chamber. You will set out for the nearby town in the morning.
+                        <br><br>
+                </div>
+
+                <div id = "bodytext" class = "U4aca">
+                        <p><font size="6">Chastise the King</font><br>
+                            The rage you feel inside boils over, you simply cannot stand the idea of this man killing 
+                            innocent creatures, just to hang them as hunting trophies! It’s despicable. 
+                            <br><br>
+                            “How dare you even attempt something so cruel, sir! These creatures should be preserved 
+                            and documented, not butchered for status. You should be ashamed of yourself.”
+                            <br><br>
+                            The King’s gaze falls directly upon you, in his eyes you can see a rage and contempt that 
+                            equals your own. 
+                            <br><br>
+                            “How dare I!? How dare you, brother… brother… why I don’t even know your name, in fact 
+                            I don’t recall ever seeing your face before! Not only are you an agitator, you are an 
+                            imposter as well! Guards, seize this wretched soul and send them to the gallows!”
+                        <br><br>
+                </div>
+
+                <div id = "bodytext" class = "U4acb">
+                        <p><font size="6">Offer a Hunting Technique</font><br>
+                        Thinking quickly, you call for the King’s attention. Recalling what you read in the folded 
+                        paper, you offer up a hunting technique to the King. 
+                        <br><br>
+                        “And you say this is for the Unicorn, of all creatures? Well child, if you knew anything at 
+                        all you would be aware of the fact that the Unicorn cannot be caught by conventional means. 
+                        I have had my best men on the hunt for one for the better part of two years and they have 
+                        yielded me no results. Tell me, how do you propose one would capture the beast?”
+                        <br><br>
+                        Now is your chance to trick the King into helping you. His extensive resources would make your 
+                        task a lot easier.
+                        <br><br>
+                        “If it’s alright with you, your majesty, I would prefer to tell you in private, as this 
+                        information is proprietary highly secretive.”
+                        <br><br>
+                        The King ushers you into an antechamber behind the throne room to speak in private. You decide 
+                        to…
+                        <br><br>
+                       Hold the hunting technique for ransom
+                       <br>
+                       Tell the King the real technique
+                          
+                        <br><br>
+                </div>
+
+                <!--------------------------------------------------------------------->
+                <!--------------------- UNICORN LEVEL 5 ------------------------------->
+                <!--------------------------------------------------------------------->
+                <div id = "bodytext" class = "U5baba">
+                        <p><font size="6">The Enchanted Spear</font><br>
+                        If you had read the witch’s brochure properly you would have noticed that the Unicorn can’t 
+                        be caught by normal means, and either way your quest is not to harm the animal, it is to 
+                        document it and ensure its protection… odd choice there friend.
+                        <br><br>
+                </div>
+
+                <div id = "bodytext" class = "U5babb">
+                        <p><font size="6">Magic Spices</font><br>
+                            You choose a sachet of frankincense-based magic spices. Thought the instructions on the back 
+                            say nothing about Unicorns, it does mention that it can enhance the resurrection process of a 
+                            creature known as the Phoenix. Unfortunately however, the choice you have made won’t assist 
+                            you very much in catching the current creature you’re after.
+                        <br><br>
+                </div>
+
+                <div id = "bodytext" class = "U5babc">
+                        <p><font size="6">Charisma Potion</font><br>
+                        The charisma potion you have selected from the table is designed to improve your ability to 
+                        persuade and engage people. After reading the label less than carefully, you consume the whole 
+                        bottle. 
+                        <br><br>
+                        The witch claps her hands together excitedly, “Fantastic choice! The charisma potion is a 
+                        personal favourite of mine. Now, if I remember correctly, we left the tavern before you were 
+                        able to eat and drink! I feel so rude for dragging you away, please allow me to give you some 
+                        supper.”
+                        <br><br>
+                        She ushers you into the next room, where a young girl is standing above a stove, stirring a 
+                        pot of soup. You take a seat next to the old woman at her kitchen table and the girl brings you 
+                        each a bowl of soup and a hunk of bread, before sitting down herself.
+                        <br><br>    
+                        “Traveller, this is my daughter, Petunia. Petunia, this…”
+                        <br><br>
+                       You quickly interject, “A friend, I don’t have a name.” The pair of women look a little puzzled, 
+                       but quickly move on. As you listen to the idle conversation, you can feel the charisma potion 
+                       beginning to work. You remember the methodology written about in the brochure for capturing the 
+                       Unicorn and decide to enlist the help of the witch’s maiden daughter. The charisma potion 
+                       compels you to…
+                       <br><br>
+                       Pay Petunia a compliment
+                       <br>
+                       Make a move on Petunia
+                       <br>
+                       Ask Petunia for a favor
+                        <br><br>
+                </div>
+
+                <div id = "bodytext" class = "U5abba">
+                        <p><font size="6">The Speed Potion</font><br>
+                            If you had read the brochure correctly, you would have realised that nothing is as fast as 
+                            the unicorn… not even an artist hopped up of speed potion. This potion will not be useful 
+                            to you. Try another.
+                        <br><br>
+                </div>
+
+                <div id = "bodytext" class = "U5abbb">
+                        <p><font size="6">The Sleeping Potion</font><br>
+                        You create a sleeping potion, a very potent one at that. You pour the contents into a glass 
+                        flask and stopper it with a cork. Tucking the flask into your jacket pocket you make your way 
+                        as fast as you can out of the alchemist's laboratory and into the castle yard. 
+                        <br>
+                        Unfortunately, however, you are incredibly clumsy. You trip over a bucket of apples and send 
+                        them rolling across the dirt. As you hit the ground the flask flies from your pocket and 
+                        smashes, freeing the potent sleeping potion. You see its effects begin immediately. 
+                        <br>
+                        Within 30 seconds the entire castle has been put to sleep by the effects of the concoction, 
+                        including yourself. As you failed to read the instructions carefully, you missed the fact 
+                        that the sleeping potion’s effect lasts for 100 years. 
+                        <br><br>
+                        Until then, old timer.
+                       
+                        <br><br>
+                </div>
+
+                <div id = "bodytext" class = "U5abbc">
+                        <p><font size="6">The Charisma Potion</font><br>
+                        You concoct the charisma potion and stow it in your jacket pocket before making your way out of 
+                        the alchemist’s laboratory. After reading that brochure you decide to seek the help of another, 
+                        the woman who wrote it. You recall her address written on the last page and set out on your 
+                        journey.
+                        <br><br>
+                        The woman’s house was a small, rickety set up, right in the heart of the town. You attempt to 
+                        knock gingerly on the small front door but before you knuckles can meet the wood of the door 
+                        panel, it swings open, revealing a small but sweet looking old woman. She ushers you into the 
+                        next room, where a young girl is standing above a stove, stirring a pot of soup. You take a 
+                        seat next to the old woman at her kitchen table and the girl brings you each a bowl of soup 
+                        and a hunk of bread, before sitting down herself.
+                        <br><br>
+                        “Traveller, this is my daughter, Petunia. Petunia, this…”
+                        <br><br>
+                      You quickly interject, “A friend, I don’t have a name.” The pair of women look a little puzzled, 
+                      but quickly move on. As you listen to the idle conversation, you can feel the charisma potion 
+                      beginning to work. You remember the methodology written about in the brochure for capturing the 
+                      Unicorn and decide to enlist the help of the witch’s maiden daughter. The charisma potion compels 
+                      you to…
+                      <br><br>
+                      Pay Petunia a compliment
+                      <br>
+                      Make a move on Petunia
+                      <br>
+                      Ask Petunia for a favor
+                      
+                        <br><br>
+                </div>
+
+                <div id = "bodytext" class = "U5acba">
+                        <p><font size="6">Hold the Technique for Ransom</font><br>
+                        “You think you can extort me, cretin!?” the King booms. The sound of his yelling can be 
+                        heard by all in the room next door. The guards are called to apprehend you and you are 
+                        tortured in the dungeon below the castle for treason. Who knew the King had such a short 
+                        temper?
+                        <br><br>
+                </div>
+                <div id = "bodytext" class = "U5acbb">
+                        <p><font size="6">The Real Technique</font><br>
+                        “Listen…” you begin. “The technique I have in mind has been developed from reading ancient 
+                        manuscripts. It requires the assistance of a maiden, pure of heart. You see, the Unicorn itself 
+                        is like a metaphor for Jesus Christ himself; the beast is attracted to maidens because they
+                         resemble the bosom of the Virgin Mother. I believe if we were to find a young woman to fit 
+                         the bill, maybe dress her up in a blue cloak like the Mother, we may just catch the creature.”
+                         <br><br>
+                        The King strokes his beard in thought. “I can think of three who would fit this description. 
+                        The first is my sublime daughter, Eleanor. She is fair and of a good sort. The second is her 
+                        lady in waiting, Daphne. I’ve always known her to be honest and caring. There is also the 
+                        servant girl, Mildred, I’ve never known her to steal anything from me at the very least.”
+                        <br><br>
+                        You decide to choose…
+                       <br>
+                        Eleanor
+                        <br>
+                       Daphne
+                       <br>
+                       Mildred
+                       
+                        <br><br>
+                </div>
+                
+                <!--------------------------------------------------------------------->
+                <!--------------------- UNICORN LEVEL 6 ------------------------------->
+                <!--------------------------------------------------------------------->
+                <div id = "bodytext" class = "U6babca">
+                        <p><font size="6">Pay her a compliment</font><br>
+                            You tell Petunia that her soup is delicious and that she’s a world-class cook. She appears very 
+                            flattered. “Listen, you’ve been so kind, if there’s anything I can help you with, I’d be happy 
+                            to.”
+                            <br><br>
+                            You explain your plan to Petunia, showing her mother’s carefully written brochure to her. She 
+                            seems excited to be able to help you on your quest. As it was prescribed in the brochure, you 
+                            make Petunia wear a blue cloak, to mimic the Virgin Mary. The two of you set out early in the 
+                            morning and head to the highest peak near the village. It’s a calm, sunny day. You get Petunia 
+                            to kneel down on the mountainside in her cloak, arms outstretched, while you go and hide behind 
+                            a rock. Before the two of you know it, a large horn can be seen in the distance… then a small 
+                            horse’s body… you can’t believe the lure has worked! The sweet creature gingerly makes its way 
+                            over to Petunia, who hugs the Unicorn gently and strokes its mane. While the creature is subdued, 
+                            you move from behind the rock. Quickly, you sketch its likeness, to be properly illustrated 
+                            later, and jot down any important notes from the experience. The first creature on your uncle’s 
+                            list has been found! Congratulations. 
+                        <br><br>
+                </div>
+                <div id = "bodytext" class = "U6babcb">
+                        <p><font size="6">Make a Move</font><br>
+                            Petunia doesn’t take kindly to your advances, no offense but you’re just not her type. 
+                            The charisma potion must not have worked.
+                        <br><br>
+                </div>
+                <div id = "bodytext" class = "U6babcc">
+                        <p><font size="6">Ask for a Favour</font><br>
+                            “Listen, you’ve been so kind, if there’s anything I can help you with, I’d be happy to.” 
+                            <br><br>
+                            You explain your plan to Petunia, showing her mother’s carefully written brochure to her. She seems excited to be 
+                            able to help you on your quest. As it was prescribed in the brochure, you make Petunia wear a blue cloak, to mimic 
+                            the Virgin Mary. The two of you set out early in the morning and head to the highest peak near the village. It’s a 
+                            calm, sunny day. You get Petunia to kneel down on the mountainside in her cloak, arms outstretched, while you go 
+                            and hide behind a rock. Before the two of you know it, a large horn can be seen in the distance… then a small 
+                            horse’s body… you can’t believe the lure has worked! The sweet creature gingerly makes its way over to Petunia, 
+                            who hugs the Unicorn gently and strokes its mane. While the creature is subdued, you move from behind the rock. 
+                            Quickly, you sketch its likeness, to be properly illustrated later, and jot down any important notes from the 
+                            experience. The first creature on your uncle’s list has been found! 
+                            <br><br>
+                            Congratulations. 
+                        <br><br>
+                </div>
+                <div id = "bodytext" class = "U6acbba">
+                        <p><font size="6">Eleanor</font><br>
+                            The King’s daughter agrees to help you and her father with your mission. Eleanor dons a 
+                            fine blue cloak and waits on a hillside. Lo! You see a horn in the distance, just peeking 
+                            out from behind some trees. The magnificent creature slowly makes itself seen, it’s 
+                            beautiful. Unfortunately, it takes one look at Eleanor and bolts - it looks as though the 
+                            girl has had the opposite effect, startling the Unicorn away. 
+                            <br><br>
+                            Dissatisfied with the outcome Eleanor flies into a rage, cursing the creature, the King 
+                            and yourself. Maybe she wasn’t as sweet as the King made her out to be…
+                        <br><br>
+                </div>
+                <div id = "bodytext" class = "U6acbbb">
+                        <p><font size="6">Daphne</font><br>
+                            The princess’ Lady in Waiting agrees to help you and the King with your mission. Daphne 
+                            dons a fine blue cloak and waits on the hillside. It’s a beautiful sunny day and the wind 
+                            sweeping across the countryside makes the grass shine in the light. Lo! You see a horn in 
+                            the distance, just peeking out from behind some trees. The magnificent creature slowly 
+                            makes itself seen, it’s beautiful. The Unicorn makes its way over, gingerly at first, to 
+                            the girl. Daphne opens her arms to greet the creature, taking it in close for a tender hug.
+                            <br><br>
+                            While this is happening you quickly take down some notes about the creature, noting its 
+                            form and doing a quick sketch of the animal. Thankfully, you were able to speak to Daphne 
+                            in private before commencing the operation and you and her agree to allow the creature to 
+                            escape before the King’s men can butcher it. As for yourself, you run into the trees, 
+                            remaining hidden from the King’s guards for several days until the coast is clear. 
+                        <br><br>
+                </div>
+                <div id = "bodytext" class = "U6acbbc">
+                        <p><font size="6">Mildred</font><br>
+                            The King’s servant girl agrees to help you and him with your mission. Mildred dons a fine blue 
+                            cloak, borrowed from the Princess, and waits on the hillside. It’s a beautiful sunny day 
+                            and the wind sweeping across the countryside makes the grass shine in the light. Lo! You 
+                            see a horn in the distance, just peeking out from behind some trees. The magnificent 
+                            creature slowly makes itself seen, it’s beautiful. The Unicorn makes its way over, gingerly 
+                            at first, to the girl. Mildred opens her arms to greet the creature, taking it in close for 
+                            a tender hug.
+                            <br><br>
+                            While this is happening you quickly take down some notes about the creature, noting its 
+                            form and doing a quick sketch of the animal. Thankfully, you were able to speak to Mildred 
+                            in private before commencing the operation and you and her agree to allow the creature to 
+                            escape before the King’s men can butcher it. As for yourself, you run into the trees, 
+                            remaining hidden from the King’s guards for several days until the coast is clear. 
+                        <br><br>
+                </div>
+
+                <!--------------------------------------------------------------------->
+                <!--------------------- UNICORN LEVEL 7 ------------------------------->
+                <!--------------------------------------------------------------------->
+                <div id = "bodytext" class = "win">
+                        <p><strong>YOU HAVE WON THE GAME</strong> <br>
+                            Congratulations. Go and bask in your victory and enjoy the company of the animals from
+                            bestiary. 
+                        </p>
+                        <p>Well....you're the champion.....go and CELEBRATE GOOD TIMES ! 
+                        </p>
+                </div>
+                <div id = "bodytext" class = "lose">
+                        <p><strong>Aw no. Aw no. Aw no. THE GAME IS LOST</strong> <br>
+                            I don't really know what to say here other than I'm sorry to say, today wasn't your day. 
+                        </p>
+                        <p>Well....what else do you want me to say here....you lost....
+                        </p>
+                </div>
+            </div>
+<!-------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------ END UNICORN NARRATIVE --------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------->
+
+
+
+<!-------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------ BEGIN DRAGON NARRATIVE -------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------->
+    <div class = "bodyTextD">               
+
+<div id = "bodytext" class = "D1">
+                    <p><font size="6">The Quest Begins</font><br>
+                        Re-reading Uncle Philip’s letter, one name on the list stands out to you in bold lettering: 
+                        DRAGON.
+                        <br><br>
+                        You enter a tavern to purchase a tankard of beer. As you sip on your beer, you take your 
+                        time mulling over what little you know about Dragons. You realise that you are not the only 
+                        person in the tavern this early in the day, and notice three other people.
+                        <br><br>
+                        In the hope of finding out more about Dragons, you introduce yourself to:
+                        <br>
+                        - The Knight
+                        <br>
+                        - The Bard
+                        <br>
+                        - The Merchant
+                    </p>
+                </div>
+                <div id = "bodytext" class = "D2a">
+                    <p><font size="6">The Knight</font><br>
+                        In a dark corner of the tavern sits a Knight with their dusty shield propped against the table. 
+                        They seem to be concentrating on a tattered and dirty scroll in their hands.
+                        <br><br>
+                        Hearing your footsteps, they look up to see who's approaching them and seem eager for some 
+                        company. Striking up conversation, you find that the Knight is on a quest to find a living example of his House Crest - an Elephant. 
+                        <br><br>
+                        Taking a shine to you, the Knight offers you:
+                        <br>
+                        - A look at their Shield emblem
+                        <br>
+                        - Opportunity to read their scroll
+                        <br>
+                        - Join them on their quest as their Squire
+                    </p>
+                </div>
+                <div id = "bodytext" class = "D2b">
+                    <p><font size="6">The Bard</font><br>
+                        Quietly strumming their lute at a deserted table is a charming looking Bard. Known for their 
+                        poetic and musical prowess, Bards regale their audiences recounting epic adventures, stories 
+                        and sensational news.
+                        <br><br>
+                        Thinking the Bard could have a song or poem about dragons that could help you in your search 
+                        for one, you cautiously approach the seated Bard and cough discreetly to get their attention. 
+                        Striking up a friendly conversation, you tell the Bard about your search for a Dragon and your 
+                        Uncle Philip's mysterious letter.
+                        <br><br>
+                        The Bard, intrigued, tells you "Alas, I have no tales of Dragons to recount, though should you 
+                        wish a life of adventure and travel, you can accompany my and learn the gift of my trade"
+                        <br><br>
+                        You can't help yourself and:
+                        <br>
+                        - Laugh openly at the Bard's offer to apprentice to them
+                        <br>
+                        - Excitedly accept their offer to apprentice to them
+                    </p>
+                </div>
+                <div id = "bodytext" class = "D2c">
+                    <p><font size="6">The Merchant</font><br>
+                        Milling about the entrance to the tavern is a richly clothed Merchant. Robed in furs and silk, 
+                        the Merchant looks you up and down - your simple but well made clothes indicate there could be 
+                        more value to you than first impressions.
+                        <br><br>
+                        As their rich and exotic clothes indicate, the Merchant travels far and wide finding wares to 
+                        sell in different towns. You wonder if they have anything for trade that could help you find a 
+                        dragon.
+                        <br><br>
+                        You size the Merchant up and offer to trade:
+                        <br>
+                        - A spool of unspun wool
+                        <br>
+                        - A lute
+                        <br>
+                        - A tattered scroll
+                    </p>
+                </div>
+               
+                <div id = "bodytext" class = "D3aa">
+                    <p><font size="6">Shield Emblem</font><br>
+                        As you bend over to get a closer look at the Knight's shield emblem, showing an Elephant, 
+                        you accidentally hit your head on the table. 
+                        Your head wound is severe, and you fall into a coma, which you never wake from.
+                        <br><br>
+                        End of Journey.
+                    </p>
+                </div>
+                <div id = "bodytext" class = "D3ab">
+                    <p><font size="6">Read Scroll</font><br>
+                        The Knight allows you to briefly read his scroll, before a loud party of ruffians enters the 
+                        tavern and he snatches it back.
+                        <br><br>
+                        You managed to read the following before the Knight snatched the scroll back from you:
+                        "...Elephants are the preferred prey of Dragons...venomous breath... winged serpent.”
+                        <br><br>
+                        You think there could be more useful information about dragons on the scroll, so you:
+                        <br>
+                        - Offer to buy the scroll
+                        <br>
+                        - Steal the scroll
+                        <br>
+                        - Offer to make a song based on the Knight's quest and the content of the scroll
+                    </p>
+                </div>
+                <div id = "bodytext" class = "D3ac">
+                    <p><font size="6">Join Quest</font><br>
+                        Becoming the Knight's Squire sounds like it could provide you with the opportunity to travel to 
+                        different lands, meet commoners and royalty alike. This could allow you to capture and document 
+                        more of the beasts on Uncle Philip's list, but it could almost certainly leads to dangerous 
+                        situations!
+                        <br><br>
+                        You take a moment to make sure you really do want to become a Squire:
+                        <br>
+                        - Graciously decline the Knight's Offer
+                        <br>
+                        - Accept the Knight's Offer with thanks
+                    </p>
+                </div>
+                <div id = "bodytext" class = "D4aba">
+                    <p><font size="6">Offer to Buy Scroll</font><br>
+                        You're desperate to see if there's more information about dragons on the scroll, so eagerly 
+                        offer to buy it from the Knight for 20 gold coins.
+                        <br><br>
+                        The Knight is greatly offended that you think they would sell their family heirloom which 
+                        contains their house emblem. In a rage, the Knight dumps the remainder of his beer on your 
+                        head and storms out of the tavern.
+                        <br><br>
+                        Dejected and soaked with beer, you decide Uncle Philip's list of beasts is too much trouble.
+                        <br><br>
+                        End of Journey.
+                    </p>
+                </div>
+                <div id = "bodytext" class = "D4abb">
+                    <p><font size="6">Steal Scroll</font><br>
+                        You begin to buy the Knight more and more beer and soon they are drunk! The Knight falls into 
+                        a drunken stupor. While they are quietly snoring, your rummage through their belongings and 
+                        grab the scroll!
+                        <br><br>
+                        You read the entire scroll passage:
+                        "Noble and wise beasts, Elephants are the preferred prey of  Dragons. Armed with a venomous 
+                        breath, these devilish winged serpents hold great power of destruction in their serpentine 
+                        tails. The only beast the dragon flees from is the roar of the Panther, its sweet breath it 
+                        cannot abide by."
+                        <br><br>
+                        Realising there isn't much more information on the scroll, and that the Knight is beginning 
+                        to wake up you hastily leave the tavern and run into a Merchant on your way out.
+                    </p>
+                </div>
+                <div id = "bodytext" class = "D4abc">
+                    <p><font size="6">Create a Song about the Knight and the Scroll</font><br>
+                        You notice the Knight getting more anxious about the scroll and your interest in it. 
+                        Thinking quickly, you tell the Knight you are an apprentice to the Bard in the tavern, and 
+                        think their quest and the wonderful scroll would make a captivating song, regaling all who 
+                        hear it about the Knight's honour and nobility.
+                        <br><br>
+                        The Knight, warming to your praise agrees.
+                        The Knight lets you read the entire scroll passage:
+                        <br><br>
+                        "Noble and wise beasts, Elephants are the preferred prey of  Dragons. Armed with a venomous 
+                        breath, these devilish winged serpents hold great power of destruction in their serpentine 
+                        tails. The only beast the dragon flees from is the roar of the Panther, its sweet breath it 
+                        cannot abide by. "
+                        <br><br>
+                        You realise there isn't much more information on the scroll, and while you sing a song using 
+                        the scroll's words, it is so terrible that the Knight becomes angry. They pick you up by the 
+                        scruff of your neck and march you over to the tavern Bard, telling you "you have much to learn!".
+                        <br><br>
+                    </p>
+                </div>
+                <div id = "bodytext" class = "D4acb">
+                    <p><font size="6">Accept the Offer - Become Squire</font><br>
+                        As the Knight's new Squire, you are eager to set off on the Knight's quest to find a living 
+                        Elephant!
+                        <br><br>
+                        As you begin your long journey, the Knight explains to you that Elephants are strong and noble 
+                        beasts, however, a major predator of the Elephant is the Dragon. 
+                        <br><br>
+                        Over many nights on your journey, the Knight tells you that Dragons prey on Elephants by laying 
+                        in wait at paths elephants frequently travel and kills its prey with its strong, coiling tail. 
+                        The Knight ponders aloud - they've heard many stories about Dragon's spitting venom from their 
+                        mouths, but are unsure if this venom is fatal or harmless. 
+                        <br><br>
+                        Finally you reach lands where Elephants are said to roam freely!
+                    </p>
+                </div>
+                <div id = "bodytext" class = "D5acba">
+                    <p><font size="6">Setup Camp</font><br>
+                        Weary from your travels, you decide to camp and recover your strength. While setting up camp, 
+                        you hear rustling in the bushes and discover a lone Elephant!
+                        <br><br>
+                        Do you:
+                        <br>
+                        - Attempt to capture the Elephant
+                        <br>
+                        - Attempt to befriend the Elephant
+                    </p>
+                </div>
+                <div id = "bodytext" class = "D6acbaa">
+                    <p><font size="6">Attempt to Capture Elephant</font><br>
+                        While you have learnt much about Elephants, it hasn't prepared you for their might and 
+                        strength! Outraged at your attempt to capture it, the Elephant tramples you. 
+                        <br>
+                        You are terribly hurt and don't survive your injuries.
+                        <br><br>
+                        End of Journey.
+                    </p>
+                </div>
+                <div id = "bodytext" class = "D6acbab">
+                    <p><font size="6">Attempt to Befriend Elephant</font><br>
+                        You slowly approach the elephant so as not to startle it. Sensing a great intelligence and 
+                        wisdom in the elephant, you begin to talk to it and retell your travels so far.
+                        <br><br>
+                        Whether or not the elephant actually understands you, it seems to find you as no threat to it's 
+                        own life.
+                        You cautiously follow it as it travels well-worn bush paths back to its herd.
+                        As you pass a rocky outcrop, the air suddenly starts to shimmer and a loud thud echoes near the 
+                        elephant!
+                        <br><br>
+                        What seems to be a large winged serpent starts to coil its powerful snake-like body around the 
+                        elephant! This must be a Dragon!
+                        <br>
+                        Thinking quickly, you ready your weapon and spring to action!
+                        <br><br>
+                        Do you:
+                        <br>
+                        - Aim for the dragon's head
+                        <br>
+                        - Aim for the dragon's tail
+                    </p>
+                </div>
+
+                <div id = "bodytext" class = "D7acbaba">
+                    <p><font size="6">Dragon's Head</font><br>
+                        You try to subdue the dragon by aiming your weapon at its head! Alas! Though you powerfully 
+                        strike the dragon's head, it's powerful tail coils around you, constricting you and crushing 
+                        your body.
+                        <br><br>
+                        End of Journey.
+                </div>
+
+                <div id = "bodytext" class = "D7acbabb">
+                    <p><font size="6">Dragon's Tail</font><br>
+                        You try to subdue the dragon by striking its powerful tail with your weapon. Thankfully your 
+                        aim is true and you hit the dragon's tail, causing it to release the struggling elephant.
+                        <br><br>
+                        A great battle begins as you dodge the dragon's tail as it whips around in fury. After what 
+                        feels like hours, it seems the dragon is growing weaker and weaker. With one last blow to its 
+                        tail, the dragon collapses in a tired heap, unable to move.
+                </div>
+
+                <div id = "bodytext" class = "dragonEnd">
+                    <p><font size="6">The Dragon</font><br>
+                        While the dragon is incapacitated, you take your time to sketch an illustration of the beast 
+                        in your journal, making sure you show its powerful tail. You meticulously record all of the 
+                        beast's terrible and wonderful attributes including:
+                        <br><br>
+                        - Harmless venom it breathes
+                        <br>
+                        - Strong, coiling tail that holds the majority of the beast's strength
+                        <br>
+                        - Its ability to stir up air and make it shine
+                        <br>
+                        - Its weakness to the Panther's sweet breath and fearsome roar
+                        <br>
+                        - Its preferred prey are Elephants
+                        <br>
+                        You are exhausted after your endeavours, but proud that you have managed to find and document 
+                        a fantastical beast from Uncle Philip's list to add to your growing Bestiary.
+                </div>
+
+                <div id = "bodytext" class = "D3ba">
+                    <p><font size="6">Laugh at the Bard's Offer</font><br>
+                        Your open disparagement of the Bard's generous offer deeply offends them.
+                        <br><br>
+                        Overwhelmed by their rage, the Bard smashes their lute over your head, vowing to ensure that 
+                        you will never be welcomed in any tavern or songhall they visit in their travels. The Bard 
+                        flees the tavern as you lay bleeding on the floor.
+                        <br><br>
+                        For disrupting the peace of the tavern, you are arrested and are detained in the public stocks. 
+                        You are pummelled with rotten food every day, your wound becoming infected.
+                        <br><br>
+                        Your infection gets worse and worse, until you eventually fall unconscious and perish while 
+                        still in the stocks.
+                        <br><br>
+                        End of Journey. 
+                        
+                </div>
+
+                <div id = "bodytext" class = "D3bb">
+                    <p><font size="6">Excitedly Accept Bard's Offer</font><br>
+                        You cannot contain your excitement at the Bard's offer and enthusiastically thank them for 
+                        taking you on as their apprentice.Thinking of all the songs you can learn to help you in your 
+                        search for Uncle Philip's beasts, and the strange places you could visit, you throw yourself 
+                        into your training.
+                        <br><br>
+                        As the days turn into weeks, turn into months, you realise you have only travelled to two towns 
+                        and the Bard's repertoire of stories and songs don't include any beasts in Uncle Philip's letter. 
+                        <br><br>
+                        Getting impatient to try and find the Dragon from Uncle Philip's letter, you decide to:
+                        <br>
+                        - Strike it out on your own as a travelling Bard
+                        <br>
+                        - Leave quietly in the night
+                </div>
+
+                <div id = "bodytext" class = "D4bba">
+                    <p><font size="6">Strike it out on your own</font><br>
+                        You tell the Bard that you wish to end your apprenticeship and make your own way in the world 
+                        as a Bard. You get into an argument with the Bard, yelling at them that you have more talent 
+                        and skill that they do.
+                        <br><br>
+                        Saddened and deeply hurt by your actions, the Bard releases you from your apprenticeship. 
+                        You strike out for a new town and there you make your debut performance in the town square. 
+                        Unfortunately you've overestimated your skills and talent and the crowd is merciless.
+                        <br><br>
+                        The crowd heckles you fiercely, and throws all matter of garbage at you. 
+                        Completely demoralised, you give up on your plan to travel as a Bard and discover Uncle Philip's 
+                        beasts. You spend the remainder of your years as the town's drunken lout.
+                        <br><br>
+                        End of Journey.
+                </div>
+
+                <div id = "bodytext" class = "D4bbb">
+                    <p><font size="6">Leave quietly in the night</font><br>
+                        You are unsure of how the Bard will react to you asking to end your apprenticeship early, 
+                        so you decide to sneak away in the middle of the night while they are fast asleep.
+                        <br><br>
+                        Bitter at how your apprenticeship was little more than indebted servitude, you decide to steal 
+                        the Bard's lute and all their coins, to cover all the work you have done for them.
+                        <br><br>
+                        Under cover of darkness you make your way to the next town with your lute and loot. Reaching 
+                        the town in the morning, you decide to find a tavern to have a drink and sell your stolen wares.
+
+                </div>
+
+                <div id = "bodytext" class = "D3ca">
+                    <p><font size="6">Offer to trade a spool of wool</font><br>
+                        You offer the merchant a small spool of rough, unspun wool. 
+                        The Merchant frowns at the paltry trade offer. They certainly misjudged you and refuse to waste 
+                        any more of their time on you when you clearly have nothing of value to offer.
+                        <br><br>
+                        Dejected at your lack of basic skills at trading, you re-think if you're cut out to search for 
+                        fantastical beasts from Uncle Philip's list.
+                        <br>
+                        You decide to return home and live a quiet life with your family.
+                        <br><br>
+                        End of Journey. 
+                </div>
+
+                <div id = "bodytext" class = "D3cb">
+                    <p><font size="6">Offer to trade a lute</font><br>
+                        As you tell the Merchant of your search for a dragon to complete Uncle Philip's bestiary, you 
+                        spot the Merchant eyeing your lute. 
+                        <br><br>
+                        Seeing the Merchant's interest in your lute, and realising it would be too bulky to carry on 
+                        your adventures, you offer up your lute, inlaid with mother-of-pearl for trade.
+                        The Merchant, always looking for a bargain, offers you two trade options.
+                        <br><br>
+                        You agree to trade your lute for:
+                        <br>
+                        - An iron Broadsword
+                        <br>
+                        - More information about dragons
+                </div>
+
+                <div id = "bodytext" class = "D4cba">
+                    <p><font size="6">Trade for Broadsword</font><br>
+                        You decide to trade your lute for a strong looking iron broadsword.
+                        The Merchant greedily chuckles, snatches the lute and gives you the broadsword.
+                        You pick the broadsword up thinking it would be perfect to help you capture a dragon. Taking a 
+                        closer look at the blade, you decide to give it a quick polish with the hem of your tunic.
+                        <br><br>
+                        Giving the blade a brisk polish, you feel a sudden pain in your hand. You look down to see your 
+                        hand bleeding heavily. The strong looking iron broadsword, is really an old sword, riddled with 
+                        rust and covered in paint to look new. In your bleeding hand is a chunk of corroded blade that 
+                        has fallen away.
+                        <br><br>
+                        You spend all your coins on a poultice to heal your cut, unfortunately infection still sets in 
+                        and you perish in a fevered state.
+                        <br><br>
+                        End of Journey.
+                </div>
+
+                <div id = "bodytext" class = "D4cbb">
+                    <p><font size="6">Trade for Information on Dragons</font><br>
+                        The Merchant seems somewhat disappointed at your choice, but nevertheless honours the trade 
+                        and begins to tell you all the information about Dragons they have collected on their trade 
+                        journeys. 
+                        <br><br>
+                        The Merchant tells you that "Dragons are large, fierce and strong winged serpents that prefer 
+                        to hunt elephants in Africa and India, stalking them on the bush tracks the elephants follow. 
+                        Despite its venomous breath, a dragon's power lies within its snake-like tail, with unimaginable
+                         power to crush whomever it wishes. It also has the power to stir the air and make it shine. 
+                         The only known beast the dragon is afeared of is the vainglorious Panther. The swiftest of all 
+                         beasts, the Panther can only be caught with trickery when captivated by its own reflection. 
+                         The dragon cowers before the Panther's roar and hides from its sweet breath."
+                        <br><br>
+                        With that, the Merchant begins to pack up their wares, and makes plans to travel further along 
+                        their trade route.
+                        <br><br>
+                        You:
+                        <br>
+                        - See a travelling hunting party pass by and ask to join them
+                        <br>
+                        - Pay for safe passage with the Merchant to India or Africa 
+                </div>
+
+                <div id = "bodytext" class = "D3cc">
+                    <p><font size="6">Offer to trade a tattered scroll</font><br>
+                        You reluctantly pull a tattered scroll from your satchel and offer it to the Merchant to 
+                        look at. Though you haven't looked at in a while, you recall the scroll featuring beautiful 
+                        illuminated images and lettering, indicating the care and expense taken to create it.
+                        <br><br>
+                        You agree to trade the tattered scroll for:
+                        <br>
+                        - A Lance
+                        <br>
+                        - A hand mirror
+                </div>
+
+                <div id = "bodytext" class = "D4cca">
+                    <p><font size="6">Trade for Lance</font><br>
+                        The Merchant tosses you a heavy lance, forcing you to stumble back under its weight.
+                        <br><br>
+                        As you stumble back from the sudden weight of the lance, you trip over your own feet and fall 
+                        into the nearby well. As you plummet many metres into the dark, damp well, you wonder about all 
+                        the wonderful beasts from Uncle Philip's letter and if you'll ever get the chance to see them.
+                        <br><br>
+                        End of Journey.
+                </div>
+
+                <div id = "bodytext" class = "D4ccb">
+                    <p><font size="6">Trade for hand mirror</font><br>
+                        The Merchant gives you the old hand mirror in exchange for the tattered scroll. The Merchant 
+                        seems smug with this trade, understanding the scroll comes from a noble family. As you step 
+                        away and begin to examine the mirror, you notice its handle is heavier than usual. Finding a 
+                        latch on the side, you press it, and a small scrap of folded parchment falls out of a hidden 
+                        compartment. 
+                        <br><br>
+                        The parchment reads "No hunter on swiftest steed can catch the Panther, so quick it is. Fastest 
+                        of all creatures on earth, the only means to capture the vain beast is to trick it with its own 
+                        reflection and captive it will be." Curious though it is, you decide it's time to continue your 
+                        search for a dragon.
+                        <br><br>
+                        As you travel along the road you come to a junction - one path leads East, where a hunting party 
+                        is preparing their gear. The other path leads West.
+                        <br><br>
+                        You decide to:
+                        <br>
+                        - Ask the hunting party to accompany them on their hunt Eastwards.
+                        <br>
+                        - Travel alone towards the West.
+                </div>
+
+                <div id = "bodytext" class = "D5ccbb">
+                    <p><font size="6">Continue on your journey alone</font><br>
+                        You chose the path leading West and continue on your own. You run out of rations a few days 
+                        into your travel, and there are no signs of civilisation in the distance. The landscape is 
+                        hostile and seems deserted of life or edible plants.
+                        <br><br>
+                        You slowly waste away, losing strength and perish in the wilderness.
+                        <br><br>
+                        End of Journey.
+                </div>
+
+                <div id = "bodytext" class = "D5ccba">
+                    <p><font size="6">Travel with the hunting party</font><br>
+                        You walk up to the hunting party and introduce yourself and your quest to find a dragon. 
+                        They are a rowdy group, but welcome you to their party with open arms. 
+                        <br><br>
+                        They mention that while they're excited to help hunt a dragon, they are actually in the midst 
+                        of hunting a Panther that has been plaguing their village. The hunters have been chasing the 
+                        Panther for days, but it's simply too fast for them to catch! You hatch a plan for the hunters 
+                        to trap the Panther using a bit of trickery. 
+                        <br><br>
+                        To catch the Panther you:
+                        <br>
+                        - Use a spear
+                        <br>
+                        - Use a coil of rope
+                        <br>
+                        - Use a hand mirror
+                </div>
+
+                <div id = "bodytext" class = "D6ccbaa">
+                    <p><font size="6">Use Spear</font><br>
+                        As the hunting party make camp, you notice that the Panther has circled back. You think it 
+                        might try to attack the hunters while they are resting.
+                        <br><br>
+                        Thinking there is no time to lose, you decide to use the spear laying beside you. As the 
+                        Panther enters the camp, you jump up with a loud battle cry and throw the spear at the Panther!
+                        <br><br>
+                        Unfortunately, your aim was off and the spear whizzes past some shrubs, missing the Panther 
+                        entirely. Before you can blink, the Panther launches itself at you and strikes you down! The 
+                        hunters were right - the Panther truly is the fastest beast.
+                        <br><br>
+                        End of Journey.
+                </div>
+
+                <div id = "bodytext" class = "D6ccbab">
+                    <p><font size="6">Use Rope</font><br>
+                        As the hunting party make camp, you notice that the Panther has circled back. You think it 
+                        might try to attack the hunters while they are resting.
+                        <br><br>
+                        Thinking there is no time to lose, you decide to trap the Panther by using the coil of rope in 
+                        your satchel. As the Panther enters the camp, you jump up with a loud battle cry and launch 
+                        yourself at the Panther's back! A fierce battle begins as you try to bind the Panther with the 
+                        rope. Unfortunately all the stories the Hunter told you are true - the Panther is so incredibly 
+                        fast you can't seem to get any grip on it as it squirms and moves in your grasp. Before you know 
+                        it, the Panther has thrown you to the ground and all you can see is the Panther's cloud of breath 
+                        and dark eyes as it pounces on you.
+                        <br><br>
+                        End of Journey.
+                </div>
+
+                <div id = "bodytext" class = "D6ccbac">
+                    <p><font size="6">Use Mirror</font><br>
+                        As the hunting party make camp, you notice that the Panther has circled back. You think it 
+                        might try to attack the hunters while they are resting.
+                        <br><br>
+                        Thinking there is no time to lose, you decide to use the small hand-mirror in your pocket and 
+                        attempt to trick the Panther by entrancing it with its own reflection. 
+                        <br><br>
+                        As the Panther stalks near your sleeping bag, you spring into action and jump in front of the 
+                        Panther, angling the hand-mirror into its line of sight. The Panther's normally alert gaze 
+                        transforms into a dreamy look as it seems to be transfixed by its own reflection in the mirror! 
+                        While it is captivated by its own reflection, you take the opportunity to bind it so it can't 
+                        escape. Waking the hunting party you all celebrate at the capture of the Panther!
+                        <br><br>
+                        As you and the hunting party celebrate with beer by the fire, you discuss what you should do 
+                        with the Panther now that it has finally been caught and how the hunters can help you find a 
+                        dragon. 
+                        <br><br>
+                        You decide to:
+                        <br>
+                        - Sell the Panther and use the gold to fund your expedition to find a dragon
+                        <br>
+                        - Use the Panther to trap a Dragon
+                </div>
+
+                <div id = "bodytext" class = "D7ccbaca">
+                    <p><font size="6">Sell Panther</font><br>
+                        As the Panther gazes at its reflection in the mirror, you and the hunting party take it to the 
+                        Merchant in town.
+                        <br><br>
+                        The Merchant's eyes widen as they realise the rare creature before it. The Merchant offers a 
+                        huge amount of gold for the Panther, you accept, but before the gold can exchange hands, an 
+                        argument erupts between you and the hunting party over what share of the gold everyone will get.
+                        <br><br>
+                        As the argument gets louder, you and the hunter's begin to push each other around. A hunter 
+                        pushes you and you fall onto the Panther, accidentally smashing the hand mirror. The Panther, 
+                        no longer distracted by its own reflection, snarls loudly and attacks you and the hunters as 
+                        the Merchant escapes to safety.
+                        <br><br>
+                        End of Journey.
+                </div>
+
+                <div id = "bodytext" class = "D7ccbacb">
+                    <p><font size="6">Use Panther to trap Dragon</font><br>
+                        Deciding to use the Panther as bait to capture a dragon, you and the hunters set off to the 
+                        arid lands in search of a Dragon. Travelling for several days and nights, you and the hunters 
+                        are exhausted by the heat and decide to set up a camp at the base of a hill dotted with small 
+                        caves.
+                        <br><br>
+                        In the middle of the night you wake up - something doesn't feel right - and you decide to wander 
+                        the camp. As you walk through the camp ground, the Panther begins to stir and wakes. The air seems 
+                        to shimmer and shine and before you know it a fearsome serpent with wings appears!
+                        <br><br>
+                        This must be a Dragon! You stand frozen in fear as the Dragon seems to coil up ready to strike at 
+                        you. As the Dragon sets to attack you, a fearsome roar stuns you both - the Panther has noticed the 
+                        Dragon and as one of its enemies has let out a vicious snarl and a sweet-smelling breath comes from 
+                        its mouth.
+                        <br><br>
+                        The Panther manages to break loose from its binding and escapes into the distance as the Dragon 
+                        seems frozen by its roar and breath. Taking a deep breath, you cautiously approach the frozen Dragon 
+                        for a closer look...
+                </div>
+
+            </div> 
+
+<!---------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------- END DRAGON NARRATIVE ---------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+
+
+                <!------------------------------------------------------------------>
+                <!------------------------- INVENTORY------------------------------->
+                <!------------------------------------------------------------------>
+                <div id = "inventory">
+                    <div class = "basiliskInv">
+                        <img id = "basiliskInvP" src="basiliskB.png" alt="The Basilisk, a flying animal with 
+                            large wings and a long neck">
+                    </div>
+                    <div class = "dragonInv">
+                        <img id = "dragonInvP" src="dragonB.png" alt="The Dragon, a flying reptilian animal.">
+                    </div>
+                    <div class = "phoenixInv">
+                        <img id = "phoenixInvP" src="phoenixB.png" alt="The Phoenix, a brightly coloured flying animal.">
+                    </div>
+                    <div class = "hydrusInv">
+                        <img id = "hydrusInvP" src="hydrusB.png" alt="The Hydrus.">
+                    </div>
+                    <div class = "unicornInv">
+                        <img id = "unicornInvP" src="unicornB.png" alt="The Unicorn.">
+                    </div>
+                </div>
+
+            </div>
+            <!------------- ENGLISH SCRIPT NAVIGATION BUTTONS------------------------>    
+            <div id="navigation" class = "prologue" class = "buttonp1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="enterDragon()">DRAGON</button>
+                    <button id = "navigationButton" onclick="enterHydrus()">#HYDRUS</button>
+                    <button id = "navigationButton" onclick="enterUnicorn()">UNICORN</button>
+                    <button id = "navigationButton" onclick="enterBasilisk()">#BASILISK</button>
+                    <button id = "navigationButton" onclick="enterPhoenix()">#PHOENIX</button>
+            </div>
+            
+            <!------------------------------ UNICORN NAVIGATION----------------------->
+            <div id="navigation" class = "U1" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="seeKing()">The King</button>
+                    <button id = "navigationButton" onclick="seeMonk()">The Monk</button>
+                    <button id = "navigationButton" onclick="seeDoctor()">The Doctor</button>
+            </div>
+            <div id="navigation" class = "U2a" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="seeAristocracy()">Aristocracy</button>
+                    <button id = "navigationButton" onclick="seeAlchemist()">Alchemist</button>
+                    <button id = "navigationButton" onclick="seeClergy()">Clergy</button>
+            </div>
+            <div id="navigation" class = "U2b" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="seePentagram()">Pentagram</button>
+                    <button id = "navigationButton" onclick="seeFiligree()">Filigree</button>
+                    <button id = "navigationButton" onclick="seeDiary()">Diary</button>
+            </div>
+            <div id="navigation" class = "U2c" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+            <div id="navigation" class = "U3ab" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="seePrivy()">Privy</button>
+                    <button id = "navigationButton" onclick="seeLaboratory()">Laboratory</button>
+                    <button id = "navigationButton" onclick="seeWhereKing()">Where is the King?</button>
+            </div>
+            <div id="navigation" class = "U3ac" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="chastiseKing()">Chastise King</button>
+                    <button id = "navigationButton" onclick="huntingOffer()">Hunting Offer</button>
+            </div>
+            <div id="navigation" class = "U3bb" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="returnBook()">Return Book</button>
+                    <button id = "navigationButton" onclick="readUnicornChap()">Read Unicorn Chapter</button>
+                    <button id = "navigationButton" onclick="womansAddress()">Woman's Address</button>
+            </div>
+            <div id="navigation" class = "U3ba" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="pushOver()">Push Her Over</button>
+                    <button id = "navigationButton" onclick="trade()">Trade</button>
+            </div>
+            <div id="navigation" class = "U3bc" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+
+            <div id="navigation" class = "U4bab" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="enchantSpear()">Spear</button>
+                    <button id = "navigationButton" onclick="spices()">Spices</button>
+                    <button id = "navigationButton" onclick="charismaPotion()">Potion</button>
+            </div>
+
+            <div id="navigation" class = "U4bbc" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="trade()">Continue</button>
+            </div>
+
+            <div id="navigation" class = "U4acb" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="holdRandom()">Hold Ransom</button>
+                    <button id = "navigationButton" onclick="realTechnique()">Real Technique</button>
+            </div>
+            <div id="navigation" class = "U4baa" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+            <div id="navigation" class = "U4bba" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+            <div id="navigation" class = "U4aba" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+            <div id="navigation" class = "U4abc" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+            <div id="navigation" class = "U4aca" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+            <div id="navigation" class = "U4abb" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="chooseSpeed()">Speed</button>
+                    <button id = "navigationButton" onclick="chooseSleeping()">Sleeping</button>
+                    <button id = "navigationButton" onclick="charismaPotion2()">Charisma</button>
+            </div>
+            <div id="navigation" class = "U5baba" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+            <div id="navigation" class = "U5abba" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+            <div id="navigation" class = "U5abbb" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+            <div id="navigation" class = "U6babcb" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+            <div id="navigation" class = "U6acbba" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+            <div id="navigation" class = "U3aa" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+
+            <div id="navigation" class = "U5babc" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="complimentPetunia()">Compliment Petunia</button>
+                    <button id = "navigationButton" onclick="makeMove()">Make a Move</button>
+                    <button id = "navigationButton" onclick="askFavor()">Ask Favor</button>
+            </div>
+
+            <div id="navigation" class = "U5abbc" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="complimentPetunia()">Compliment Petunia</button>
+                    <button id = "navigationButton" onclick="makeMove()">Make a Move</button>
+                    <button id = "navigationButton" onclick="askFavor()">Ask Favor</button>
+            </div>
+
+            <div id="navigation" class = "U5acbb" class = "buttona2">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="eleanor()">Eleanor</button>
+                    <button id = "navigationButton" onclick="daphne()">Daphne</button>
+                    <button id = "navigationButton" onclick="mildred()">Mildred</button>
+            </div>
+
+            <div id="navigation" class = "U6babca" class = "bodyTextU">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="enterHydrus()">HYDRUS</button>
+                    <button id = "navigationButton" onclick="enterDragon()">DRAGON</button>
+                    <button id = "navigationButton" onclick="enterBasilisk()">BASILISK</button>
+                    <button id = "navigationButton" onclick="enterPhoenix()">PHOENIX</button>
+            </div>
+
+            <div id="navigation" class = "U6babcc" class = "bodyTextU">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="enterHydrus()">HYDRUS</button>
+                    <button id = "navigationButton" onclick="enterDragon()">DRAGON</button>
+                    <button id = "navigationButton" onclick="enterBasilisk()">BASILISK</button>
+                    <button id = "navigationButton" onclick="enterPhoenix()">PHOENIX</button>
+            </div>
+
+            <div id="navigation" class = "U6acbba" class = "bodyTextU">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="enterHydrus()">HYDRUS</button>
+                    <button id = "navigationButton" onclick="enterDragon()">DRAGON</button>
+                    <button id = "navigationButton" onclick="enterBasilisk()">BASILISK</button>
+                    <button id = "navigationButton" onclick="enterPhoenix()">PHOENIX</button>
+            </div>
+
+            <div id="navigation" class = "U6acbbc" class = "bodyTextU">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="enterHydrus()">HYDRUS</button>
+                    <button id = "navigationButton" onclick="enterDragon()">DRAGON</button>
+                    <button id = "navigationButton" onclick="enterBasilisk()">BASILISK</button>
+                    <button id = "navigationButton" onclick="enterPhoenix()">PHOENIX</button>
+            </div>
+            <!------------------------------------------------------------------------->
+            <!------------------------------ DRAGON NAVIGATION ------------------------>
+            <!------------------------------------------------------------------------->
+            <div id="navigation" class = "D1" class = "bodyTextD">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="seeKnight(); move(10)">The Knight</button>
+                <button id = "navigationButton" onclick="seeBard()">The Bard</button>
+                <button id = "navigationButton" onclick="seeMerchant()">The Merchant</button>
+            </div>
+
+            <div id="navigation" class = "D2a" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="lookEmblem()">Look at Emblem</button>
+                <button id = "navigationButton" onclick="readScroll()">Read Scroll</button>
+                <button id = "navigationButton" onclick="joinQuest(); move(10)">Join Quest</button>
+            </div>
+
+            <div id="navigation" class = "D3ab" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="buyScroll()">Buy Scroll</button>
+                <button id = "navigationButton" onclick="stealScroll()">Steal Scroll</button>
+                <button id = "navigationButton" onclick="makeSong()">Make Song</button>
+            </div>
+
+            <div id="navigation" class = "D3ac" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="declineOffer()">Decline</button>
+                <button id = "navigationButton" onclick="acceptSquire(); move(10)">Accept It</button>
+            </div>
+            <div id="navigation" class = "D4abc" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="seeBard()">The Bard</button>
+            </div>
+            <div id="navigation" class = "D4acb" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="setupCamp(); move(10)">Setup camp</button>
+            </div>
+
+            <div id="navigation" class = "D4abb" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="tradeScroll()">Merchant</button>
+            </div>
+
+
+            <div id="navigation" class = "D5acba" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="captureElephant()">Capture Elephant</button>
+                <button id = "navigationButton" onclick="befriendElephant(); move(10)">Befriend Elephant</button>
+            </div>
+            <div id="navigation" class = "D6acbab" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="aimHead()">Aim for the Head</button>
+                <button id = "navigationButton" onclick="aimTail(); move(25)">Aim for the Tail</button>
+            </div>
+            <div id="navigation" class = "D7acbabb" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="dragonEnd(); move(25)">The Dragon</button>
+            </div>
+            <div id="navigation" class = "D2b" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="laughOpenly()">Laugh Openly</button>
+                <button id = "navigationButton" onclick="acceptOffer()">Accept Offer</button>
+            </div>
+            <div id="navigation" class = "D3bb" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="goSolo()">Go Solo</button>
+                <button id = "navigationButton" onclick="leaveQuietly()">Leave Quietly</button>
+            </div>
+            <div id="navigation" class = "D4bbb" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="tradeLute()">Trade Lute</button>
+            </div>
+
+            <div id="navigation" class = "D2c" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="unspunWool()">Unspun Wool</button>
+                <button id = "navigationButton" onclick="tradeLute()">A Lute</button>
+                <button id = "navigationButton" onclick="tradeScroll()">A Tattered Scroll</button>
+            </div>
+
+            <div id="navigation" class = "D3cb" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="ironBroadsword()">Iron Broadsword</button>
+                <button id = "navigationButton" onclick="infoDragons()">Information</button>
+            </div>
+
+            <div id="navigation" class = "D4cbb" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="joinHunting()">Join Hunting Party</button>
+                <button id = "navigationButton" onclick="infoDragons()">Pay for Safe Passage</button>
+            </div>
+
+            <div id="navigation" class = "D3cc" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="tradeLance()">Lance</button>
+                <button id = "navigationButton" onclick="tradeMirror()">Hand Mirror</button>
+            </div>
+
+            <div id="navigation" class = "D4ccb" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="huntingEast()">Hunting party East</button>
+                <button id = "navigationButton" onclick="aloneWest()">Along West</button>
+            </div>
+
+            <div id="navigation" class = "D5ccba" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="useSpear()">Use spear</button>
+                <button id = "navigationButton" onclick="useCoil()">Use rope coil</button>
+                <button id = "navigationButton" onclick="useHandMirror()">Use hand mirror</button>
+            </div>
+
+            <div id="navigation" class = "D6ccbac" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="sellPanther()">Sell Panther</button>
+                <button id = "navigationButton" onclick="trapDragon()">Use Panther to Trap Dragon</button>
+            </div>
+
+            <div id="navigation" class = "D7ccbacb" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="dragonEnd()">The Dragon</button>
+            </div>
+
+            <div id="navigation" class = "D4cbb" class = "buttona1">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="huntingEast()">Join Hunting Party</button>
+                <button id = "navigationButton" onclick="setupCamp()">Pay safe passage</button>
+            </div>
+            
+            <div id="navigation" class = "dragonEnd" class = "bodyTextD">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="enterHydrus()">HYDRUS</button>
+                <button id = "navigationButton" onclick="enterUnicorn()">UNICORN</button>
+                <button id = "navigationButton" onclick="enterBasilisk()">BASILISK</button>
+                <button id = "navigationButton" onclick="enterPhoenix()">PHOENIX</button>
+            </div>
+        
+            
+            <!------------------------------------------------------------------------->
+            <!---////////////////////////////////////////////////////////////////////-->
+            <!----------------- ENGLISH SCRIPT SCORE UPDATE----------------------------> 
+            <div id="score">
+                <div id="myProgressD" class = "bodyTextD">
+                    <div id="myBar">0%</div>
+                </div>
+                <div id="myProgressU" class = "bodyTextU">
+                        <div id="myBar">0%</div>
+                    </div>
+            </div>
+            <!------------------------------------------------------------------------->
+            <!--------------------- ENGLISH SCRIPT FOOTER------------------------------>
+            <div id = "footer">
+                Copyright &copy; ANU Digital Humanities 2019. Add more content here if necessary.
+            </div>
+            <!------------------------------------------------------------------------->
+        </div>
+    </div>
+        <!------------------------------------------------------------------>    
+        <!--------------------END ENGLISH LANGUAGE DIV---------------------->
+        <!------------------------------------------------------------------>
+
+        
+
+        <!------------------------------------------------------------------>
+        <!-------------------START MANDARIN LANGUAGE DIV-------------------->
+        <!------------------------------------------------------------------>
+        <div id = "mandarinScript"> 
+                <div class="container">
+                    <div class = "title">
+                        <h1>本节将以中文讲</h1>
+                    </div>
+                    <div class = "subTitle">  
+                        <h2>这次用普通话讲了一个“选择自己的冒险”故事</h2>
+                    </div>
+                    <div class = "content">
+                        <div id="pathway">
+                            Which paths have you chosen to get here?
+                        </div>
+
+<!-------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------ BEGIN DRAGON NARRATIVE (MANDARIN) --------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------->
+
+                        <div id = "bodytext" class = "pa1M">
+                                <p>风拂着你的帆。您的船员早已抛弃了这艘船，因为该船pre可危
+                                        向海岸线上锯齿​​状的岩石。这个岛甚至都不应该在这里。没有在任何地图上。你
+                                        许多错误的决定导致您到这一点。随着您的船越来越靠近海岸线，
+                                        海浪在沉船的侧面碰撞并起泡沫，您最后决定放弃船身并潜水
+                                        落水。您疯狂地向岸边游泳。气喘吁吁地吞食盐水。您到达了感觉就像沙丘的感觉
+                                        随着波浪在你周围破裂而崩溃...
+                                        <br><br>
+                                        The wind lashes at your sails. Your crewmates have long since abandoned the vessel as it veers precariously
+                                        towards jagged rocks on the shoreline. This island shouldn't even be here. It wasn't on any maps. You rue 
+                                        the many wrong decisions that have led you to this point. As your boat inches closer and closer towards the shoreline,
+                                        waves crashing and foaming against the side of the sinking ship, you make one last decision to abandon ship and dive 
+                                        overboard. You swim frantically towards the shore. Panting, puffing, swallowing saltwater. You reach what feels like a sandbank
+                                        and collapse as the waves break around you...
+                                </p>
+                                <p>You awake, dazed and confused. Silence surrounds you. As the sun breaks through the clouds on this god-forsaken island
+                                        you think to yourself "Something has to be done." Do you:
+                                </p>
+                                <audio controls>
+                                    <source src="englishsample.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                </audio>
+                                <audio controls>
+                                    <source src="germansample.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                </audio>
+        
+                        </div>
+                        <div id = "bodytext" class = "pa2M">
+                                <p>边讲边探索岛屿 <br>
+                                Different blob of text blah blah blah blah blah!!!!! 
+                                </p>
+                                <p>You arms are heavy, knees weak moms spaghetti. You're nervous, but on the surface you look calm and 
+                                    ready to drop bombs, but you keep on forgetting what you WROTE down the WHOLE crowd GOES so LOUD, 
+                                </p>
+                        </div>
+                        <div id = "bodytext" class = "pa3M">
+                                <p>修好船，只修好船上的孩子。 <br>
+                                    Third blod of text here blah blah blah blah blah third blob!!!!! 
+                                </p>
+                                <p>现在我们的角色会发生什么？谁知道。没人会
+                                </p>
+                        </div>
+                        <div id = "bodytext" class = "winM">
+                                <p><strong>YOU HAVE WON THE GAME</strong> <br>
+                                    恭喜。去晒太阳，享受动物的陪伴。 
+                                </p>
+                                <p>Well....you're the champion.....go and CELEBRATE GOOD TIMES ! 
+                                </p>
+                        </div>
+                        <div id = "bodytext" class = "loseM">
+                                <p><strong>Aw no. Aw no. Aw no. THE GAME IS LOST</strong> <br>
+                                    除了抱歉，今天不是您的日子，我真的不知道该说些什么。 
+                                </p>
+                                <p>Well....what else do you want me to say here....you lost....
+                                </p>
+                        </div>
+        
+                        <div id = "inventory">
+                            <p>The inventory will display here</p>
+                        </div>
+        
+                    </div>            
+                    <div id="navigationM" class = "pa1M">
+                            <p>So which way will you choose to navigate?</p>
+                            <button onclick="exploreIslandM()">Explore the Island</button>
+                            <br>
+                            <button onclick="fixBoatM()">Fix boat</button>
+                    </div>
+                    
+                    <div id="navigationM" class = "pa2M">
+                            <p>So which way will you choose to navigate?</p>
+                            <button onclick="winGameM()">Win the Game</button>
+                            <br>
+                            <button onclick="loseGameM()">Lose the game</button>
+                    </div>
+                    <div id="navigationM" class = "pa3M">
+                            <p>So which way will you choose to navigate?</p>
+                            <button onclick="winGameM()">Win the game (3)</button>
+                            <br>
+                            <button onclick="loseGameM()">Lose the game (3)</button>
+                    </div>
+                
+        
+                    <div id="score">
+                        <p>Score Updates will display here.</p>
+                    </div>
+                    <div id = "footer">
+                        Copyright &copy; ANU Digital Humanities 2019 <br>
+                        I suppose I should put something else in this footer.
+                    </div>
+                </div>
+            </div>
+
+
+        <!--END MANDARIN LANGUAGE DIV-->
+        <script src="scripts.js"></script>
+        <script src="scriptsM.js"></script>
+    </body>
+    </html>

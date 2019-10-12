@@ -45,6 +45,9 @@ function modalPopup(){
 
 function closeModal(){
     document.getElementById("myModal").style.display = "none"; //show the modal on button click
+    document.getElementById("myModalU").style.display = "none"; //show the modal on button click
+    document.getElementById("myModalD").style.display = "none"; //show the modal on button click
+    document.getElementById("myModalP").style.display = "none"; //show the modal on button click
 }
 
 //Toggle Opacity of the Basilisk Image
@@ -79,13 +82,34 @@ function toggleHydrus(){
     imgHT.classList.toggle("m-fadeIn");
 }
 
-//Toggle Opacity of the Phoenix Image
+//Toggle Opacity of the Unicorn Image
 function toggleUnicorn(){
     var imgUB = document.getElementById("unicornInvB");
     var imgUT = document.getElementById("unicornInvT");
     imgUB.classList.toggle("m-fadeOut");
     imgUT.classList.toggle("m-fadeIn");
 }
+
+//Toggle UNICORN MODAL
+function unicornModal(){
+    document.getElementById("myModalU").style.display = "block"; //show the modal on button click
+}
+
+
+
+//Toggle DRAGON MODAL
+function dragonModal(){
+    document.getElementById("myModalD").style.display = "block"; //show the modal on button click
+}
+
+
+
+//Toggle PHOENIX MODAL
+function phoenixModal(){
+    document.getElementById("myModalP").style.display = "block"; //show the modal on button click
+}
+
+
 
 //------------------------------------------------------------------------------------------------
 //----------------------------- ENTER ANIMALS FUNCTIONS ------------------------------------------
@@ -154,6 +178,12 @@ function goPrologue() {
     document.getElementsByClassName("U6babcb")[1].style.display="none";
     document.getElementsByClassName("U6acbba")[0].style.display="none";
     document.getElementsByClassName("U6acbba")[1].style.display="none";
+
+
+    document.getElementsByClassName("P3aa")[0].style.display="none";
+    document.getElementsByClassName("P3aa")[1].style.display="none";
+    document.getElementsByClassName("P4aca")[0].style.display="none";
+    document.getElementsByClassName("P4aca")[1].style.display="none";
     //console.log("here we are");
     //document.getElementById("englishScript").style.display = "block"; //show the english Script HTML
     //document.getElementsByClassName("bodyTextU")[0].style.display="none";
@@ -167,6 +197,8 @@ function enterUnicorn(){
     document.getElementsByClassName("prologue")[0].style.display="none";
     document.getElementsByClassName("prologue")[1].style.display="none";
     document.getElementById("myProgressU").style.display = "block"; //show unicorn progress bar
+    document.getElementById("myProgressD").style.display = "none"; //hide dragon progress bar
+    document.getElementById("myBarD").style.display = "none"; //hide dragon progress bar
     //document.getElementsByClassName("dragonEnd")[0].style.display="none";
     //document.getElementsByClassName("dragonEnd")[1].style.display="none";
     //document.getElementsByClassName("bodyTextD")[0].style.display="none";
@@ -174,6 +206,10 @@ function enterUnicorn(){
     //document.getElementsByClassName("bodyTextU")[0].style.display="none";
     //document.getElementsByClassName("bodyTextU")[1].style.display="none";
     //document.getElementById("bodyTextD").style.display = "none";
+    document.getElementsByClassName("P5acca")[0].style.display="none";
+    document.getElementsByClassName("P5acca")[1].style.display="none";
+    document.getElementsByClassName("P5acca")[0].style.display="none";
+    document.getElementsByClassName("P5acca")[1].style.display="none";
     document.getElementsByClassName("U1")[0].style.display="block";
     document.getElementsByClassName("U1")[1].style.display="block";
 }
@@ -189,18 +225,66 @@ function enterDragon(){
     document.getElementsByClassName("U6acbba")[1].style.display="none";
     document.getElementsByClassName("U6acbbc")[0].style.display="none";
     document.getElementsByClassName("U6acbbc")[1].style.display="none";
+    document.getElementsByClassName("P5acca")[0].style.display="none";
+    document.getElementsByClassName("P5acca")[1].style.display="none";
     var someX = document.getElementsByClassName("D1");
+    document.getElementById("myProgressU").style.display = "none"; //hide unicorn progress bar
+    document.getElementById("myBarU").style.display = "none"; //hide unicorn progress bar
     document.getElementById("myProgressD").style.display = "block"; //show dragon progress bar
     document.getElementsByClassName("D1")[0].style.display="block";
 
     document.getElementsByClassName("D1")[1].style.display="block";
 }
 
+window.document.onkeydown = function(e) {
+    if (!e) {
+      e = event;
+    }
+    if (e.keyCode == 27) {
+      lightbox_close();
+    }
+  }
+
+function lightbox_openD() {
+    console.log("hi hi");
+    var lightBoxVideoD = document.getElementById("dragonBeginning");
+    window.scrollTo(0, 0);
+    document.getElementById('lightD').style.display = 'block';
+    document.getElementById('fadeD').style.display = 'block';
+    lightBoxVideoD.play();
+  }
+
+  function lightbox_closeD() {
+    var lightBoxVideoD = document.getElementById("dragonBeginning");
+    document.getElementById('lightD').style.display = 'none';
+    document.getElementById('fadeD').style.display = 'none';
+    lightBoxVideoD.pause();
+  }
+
+  function lightbox_openU() {
+    var lightBoxVideoU = document.getElementById("unicornBeginning");
+    window.scrollTo(0, 0);
+    document.getElementById('lightU').style.display = 'block';
+    document.getElementById('fadeU').style.display = 'block';
+    lightBoxVideoU.play();
+  }
+  
+  function lightbox_close() {
+    var lightBoxVideoD = document.getElementById("dragonBeginning");
+    var lightBoxVideoU = document.getElementById("unicornBeginning");
+    document.getElementById('lightU').style.display = 'none';
+    document.getElementById('fadeU').style.display = 'none';
+    lightBoxVideoD.pause();
+    lightBoxVideoU.pause();
+  }
+
 function enterHydrus(){
     document.getElementsByClassName("prologue")[0].style.display="none";
     document.getElementsByClassName("prologue")[1].style.display="none";
     document.getElementsByClassName("endDragon")[0].style.display="none";
     document.getElementsByClassName("endDragon")[1].style.display="none";
+    document.getElementsByClassName("P5acca")[0].style.display="none";
+    document.getElementsByClassName("P5acca")[1].style.display="none";
     document.getElementsByClassName("H1")[0].style.display="block";
     document.getElementsByClassName("H1")[1].style.display="block";
 }
@@ -210,6 +294,8 @@ function enterBasilisk(){
     document.getElementsByClassName("prologue")[1].style.display="none";
     document.getElementsByClassName("endDragon")[0].style.display="none";
     document.getElementsByClassName("endDragon")[1].style.display="none";
+    document.getElementsByClassName("P5acca")[0].style.display="none";
+    document.getElementsByClassName("P5acca")[1].style.display="none";
     document.getElementsByClassName("B1")[0].style.display="block";
     document.getElementsByClassName("B1")[1].style.display="block";
 }
@@ -217,8 +303,16 @@ function enterBasilisk(){
 function enterPhoenix(){
     document.getElementsByClassName("prologue")[0].style.display="none";
     document.getElementsByClassName("prologue")[1].style.display="none";
-    document.getElementsByClassName("endDragon")[0].style.display="none";
-    document.getElementsByClassName("endDragon")[1].style.display="none";
+    document.getElementsByClassName("U6babca")[0].style.display="none";
+    document.getElementsByClassName("U6babca")[1].style.display="none";
+    document.getElementsByClassName("U6babcc")[0].style.display="none";
+    document.getElementsByClassName("U6babcc")[1].style.display="none";
+    document.getElementsByClassName("U6acbbb")[0].style.display="none";
+    //document.getElementsByClassName("U6acbbb")[1].style.display="none";
+    document.getElementsByClassName("U6acbbc")[0].style.display="none";
+    document.getElementsByClassName("U6acbbc")[1].style.display="none";
+    //document.getElementsByClassName("endDragon")[0].style.display="none";
+    //document.getElementsByClassName("endDragon")[1].style.display="none";
     document.getElementsByClassName("P1")[0].style.display="block";
     document.getElementsByClassName("P1")[1].style.display="block";
 }
@@ -736,15 +830,170 @@ function trapDragon(){
     document.getElementsByClassName("D7ccbacb")[1].style.display="block";
 }
 
-
-
-
-
-
 //----------------------------------------------------------------------------------------------
 //----------------------------- end dragon narrative functions ---------------------------------
 //----------------------------------------------------------------------------------------------
 
+//----------------------------------------------------------------------------------------------
+//----------------------------- start phoenix narrative functions ------------------------------
+//----------------------------------------------------------------------------------------------
+var triggerR, triggerD, triggerK;
+
+function goIndia(){
+    document.getElementsByClassName("P1")[0].style.display="none";
+    document.getElementsByClassName("P1")[1].style.display="none";
+    document.getElementsByClassName("P3ba")[0].style.display="none";
+    document.getElementsByClassName("P3ba")[1].style.display="none";
+    document.getElementsByClassName("P2b")[0].style.display="block";
+    document.getElementsByClassName("P2b")[1].style.display="block";
+    triggerR = 0;
+    triggerD = 0;
+    triggerK = 0;
+}
+
+function goEgypt(){
+    document.getElementsByClassName("P1")[0].style.display="none";
+    document.getElementsByClassName("P1")[1].style.display="none";
+    document.getElementsByClassName("P2a")[0].style.display="block";
+    document.getElementsByClassName("P2a")[1].style.display="block";
+}
+
+function goResurrection(){
+    document.getElementsByClassName("P2b")[0].style.display="none";
+    document.getElementsByClassName("P2b")[1].style.display="none";
+    document.getElementsByClassName("P3ba")[0].style.display="block";
+    document.getElementsByClassName("P3ba")[1].style.display="block";
+    if (triggerR==0){triggerR = 1;}
+    if (triggerK == 1 && triggerD == 1 && triggerK == 1){
+        document.getElementsByClassName("P4ba")[0].style.display="block";
+        //document.getElementsByClassName("continueIndia")[1].style.display="block";
+    }
+}
+
+function goDeath(){
+    document.getElementsByClassName("P2b")[0].style.display="none";
+    document.getElementsByClassName("P2b")[1].style.display="none";
+    document.getElementsByClassName("P3bb")[0].style.display="block";
+    document.getElementsByClassName("P3bb")[1].style.display="block";
+    if (triggerD==0){triggerD = 1;}
+    if (triggerK == 1 && triggerD == 1 && triggerK == 1){
+        document.getElementsByClassName("P4ba")[0].style.display="block";
+        //document.getElementsByClassName("continueIndia")[1].style.display="block";
+    }
+}
+
+function goKarma(){
+    document.getElementsByClassName("P2b")[0].style.display="none";
+    document.getElementsByClassName("P2b")[1].style.display="none";
+    document.getElementsByClassName("P3bc")[0].style.display="block";
+    document.getElementsByClassName("P3bc")[1].style.display="block";
+    if (triggerK==0){triggerK = 1;}
+    if (triggerK == 1 && triggerD == 1 && triggerK == 1){
+        document.getElementsByClassName("P4ba")[0].style.display="block";
+        //document.getElementsByClassName("continueIndia")[1].style.display="block";
+    }
+}
+
+function anotherListen(){
+    if (triggerR ==1){
+    document.getElementsByClassName("P3ba")[0].style.display="none";
+    document.getElementsByClassName("P3ba")[1].style.display="none";
+    }
+    if (triggerD ==1){
+    document.getElementsByClassName("P3bb")[0].style.display="none";
+    document.getElementsByClassName("P3bb")[1].style.display="none";
+    }
+    if (triggerK == 1){   
+    document.getElementsByClassName("P3bc")[0].style.display="none";
+    document.getElementsByClassName("P3bc")[1].style.display="none";
+    }
+    document.getElementsByClassName("P2b")[0].style.display="block";
+    document.getElementsByClassName("P2b")[1].style.display="block";
+}
+
+
+function goContinue(){
+    document.getElementsByClassName("P2b")[0].style.display="none";
+    document.getElementsByClassName("P2b")[1].style.display="none";
+    document.getElementsByClassName("P4ba")[0].style.display="block";
+    document.getElementsByClassName("P4ba")[1].style.display="block";
+}
+
+function goFeathers(){
+    document.getElementsByClassName("P2a")[0].style.display="none";
+    document.getElementsByClassName("P2a")[1].style.display="none";
+    document.getElementsByClassName("P3aa")[0].style.display="block";
+    document.getElementsByClassName("P3aa")[1].style.display="block";
+}
+
+function goFeathers(){
+    document.getElementsByClassName("P2a")[0].style.display="none";
+    document.getElementsByClassName("P2a")[1].style.display="none";
+    document.getElementsByClassName("P3aa")[0].style.display="block";
+    document.getElementsByClassName("P3aa")[1].style.display="block";
+}
+
+function goStory(){
+    document.getElementsByClassName("P2a")[0].style.display="none";
+    document.getElementsByClassName("P2a")[1].style.display="none";
+    document.getElementsByClassName("P3ab")[0].style.display="block";
+    document.getElementsByClassName("P3ab")[1].style.display="block";
+}
+
+function goTown(){
+    document.getElementsByClassName("P2a")[0].style.display="none";
+    document.getElementsByClassName("P2a")[1].style.display="none";
+    document.getElementsByClassName("P3ab")[0].style.display="none";
+    document.getElementsByClassName("P3ab")[1].style.display="none";
+    document.getElementsByClassName("P4ba")[0].style.display="none";
+    document.getElementsByClassName("P4ba")[1].style.display="none";
+    document.getElementsByClassName("P3ac")[0].style.display="block";
+    document.getElementsByClassName("P3ac")[1].style.display="block";
+}
+
+function birdWatch(){
+    document.getElementsByClassName("P3ac")[0].style.display="none";
+    document.getElementsByClassName("P3ac")[1].style.display="none";
+    document.getElementsByClassName("P4aca")[0].style.display="block";
+    document.getElementsByClassName("P4aca")[1].style.display="block";
+}
+
+function mapHelio(){
+    document.getElementsByClassName("P3ac")[0].style.display="none";
+    document.getElementsByClassName("P3ac")[1].style.display="none";
+    document.getElementsByClassName("P5accb")[0].style.display="none";
+    document.getElementsByClassName("P5accb")[1].style.display="none";
+    document.getElementsByClassName("P5accc")[0].style.display="none";
+    document.getElementsByClassName("P5accc")[1].style.display="none";
+    document.getElementsByClassName("P4acb")[0].style.display="block";
+    document.getElementsByClassName("P4acb")[1].style.display="block";
+}
+
+function chooseSun(){
+    document.getElementsByClassName("P4acb")[0].style.display="none";
+    document.getElementsByClassName("P4acb")[1].style.display="none";
+    document.getElementsByClassName("P5acca")[0].style.display="block";
+    document.getElementsByClassName("P5acca")[1].style.display="block";
+}
+
+function chooseAlcohol(){
+    document.getElementsByClassName("P4acb")[0].style.display="none";
+    document.getElementsByClassName("P4acb")[1].style.display="none";
+    document.getElementsByClassName("P5accb")[0].style.display="block";
+    document.getElementsByClassName("P5accb")[1].style.display="block";
+}
+
+function choosePalace(){
+    document.getElementsByClassName("P4acb")[0].style.display="none";
+    document.getElementsByClassName("P4acb")[1].style.display="none";
+    document.getElementsByClassName("P5accc")[0].style.display="block";
+    document.getElementsByClassName("P5accc")[1].style.display="block";
+}
+
+
+//----------------------------------------------------------------------------------------------
+//----------------------------- end phoenix narrative functions --------------------------------
+//----------------------------------------------------------------------------------------------
 
 function winGame() {
     //If the button, winBoat is clicked. "Hide" the previous elements and "show" the .win elements

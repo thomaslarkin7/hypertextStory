@@ -28,27 +28,27 @@
             </div>
             <div id="imgBanner">
                 <div class= "imgBannerCol">
-                    <img id = "basiliskB" src="basiliskB.png" alt="The Basilisk, a flying animal with large wings 
-                    and a long neck">
+                    <img id = "dragonB" src="creatureSketches/dragonB.png" alt="The Dragon, a flying reptilian animal.">
                 </div>
                 <div class= "imgBannerCol">
-                    <img id = "dragonB" src="dragonB.png" alt="The Dragon, a flying reptilian animal.">
+                        <img id = "basiliskB" src="creatureSketches/basiliskB.png" alt="The Basilisk, a flying animal with large wings 
+                        and a long neck">
                 </div>
                 <div class = "imgBannerCol">
-                    <img id = "phoenixB" src="phoenixB1.png" alt="The Phoenix, a brightly coloured flying animal.">
+                    <img id = "phoenixB" src="creatureSketches/phoenixB1.png" alt="The Phoenix, a brightly coloured flying animal.">
                 </div>
                 <div class = "imgBannerCol">
-                    <img id = "hydrusB" src="hydrusB.png" alt="The Hydrus.">
+                    <img id = "hydrusB" src="creatureSketches/hydrusB.png" alt="The Hydrus.">
                 </div>
                 <div class = "imgBannerCol">
-                    <img id = "unicornB" src="unicornB.png" alt="The Unicorn.">
+                    <img id = "unicornB" src="creatureSketches/unicornB.png" alt="The Unicorn.">
                 </div>
         
             </div>
             <div id = "buttonBanner">
                     <button type = "button" id = "buttonIntro" onclick = "modalPopup()">INSTRUCTIONS</button>
                     <button type = "button" id = "buttonIntro" class = "buttonEnglish" onclick = "english()">START</button>
-                    <button type = "button" id = "buttonIntro" class = "buttonMandarin" onclick = "mandarin()">开始(INCOMPLETE)</button>
+                    <button type = "button" id = "buttonIntro" class = "buttonMandarin" onclick = "mandarin()">开始</button>
                 </div>
             <div id="author">Jared Auer, May Poole, Qian Zhang, Ruixue Wu, Thomas Larkin, Vick Gwyn, Wen Ren</div>
         </div>
@@ -94,20 +94,352 @@
                     <font size = "30">A Fantastic Bestiary</font><br>
                     <font size = "5">Read along. Decide your path. Document five fantastical creatures to complete the 
                         adventure.</font>
+                <div>
+                    <button id = "bestiaryButton" onclick = "behindBestiary()">Behind the Bestiary</button>
+
+                <!----------------------------------------------------------------------------------->
+                <!------------------ ABOUT THE BESTIARY INFORMATION MODAL --------------------------->
+                <!----------------------------------------------------------------------------------->
+                <div id="myModalAB" class="modalAB">
+                        <!-- Modal content -->
+                            <div class="modal-contentAB">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <div class= "modalContentABTitle">
+                                    Behind the Bestiary
+                                </div>
+                                <div class = "modalContentAB">
+                                        Welcome to <i>Behind the Bestiary</i>, where you can learn more about medieval 
+                                        bestiaries and the creatures that went into developing the Fantastic 
+                                        Bestiary adventure.
+                                        <br><br>
+                                        <strong>What is a Bestiary?</strong><br>
+                                        A bestiary is a text or manuscript that contains descriptions about 
+                                        animals – real and mythical – and sometimes plants and environments, 
+                                        which stood as allegories for Christian moral codes. Because of this, 
+                                        they were used as religious texts and incorporated into sermons by the 
+                                        Church. Bestiaries were popular in England during the Middle Ages and 
+                                        the descriptions were generally accompanied by beautiful hand-drawn 
+                                        illustrations. <br><br>
+                                        <div id = "bestiaryImg">
+                                            <img class = "bestiaryIMG" src="orgSketches/bestiaryPage2.JPG" alt="Bestiary Cover Image">
+                                        </div><br><br>
+                                        Not only are bestiaries historical religious texts, but they also serve 
+                                        as an interesting example of manuscript production – a bestiary would be 
+                                        copied by hand to create a new copy or version. Because of this version 
+                                        process, bestiaries are sometimes categorised as First families 
+                                        (earlier or first version) or Secondary families (later versions) 
+                                        and/or Transitional (versions that are the bridge between First and 
+                                        Secondary families). <br><br>
+                                        <div id = "bestiaryImg">
+                                                <img class = "bestiaryIMG" src="orgSketches/bestiaryPage1.JPG" alt="Bestiary Cover Image">
+                                        </div>
+                                        <br><br>
+                                        <strong>What bestiary was used for 'A Fantastic Bestiary'?</strong><br>
+                                        The bestiary used in this Choose Your Own Adventure is an early 13th 
+                                        Century Latin version from central or northern England, held in the 
+                                        British Library’s collection, shelfmark: Royal MS 12 C. xix.<br><br>
+                                        This version is related to an earlier bestiary <a href = "https://www.themorgan.org/collection/worksop-bestiary" target = "_blank">
+                                            (c. 1185) from the Worksop Priory</a>,
+                                         Nottinghamshire. It is also related to a later bestiary 
+                                         <a href = "http://www.getty.edu/art/collection/objects/240115/unknown-maker-northumberland-bestiary-english-about-1250-1260/" target = "_blank">
+                                            (c. 1250-1260) from Alnwick Castle
+                                        </a>.
+                                          Because of these relationships, Royal MS 12 C. xix is considered a 
+                                         transitional bestiary that shows the changes or evolutions between a First 
+                                         (Worksop Priory) and Second (Alnwick Castle) Family bestiaries. It is also 
+                                         identified as missing several folios, or pages. 
+                                        <br><br>
+                                        You can view a digitised copy of Royal MS 12 C. xix at the British 
+                                        Library’s Turning Pages site 
+                                        <a href = "http://www.bl.uk/turning-the-pages/?id=32841b35-03d4-40d5-a218-0e9effb1843a&type=book" target = "_blank">
+                                        here
+                                        </a>.
+                                        <br><br>
+                                        <Strong>Who wrote bestiaries?</Strong><br>
+                                        While the specific creator of this bestiary is unknown, it is based off 
+                                        the Greek Physiologus and the Etymologiae of St. Isidore of Seville. 
+                                        <br><br>
+                                        Copying or writing illuminated manuscripts (texts with illustrations) 
+                                        was usually undertaken by scribes and these beautiful works were created 
+                                        for wealthy aristocracy or the clergy - people who had the wealth to 
+                                        create expensive manuscripts, and could also understand latin, the 
+                                        language most manuscripts were written in. 
+                                        <br><br>
+                                        Royal MS 12 C. xix, with its bright illustrations, encircled by gold 
+                                        shows that it would have been an expensive manuscript to make.
+                                        <br><br>
+                                        Other authors of medieval bestiaries that were frequently copied include 
+                                        Guillaume le Clerc, a Norman cleric and Old French poet, and Philip de 
+                                        Thaon, an Anglo-Norman poet who was used as inspiration for A Fantastic 
+                                        Bestiary. 
+                                        <br><br>
+                                        <Strong>What influences have bestiaries had on modern culture?</Strong><br>
+                                        Medieval bestiaries and the creatures within them have impacted on modern 
+                                        popular culture greatly. Many of the mythical creatures within bestiaries
+                                         have become widely popular in genres such as Fantasy fiction, television 
+                                         and film, to classical texts and artworks, music and the performing arts.
+                                         <br><br>
+                                         <strong>Learn More:</strong><br>
+                                         You can find out more about medieval bestiaries and the fantastical 
+                                         creatures within them at the links below.
+                                         <ul>
+                                        <li><a href= "http://bestiary.ca/" target = "_blank">
+                                            The Medieval Bestiary: Animals in the Middle Ages</a>
+                                                An encyclopedic resource listing many medieval bestiaries in 
+                                                collecting institutions around the world. It also provide 
+                                                creature profiles and references from these bestiaries.
+                                                </li>
+                                        <li><a href = "https://www.bl.uk/collection-items/manuscript-medieval-bestiary" target = "_blank">
+                                                Medieval Bestiary Manuscript - British Library
+                                        </a>
+                                                A brief description of medieval bestiary manuscripts from 
+                                                the British Library.
+                                                </li>
+                                        <li><a href= "http://www.bl.uk/catalogues/illuminatedmanuscripts/record.asp?MSID=8813&CollID=16&NStart=120319" target = "_blank">
+                                                Royal MS 12 C. xix - British Library Catalogue Record
+                                        </a>
+                                                The catalogue record for medieval bestiary shelfmark Royal 
+                                                MS 12 C. xix.
+                                                </li>
+                                                <li><a href = "https://blogs.getty.edu/iris/an-introduction-to-the-bestiary-book-of-beasts-in-the-medieval-world/" target = "_blank">
+                                                    An Introduction to the Bestiary, Book of Beasts in the 
+                                                    Medieval World - Getty
+                                                </a>
+                                                    An in-depth look at medieval bestiaries, their influences, 
+                                                    origins and their creatures from curators at the Getty.
+                                                        
+                                                </li>
+                                        </ul>
+                                </div>
+                            </div>
+                    </div>
+                    <!----------------------------------------------------------------------------------->
+                    <!--------------------------- BESTIARY INFORMATION MODAL ---------------------------->
+                    <!----------------------------------------------------------------------------------->
+
+
+                </div>
                 </div>
             <div class = "content">
+                
                 <div id="pathway">
-                    Which paths have you chosen to get here?
+                    <div class = "pathwaySec">
+                        Encountered Creatures
+                    </div>
+                    <div id = "tigerEnc">
+                        <img id = "tigerEncT" class = "top" src="creatureSketches/tigerCc.png" onclick = "tigerModal()" alt="The Tiger.">
+                    </div>
+                    <div id = "weaselEnc">
+                        <img id = "weaselEncT" class = "top" src="creatureSketches/weaselCc.png" onclick = "weaselModal()" alt="The Weasel.">
+                    </div>
+                    <div id = "pantherEnc">
+                            <img id = "pantherEncT" class = "top" src="creatureSketches/pantherCc.png" onclick = "pantherModal()" alt="The panther.">
+                    </div>
+                    <div id = "ostrichEnc">
+                            <img id = "ostrichEncT" class = "top" src="creatureSketches/ostrichCc.png" onclick = "ostrichModal()" alt="The Ostrich.">
+                    </div>
+                    <div id = "elephantEnc">
+                            <img id = "elephantEncT" class = "top" src="creatureSketches/elephantCc.png" onclick = "elephantModal()" alt="The elephant.">
+                    </div>
+
+                    
                     <br><br>
-                    No content in here at the moment...
-                    <br><br>
-                    NOTE: the buttons "#HYDRUS", "#BASILISK" and "#PHOENIX" are yet to be configured!
+                    
                 </div>
+
+                <!----------------------------------------------------------------------------------->
+                <!------------------------------ TIGER INFORMATION MODAL ---------------------------->
+                <!----------------------------------------------------------------------------------->
+                <div id="myModalT" class="modalT">
+                        <!-- Modal content -->
+                            <div class="modal-contentT">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <div class = "modalHead">The Tiger</div>
+                                <div class = "modalContentAnimal">
+                                    <div>
+                                        <img src="orgSketches/unicornOrg.jpg" class = "modalImgAnimal" alt="Unicorn">
+                                    </div>
+                                    <div class = "modalTextAnimal">
+                                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+                                            consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et 
+                                            dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum 
+                                            exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
+                                            consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse 
+                                            quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla 
+                                            pariatur?"
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <!----------------------------------------------------------------------------------->
+                    <!-------------------------- END TIGER INFORMATION MODAL ---------------------------->
+                    <!----------------------------------------------------------------------------------->
+
+                <!----------------------------------------------------------------------------------->
+                <!------------------------------ WEASEL INFORMATION MODAL ---------------------------->
+                <!----------------------------------------------------------------------------------->
+                <div id="myModalW" class="modalW">
+                        <!-- Modal content -->
+                            <div class="modal-contentW">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <div class = "modalContentAnimal">
+                                    <div>
+                                        <img src="orgSketches/basiliskOrg.jpg" class = "modalImgAnimal" alt="Weasel">
+                                    </div>
+                                    <div class = "modalTextAnimal">
+                                            <div class = "modalHead">The Weasel</div>
+                                            <i>*The weasel is not featured as a standalone creature in Royal MS 12 C. 
+                                            xix, but is represented in the illustration for Basilisk.</i><br><br>
+                                            In this illustration the weasel can be seen attacking a Basilisk as a 
+                                            man stumbles on the right-hand side.
+                                            <br><br>
+                                            Weasels are depicted as ‘unclean’ animals that shouldn’t be eaten by 
+                                            people. Despite this, they are known for being very clever and 
+                                            skilled in medicine. It is the only creature that can kill a 
+                                            basilisk.  In bestiaries, weasels represent people who hear the 
+                                            teachings of god, but decide not to act on these learnings.
+                                            <br><br>
+                                            <strong>Real or Mythical?</strong>
+                                            <br>This creature is real!<br><br>
+                                            <strong>View the original:</strong>
+                                            <br>You can view the weasel illustration in the British Library’s 
+                                            digitised bestiary <a href="http://www.bl.uk/turning-the-pages/?id=32841b35-03d4-40d5-a218-0e9effb1843a&type=book" 
+                                            target="_blank"> Royal MS 12 C. xix</a>
+                                             on Folios 62v - 63.
+
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <!----------------------------------------------------------------------------------->
+                    <!------------------------- END WEASEL INFORMATION MODAL ---------------------------->
+                    <!----------------------------------------------------------------------------------->
+
+
+
+                    <!----------------------------------------------------------------------------------->
+                    <!---------------------------- PANTHER INFORMATION MODAL ---------------------------->
+                    <!----------------------------------------------------------------------------------->
+                <div id="myModalPth" class="modalPth">
+                        <!-- Modal content -->
+                            <div class="modal-contentPth">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <div class = "modalContentAnimal">
+                                    <div>
+                                        <img src="orgSketches/pantherOrg.JPG" class = "modalImgAnimal" alt="Panther">
+                                    </div>
+                                    <div class = "modalTextAnimal">
+                                            <div class = "modalHead">The Panther</div>
+                                            <br><br>
+                                            In this illustration the panther is seen standing on top of a 
+                                            defeated dragon, with other animals including a lion, stag and 
+                                            dog (left of frame) and a horse and ram (right of frame) looking on.
+                                            <br><br>
+                                            The panther is a beautiful multi-coloured creature that is often 
+                                            seen as a representation of Christ. It attracts all creatures with 
+                                            its sweet breath, representing how Jesus Christ drew people to him 
+                                            through his words and teachings.
+                                            <br><br>
+                                            <strong>Real or Mythical?</strong><br>This creature is real!
+                                            <br><br>
+                                            <strong>View the original:</strong>
+                                            You can view the panther illustration in the British Library’s 
+                                            digitised bestiary <a href="http://www.bl.uk/turning-the-pages/?id=32841b35-03d4-40d5-a218-0e9effb1843a&type=book" 
+                                            target="_blank"> Royal MS 12 C. xix</a>
+                                             on Folios 15v - 16.
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <!----------------------------------------------------------------------------------->
+                    <!------------------------ END PANTHER INFORMATION MODAL ---------------------------->
+                    <!----------------------------------------------------------------------------------->
+
+
+
+                    <!----------------------------------------------------------------------------------->
+                    <!------------------------------ OSTRICH INFORMATION MODAL -------------------------->
+                    <!----------------------------------------------------------------------------------->
+                <div id="myModalO" class="modalO">
+                        <!-- Modal content -->
+                            <div class="modal-contentO">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <div class = "modalContentAnimal">
+                                    <div>
+                                        <img src="orgSketches/ostrichOrg.JPG" class = "modalImgAnimal" alt="Ostrich">
+                                    </div>
+                                    <div class = "modalTextAnimal">
+                                            <div class = "modalHead">The Ostrich</div><br>
+                                            In this illustration two ostriches can be seen - one gazing at the 
+                                            stars as ostriches would only lay eggs when the Pleiades constellation
+                                            was visible, while the other may be burying its eggs in sand. The 
+                                            ostrich is an allegory for how people should forget the earthly 
+                                            world, and focus on heaven or spiritual endeavours.
+                                            <br><br>
+                                            <strong>Real or Mythical?</strong><br>This creature is real!
+                                            <br><br>
+                                            <strong>View the original:</strong>
+                                            You can view the ostrich illustration in the British Library’s 
+                                            digitised bestiary <a href="http://www.bl.uk/turning-the-pages/?id=32841b35-03d4-40d5-a218-0e9effb1843a&type=book" 
+                                            target="_blank"> Royal MS 12 C. xix</a>
+                                             on Folios 26v - 27.
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <!----------------------------------------------------------------------------------->
+                    <!------------------------ END OSTRICH INFORMATION MODAL ---------------------------->
+                    <!----------------------------------------------------------------------------------->
+
+
+
+                    <!----------------------------------------------------------------------------------->
+                    <!--------------------------- ELEPHANT INFORMATION MODAL ---------------------------->
+                    <!----------------------------------------------------------------------------------->
+                <div id="myModalE" class="modalE">
+                        <!-- Modal content -->
+                            <div class="modal-contentE">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <div class = "modalContentAnimal">
+                                    <div>
+                                        <img src="orgSketches/elephantOrg.jpg" class = "modalImgAnimal" alt="Elephant">
+                                    </div>
+                                    <div class = "modalTextAnimal">
+                                            <div class = "modalHead">The Elephant</div><br>
+                                            <i>*The elephant is not featured as a standalone creature in Royal MS 12 C. 
+                                                xix, but is represented in the illustration for the Dragon.</i><br><br>
+                                                In this illustration a dragon, the natural enemy of the elephant, 
+                                                can be seen wrapping its strong serpent-like tail around the elephant’s 
+                                                legs. An elephant and its mate represent Adam and Eve. In medieval 
+                                                Christian stories, the dragon (which represents the Devil) tempted 
+                                                Eve with the forbidden fruit. For this, Adam and Eve were cast out 
+                                                of the garden of Eden, making the elephant and the dragon are enemies.
+                                                <br><br>
+                                                <strong>Real or Mythical?</strong><br>This creature is real!
+                                            <br><br>
+                                            <strong>View the original:</strong>
+                                            You can view the elephant illustration in the British Library’s 
+                                            digitised bestiary <a href="http://www.bl.uk/turning-the-pages/?id=32841b35-03d4-40d5-a218-0e9effb1843a&type=book" 
+                                            target="_blank"> Royal MS 12 C. xix</a>
+                                             on Folios 61v - 62.    
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <!----------------------------------------------------------------------------------->
+                    <!----------------------- END ELEPHANT INFORMATION MODAL ---------------------------->
+                    <!----------------------------------------------------------------------------------->
+
+
+
+
                 <!--------------------------------------------------------------------->
                 <!--------------------- PROLOGUE--------------------------------------->
                 <!--------------------------------------------------------------------->
                 <div id = "bodytext" class = "prologue">
-                        <p><font size="6">Narrative Introduction</font><br>
+                        <div class = "paraTitle">
+                            Narrative Introduction
+                        </div>
                         </p>
                         <p>You receive a letter from a mysterious distant uncle known as Philip de Thaun, who 
                             propositions you with a mission of great importance. His life’s work has been the 
@@ -115,7 +447,7 @@
                             down these beasts has waned. He charges you with continuing his work: to document 
                             the remaining creatures on his list. An initial tip from Uncle Philip as well as 
                             clues you pick up along the way will guide you in pursuing these creatures. By the 
-                            end of the game you have written a bestiary of your own (the source material) using 
+                            end of the game you have written a bestiary of your own using 
                             all the information you gathered along the way.<br><br>
                             Choose an animal below to begin this quest.
                         </p>
@@ -130,18 +462,21 @@
                 <!--------------------- UNICORN LEVEL 1 ------------------------------->
                 <!--------------------------------------------------------------------->
                 <div id = "bodytext" class = "U1">
-                        <p><font size="6">The Quest Begins</font><br>
+                        <div class = "paraTitle">
+                                The quest for the Unicorn begins
+                        </div>
+                        
                             The first creature on Great Uncle Philip’s list a Unicorn, a horse-like creature with 
                             a single horn growing from the top of its head. In a note scribble down the side of the 
                             letter, next to the creature’s name, Uncle Philip writes “a very swift creature; 
                             neither principlaities, nor powers, nor thrones, nor dominations could keep up with him.”
                             <br><br>
                             Cryptic. But you notice the language alludes to a higher power. Should you seek the help of…
-                        </p>
+                        
                         <div id="lightU">
                             <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
                             <video id="unicornBeginning" width="600" controls>
-                                <source src="unicornBeginning.mp4" type="video/mp4">
+                                <source src="creatureAnimations/unicornBeginning.mp4" type="video/mp4">
                                 <!--Browser does not support <video> tag -->
                               </video>
                         </div>
@@ -151,7 +486,10 @@
                 <!--------------------- UNICORN LEVEL 2 ------------------------------->
                 <!--------------------------------------------------------------------->
                 <div id = "bodytext" class = "U2a">
-                        <p><font size="6">The King</font><br>
+                        <div class = "paraTitle">
+                                The King
+                            </div>
+                        <p>
                             You make your way through the winding streets of Westminster, the stenches of humanity 
                             assaulting your nose as you go. Your plan is to address the King directly, but you can’t 
                             make your way through the castle gates with the title of a lowly artist. As a disguise, 
@@ -163,7 +501,10 @@
                             </p>
                 </div>
                 <div id = "bodytext" class = "U2b">
-                        <p><font size="6">The Monk</font><br>
+                        <div class = "paraTitle">
+                                The Monk
+                            </div>
+                        <p><br>
                             You travel to the monastery. It takes three days and you are very tired by the end of the 
                             journey. As you approach the holy building a monk by the name of David spots you, bringing 
                             you inside for food and shelter. As you eat you begin to speak with David, telling him of 
@@ -194,7 +535,10 @@
                         </p>
                 </div>
                 <div id = "bodytext" class = "U2c">
-                        <p><font size="6">The Doctor</font><br>
+                        <div class = "paraTitle">
+                                The Doctor
+                            </div>
+                        <p><br>
                             Your neighbour, the village’s only doctor, is always the first person who comes to mind 
                             when you need help. You rap on the old man’s door three times, after which you hear the 
                             soft sound of his shuffling footsteps makes their way to the door. He greets you warmly 
@@ -208,13 +552,23 @@
                             You ponder the idea for a while. You’ve always liked your old neighbour, he’s been kind 
                             to you, treating you like his very own child. You accept his offer, and the quest for those 
                             fantastical creatures fades from your mind. 
+                            <div id="lightU">
+                                    <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                                    <video id="unicornBeginning" width="600" controls>
+                                        <source src="creatureAnimations/unicornEnd.mp4" type="video/mp4">
+                                        <!--Browser does not support <video> tag -->
+                                    </video>
+                            </div>
                         </p>
                 </div>
                 <!--------------------------------------------------------------------->
                 <!--------------------- UNICORN LEVEL 3 ------------------------------->
                 <!--------------------------------------------------------------------->
                 <div id = "bodytext" class = "U3aa">
-                        <p><font size="6">Aristocrat Disguise</font><br>
+                        <div class = "paraTitle">
+                                The Disguise
+                            </div>
+                        <p><br>
                             You walk past a wealthy bath house, where many men and women were busy cleaning themselves 
                             and socialising. You make your way around the back, ensuring that your presence goes 
                             unnoticed. One of the rear windows is open, and hanging from the sill is a fine outfit, one 
@@ -228,7 +582,10 @@
                             </p>
                 </div>
                 <div id = "bodytext" class = "U3ab">
-                        <p><font size="6">The Alchemist Disguise</font><br>
+                        <div class = "paraTitle">
+                                The Alchemist Disguise
+                            </div>
+                        <p><br>
                             As you make you way closer to the castle you pass a travelling showman, he’s asleep by his cart. 
                             You see this as an opportunity to create your disguise. Moving quietly so as to not wake the man, 
                             you rip the red show curtain from its railing and drape it over your shoulders. In the back of the 
@@ -244,7 +601,10 @@
                             </p>
                 </div>
                 <div id = "bodytext" class = "U3ac">
-                        <p><font size="6">The Clergy Disguise</font><br>
+                        <div class = "paraTitle">
+                                The Clergy Disguise
+                            </div>
+                        <p><br>
                             You elect to disguise yourself as a member of the clergy, purchasing for yourself a brown 
                             cloak and set of rosary beads from a local merchant. You are spotted almost immediately by 
                             another holy man and directed to go and join the brothers at the scriptorium. You oblige 
@@ -281,7 +641,10 @@
                             </p>
                 </div>
                 <div id = "bodytext" class = "U3ba">
-                        <p><font size="6">The Pentagram and Wanted Poster</font><br>
+                        <div class = "paraTitle">
+                                The Pentagram and the Wanted Posted
+                            </div>
+                        <p><br>
                         Your logic tells you that the woman in the wanted poster is the witch brother David spoke of, 
                         so you snatch the book and make your way out of the monastery’s back door. Running as fast 
                         as your legs will take you, you follow a trail from the monastery to the nearest town. 
@@ -338,7 +701,10 @@
                         Offer to do a trade with the woman, citing your skills as an artist. 
                 </div>
                 <div id = "bodytext" class = "U3bb">
-                        <p><font size="6">The Filigreed Book</font><br>
+                        <div class = "paraTitle">
+                                The Filigreed Book
+                            </div>
+                        <p><br>
                         You decide to take the book that has the depiction of the creature you seek, after all, 
                         surely that holds the most useful information. You stuff the book inside your coat and wait 
                         for brother David to return, as though nothing had happened. The monk remains with you awhile 
@@ -358,7 +724,10 @@
                         morning. 
                 </div>
                 <div id = "bodytext" class = "U3bc">
-                        <p><font size="6">The Diary</font><br>
+                        <div class = "paraTitle">
+                                The Diary
+                            </div>
+                        <p><br>
                         You grab the monk’s diary and stuff it into your coat before he returns. After supping with brother 
                         David you thank him for being such a gracious host and tell him you must take your leave of him and 
                         return home. Following a trail behind the monastery, you make your way to a small wooded area where 
@@ -375,7 +744,10 @@
                 <!--------------------- UNICORN LEVEL 4 ------------------------------->
                 <!--------------------------------------------------------------------->
                 <div id = "bodytext" class = "U4aba">
-                        <p><font size="6">The Privy</font><br>
+                        <div class = "paraTitle">
+                                The Privy
+                            </div>
+                        <p><br>
                         The boy shows you to a garderobe in the castle. You thank him and wait for him to leave before 
                         settling in for… well you know what. As you take your set above the hole in the wooden plank 
                         you hear a creak. Then you hear a crack. The next thing you know the entire apparatus has fallen
@@ -383,7 +755,10 @@
                         <br>
                 </div>
                 <div id = "bodytext" class = "U4abb">
-                        <p><font size="6">The Laboratory</font><br>
+                        <div class = "paraTitle">
+                                The Laboratory
+                            </div>
+                        <p><br>
                         The servant boy takes you to the royal laboratory, high in the castle. Once alone there, you 
                         begin to rifle through old books and scrolls. In a stack of papers on the desk, you find one 
                         that has been folded three times…
@@ -404,7 +779,10 @@
                         
                 </div>
                 <div id = "bodytext" class = "U4abc">
-                        <p><font size="6">The King</font><br>
+                        <div class = "paraTitle">
+                                The King
+                            </div>
+                        <p><br>
                         The boy takes you to the King’s counsel room, where he and many other members of the court are 
                         conversing about taxes, land and the Norman invasion of times gone by. You walk timidly into 
                         the room and as people notice your presence they grow quiet. 
@@ -437,7 +815,10 @@
                         
                 </div>
                 <div id = "bodytext" class = "U4baa">
-                        <p><font size="6">Push her over</font><br>
+                        <div class = "paraTitle">
+                                Push Her Over
+                            </div>
+                        <p><br>
                         You push the woman as hard as you can, hoping she’ll fall to the ground, allowing for you to 
                         make a swift getaway with the… brochure. Unfortunately, it appears she has enchanted feet that 
                         plant her firmly on the ground at all times. Infuriated at your rude behaviour she casts a hex 
@@ -445,7 +826,10 @@
                         <br>
                 </div>
                 <div id = "bodytext" class = "U4bab">
-                        <p><font size="6">You Trade</font><br>
+                        <div class = "paraTitle">
+                                You Trade
+                            </div>
+                        <p><br>
                         “You know, I happen to be an artist. I could help you reproduce your work many times over, 
                         so you have copies to share with people. Perhaps I could offer my services in exchange for 
                         some help?”
@@ -464,7 +848,10 @@
                         
                 </div>
                 <div id = "bodytext" class = "U4bba">
-                        <p><font size="6">Return the Book</font><br>
+                        <div class = "paraTitle">
+                                Return the Book
+                            </div>
+                        <p><br>
                         You notice a woman’s name and address written inside the cover of the book. Next to her details 
                         are the words, ‘Witch, Expert’. How interesting. It must be for the woman that brother David 
                         spoke of. You remember the wanted poster in the book with the pentagram. In the dead of night 
@@ -475,7 +862,10 @@
                         <br>
                 </div>
                 <div id = "bodytext" class = "U4bbb">
-                        <p><font size="6">Read the Unicorn Chapter</font><br>
+                        <div class = "paraTitle">
+                                Read the Unicorn Chapter
+                            </div>
+                        <p><br>
                         You turn to the chapter on Unicorns. Truth be told there is little there you didn’t already 
                         know. The one useful piece of information that you gleaned from its pages was that Unicorns 
                         cannot be caught by traditional means, and that they have striking similarities in their nature 
@@ -486,7 +876,10 @@
                         <br>
                 </div>
                 <div id = "bodytext" class = "U4bbc">
-                        <p><font size="6">Women's Address</font><br>
+                        <div class = "paraTitle">
+                                Woman's Address
+                            </div>
+                        <p><br>
                             You notice a woman’s name and address written inside the cover of the book. Next to her 
                             details are the words, ‘Witch, Expert’. How interesting. It must be for the woman that 
                             brother David spoke of. You remember the wanted poster in the book with the pentagram. 
@@ -497,7 +890,10 @@
                 </div>
 
                 <div id = "bodytext" class = "U4aca">
-                        <p><font size="6">Chastise the King</font><br>
+                        <div class = "paraTitle">
+                                Chastise the King
+                            </div>
+                        <p><br>
                             The rage you feel inside boils over, you simply cannot stand the idea of this man killing 
                             innocent creatures, just to hang them as hunting trophies! It’s despicable. 
                             <br><br>
@@ -514,7 +910,10 @@
                 </div>
 
                 <div id = "bodytext" class = "U4acb">
-                        <p><font size="6">Offer a Hunting Technique</font><br>
+                        <div class = "paraTitle">
+                                Offer a Hunting Technique
+                            </div>
+                        <p><br>
                         Thinking quickly, you call for the King’s attention. Recalling what you read in the folded 
                         paper, you offer up a hunting technique to the King. 
                         <br><br>
@@ -543,7 +942,10 @@
                 <!--------------------- UNICORN LEVEL 5 ------------------------------->
                 <!--------------------------------------------------------------------->
                 <div id = "bodytext" class = "U5baba">
-                        <p><font size="6">The Enchanted Spear</font><br>
+                        <div class = "paraTitle">
+                                The Enchanted Spear
+                            </div>
+                        <p><br>
                         If you had read the witch’s brochure properly you would have noticed that the Unicorn can’t 
                         be caught by normal means, and either way your quest is not to harm the animal, it is to 
                         document it and ensure its protection… odd choice there friend.
@@ -551,7 +953,10 @@
                 </div>
 
                 <div id = "bodytext" class = "U5babb">
-                        <p><font size="6">Magic Spices</font><br>
+                        <div class = "paraTitle">
+                                Magic Spices
+                            </div>
+                        <p><br>
                             You choose a sachet of frankincense-based magic spices. Thought the instructions on the back 
                             say nothing about Unicorns, it does mention that it can enhance the resurrection process of a 
                             creature known as the Phoenix. Unfortunately however, the choice you have made won’t assist 
@@ -560,7 +965,10 @@
                 </div>
 
                 <div id = "bodytext" class = "U5babc">
-                        <p><font size="6">Charisma Potion</font><br>
+                        <div class = "paraTitle">
+                                Charisma Potion
+                            </div>
+                        <p><br>
                         The charisma potion you have selected from the table is designed to improve your ability to 
                         persuade and engage people. After reading the label less than carefully, you consume the whole 
                         bottle. 
@@ -591,7 +999,10 @@
                 </div>
 
                 <div id = "bodytext" class = "U5abba">
-                        <p><font size="6">The Speed Potion</font><br>
+                        <div class = "paraTitle">
+                                The Speed Potion
+                            </div>
+                        <p><br>
                             If you had read the brochure correctly, you would have realised that nothing is as fast as 
                             the unicorn… not even an artist hopped up of speed potion. This potion will not be useful 
                             to you. Try another.
@@ -599,7 +1010,10 @@
                 </div>
 
                 <div id = "bodytext" class = "U5abbb">
-                        <p><font size="6">The Sleeping Potion</font><br>
+                        <div class = "paraTitle">
+                                The Sleeping Potion
+                            </div>
+                        <p><br>
                         You create a sleeping potion, a very potent one at that. You pour the contents into a glass 
                         flask and stopper it with a cork. Tucking the flask into your jacket pocket you make your way 
                         as fast as you can out of the alchemist's laboratory and into the castle yard. 
@@ -618,7 +1032,10 @@
                 </div>
 
                 <div id = "bodytext" class = "U5abbc">
-                        <p><font size="6">The Charisma Potion</font><br>
+                        <div class = "paraTitle">
+                                The Charisma Potion
+                            </div>
+                        <p><br>
                         You concoct the charisma potion and stow it in your jacket pocket before making your way out of 
                         the alchemist’s laboratory. After reading that brochure you decide to seek the help of another, 
                         the woman who wrote it. You recall her address written on the last page and set out on your 
@@ -649,7 +1066,10 @@
                 </div>
 
                 <div id = "bodytext" class = "U5acba">
-                        <p><font size="6">Hold the Technique for Ransom</font><br>
+                        <div class = "paraTitle">
+                                Hold the Technique for Ransom
+                            </div>
+                        <p><br>
                         “You think you can extort me, cretin!?” the King booms. The sound of his yelling can be 
                         heard by all in the room next door. The guards are called to apprehend you and you are 
                         tortured in the dungeon below the castle for treason. Who knew the King had such a short 
@@ -657,7 +1077,10 @@
                         <br><br>
                 </div>
                 <div id = "bodytext" class = "U5acbb">
-                        <p><font size="6">The Real Technique</font><br>
+                        <div class = "paraTitle">
+                                The Real Technique
+                            </div>
+                        <p><br>
                         “Listen…” you begin. “The technique I have in mind has been developed from reading ancient 
                         manuscripts. It requires the assistance of a maiden, pure of heart. You see, the Unicorn itself 
                         is like a metaphor for Jesus Christ himself; the beast is attracted to maidens because they
@@ -684,7 +1107,10 @@
                 <!--------------------- UNICORN LEVEL 6 ------------------------------->
                 <!--------------------------------------------------------------------->
                 <div id = "bodytext" class = "U6babca">
-                        <p><font size="6">Pay her a compliment</font><br>
+                        <div class = "paraTitle">
+                                Pay her a compliment
+                            </div>
+                        <p><br>
                             You tell Petunia that her soup is delicious and that she’s a world-class cook. She appears very 
                             flattered. “Listen, you’ve been so kind, if there’s anything I can help you with, I’d be happy 
                             to.”
@@ -697,7 +1123,7 @@
                             a rock... 
                             <br><br>
                             <video width = "480" height ="360" class = "videoEmbed" controls="controls">
-                                <source src="unicornAnimate.mp4" type="video/mp4">
+                                <source src="creatureAnimations/unicornAnimate.mp4" type="video/mp4">
                                   Your browser does not support the video tag.
                                   </video>
                             <br><br>
@@ -710,13 +1136,19 @@
                         <br><br>
                 </div>
                 <div id = "bodytext" class = "U6babcb">
-                        <p><font size="6">Make a Move</font><br>
+                        <div class = "paraTitle">
+                                Make a Move
+                            </div>
+                        <p><br>
                             Petunia doesn’t take kindly to your advances, no offense but you’re just not her type. 
                             The charisma potion must not have worked.
                         <br><br>
                 </div>
                 <div id = "bodytext" class = "U6babcc">
-                        <p><font size="6">Ask for a Favour</font><br>
+                        <div class = "paraTitle">
+                                Ask for a Favour
+                            </div>
+                        <p><br>
                             “Listen, you’ve been so kind, if there’s anything I can help you with, I’d be happy to.” 
                             <br><br>
                             You explain your plan to Petunia, showing her mother’s carefully written brochure to her. She seems excited to be 
@@ -726,7 +1158,7 @@
                             and hide behind a rock... 
                             <br><br>
                             <video width = "480" height ="360" class = "videoEmbed" controls="controls">
-                                <source src="unicornAnimate.mp4" type="video/mp4">
+                                <source src="creatureAnimations/unicornAnimate.mp4" type="video/mp4">
                                   Your browser does not support the video tag.
                                   </video>
                             <br><br>
@@ -740,7 +1172,10 @@
                         <br><br>
                 </div>
                 <div id = "bodytext" class = "U6acbba">
-                        <p><font size="6">Eleanor</font><br>
+                        <div class = "paraTitle">
+                                Eleanor
+                            </div>
+                        <p><br>
                             The King’s daughter agrees to help you and her father with your mission. Eleanor dons a 
                             fine blue cloak and waits on a hillside. Lo! You see a horn in the distance, just peeking 
                             out from behind some trees. The magnificent creature slowly makes itself seen, it’s 
@@ -752,14 +1187,17 @@
                         <br><br>
                 </div>
                 <div id = "bodytext" class = "U6acbbb">
-                        <p><font size="6">Daphne</font><br>
+                        <div class = "paraTitle">
+                                Daphne
+                            </div>
+                        <p><br>
                             The princess’ Lady in Waiting agrees to help you and the King with your mission. Daphne 
                             dons a fine blue cloak and waits on the hillside. It’s a beautiful sunny day and the wind 
                             sweeping across the countryside makes the grass shine in the light. Lo! You see a horn in 
                             the distance, just peeking out from behind some trees...
                             <br><br>
                             <video width = "480" height ="360" class = "videoEmbed" controls="controls">
-                                <source src="unicornAnimate.mp4" type="video/mp4">
+                                <source src="creatureAnimations/unicornAnimate.mp4" type="video/mp4">
                                   Your browser does not support the video tag.
                                   </video>
                             <br><br>
@@ -775,14 +1213,17 @@
                         <br><br>
                 </div>
                 <div id = "bodytext" class = "U6acbbc">
-                        <p><font size="6">Mildred</font><br>
+                        <div class = "paraTitle">
+                                Mildred
+                            </div>
+                        <p><br>
                             The King’s servant girl agrees to help you and him with your mission. Mildred dons a fine 
                             blue cloak, borrowed from the Princess, and waits on the hillside. It’s a beautiful sunny day 
                             and the wind sweeping across the countryside makes the grass shine in the light. Lo! You 
                             see a horn in the distance, just peeking out from behind some trees...
                             <br><br>
                             <video width = "480" height ="360" class = "videoEmbed" controls="controls">
-                                <source src="unicornAnimate.mp4" type="video/mp4">
+                                <source src="creatureAnimations/unicornAnimate.mp4" type="video/mp4">
                                   Your browser does not support the video tag.
                                   </video>
                             <br><br>
@@ -801,21 +1242,8 @@
                 <!--------------------------------------------------------------------->
                 <!--------------------- UNICORN LEVEL 7 ------------------------------->
                 <!--------------------------------------------------------------------->
-                <div id = "bodytext" class = "win">
-                        <p><strong>YOU HAVE WON THE GAME</strong> <br>
-                            Congratulations. Go and bask in your victory and enjoy the company of the animals from
-                            bestiary. 
-                        </p>
-                        <p>Well....you're the champion.....go and CELEBRATE GOOD TIMES ! 
-                        </p>
-                </div>
-                <div id = "bodytext" class = "lose">
-                        <p><strong>Aw no. Aw no. Aw no. THE GAME IS LOST</strong> <br>
-                            I don't really know what to say here other than I'm sorry to say, today wasn't your day. 
-                        </p>
-                        <p>Well....what else do you want me to say here....you lost....
-                        </p>
-                </div>
+               
+                
            
 <!-------------------------------------------------------------------------------------------------------------------->
 <!------------------------------------ END UNICORN NARRATIVE --------------------------------------------------------->
@@ -829,7 +1257,10 @@
                
 
 <div id = "bodytext" class = "D1" class = "bodyTextD">
-                    <p><font size="6">The Quest Begins</font><br>
+        <div class = "paraTitle">
+                  The quest for the Dragon begins              
+            </div>
+                    <p><br>
                         Re-reading Uncle Philip’s letter, one name on the list stands out to you in bold lettering: 
                         DRAGON.
                         <br><br>
@@ -847,7 +1278,7 @@
                         <div id="lightD">
                             <a class="boxclose" id="boxclose" onclick="lightbox_closeD();"></a>
                             <video id="dragonBeginning" width="600" controls>
-                                <source src="dragonBeginning.mp4" type="video/mp4">
+                                <source src="creatureAnimations/dragonBeginning.mp4" type="video/mp4">
                                 <!--Browser does not support <video> tag -->
                               </video>
                         </div>
@@ -856,7 +1287,10 @@
                     </p>
                 </div>
                 <div id = "bodytext" class = "D2a" class = "bodyTextD">
-                    <p><font size="6">The Knight</font><br>
+                        <div class = "paraTitle">
+                                The Knight
+                            </div>
+                    <p><br>
                         In a dark corner of the tavern sits a Knight with their dusty shield propped against the table. 
                         They seem to be concentrating on a tattered and dirty scroll in their hands.
                         <br><br>
@@ -873,7 +1307,10 @@
                     </p>
                 </div>
                 <div id = "bodytext" class = "D2b" class = "bodyTextD">
-                    <p><font size="6">The Bard</font><br>
+                        <div class = "paraTitle">
+                                The Bard
+                            </div>
+                    <p><br>
                         Quietly strumming their lute at a deserted table is a charming looking Bard. Known for their 
                         poetic and musical prowess, Bards regale their audiences recounting epic adventures, stories 
                         and sensational news.
@@ -894,7 +1331,10 @@
                     </p>
                 </div>
                 <div id = "bodytext" class = "D2c" class = "bodyTextD">
-                    <p><font size="6">The Merchant</font><br>
+                        <div class = "paraTitle">
+                                The Merchant
+                            </div>
+                    <p><br>
                         Milling about the entrance to the tavern is a richly clothed Merchant. Robed in furs and silk, 
                         the Merchant looks you up and down - your simple but well made clothes indicate there could be 
                         more value to you than first impressions.
@@ -914,7 +1354,10 @@
                 </div>
                
                 <div id = "bodytext" class = "D3aa" class = "bodyTextD">
-                    <p><font size="6">Shield Emblem</font><br>
+                        <div class = "paraTitle">
+                                Shield Emblem
+                            </div>
+                    <p><br>
                         As you bend over to get a closer look at the Knight's shield emblem, showing an Elephant, 
                         you accidentally hit your head on the table. 
                         Your head wound is severe, and you fall into a coma, which you never wake from.
@@ -923,7 +1366,10 @@
                     </p>
                 </div>
                 <div id = "bodytext" class = "D3ab" class = "bodyTextD">
-                    <p><font size="6">Read Scroll</font><br>
+                        <div class = "paraTitle">
+                                Read Scroll
+                            </div>
+                    <p><br>
                         The Knight allows you to briefly read his scroll, before a loud party of ruffians enters the 
                         tavern and he snatches it back.
                         <br><br>
@@ -940,7 +1386,17 @@
                     </p>
                 </div>
                 <div id = "bodytext" class = "D3ac">
-                    <p><font size="6">Join Quest</font><br>
+                        <div class = "paraTitle">
+                                Join Quest
+
+                                <div class = "narrAudio">
+                                    <audio controls>
+                                            <source src="Narration/dragonAudio/2b.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </div>
+                    <p><br>
                         Becoming the Knight's Squire sounds like it could provide you with the opportunity to travel to 
                         different lands, meet commoners and royalty alike. This could allow you to capture and document 
                         more of the beasts on Uncle Philip's list, but it could almost certainly leads to dangerous 
@@ -954,7 +1410,10 @@
                     </p>
                 </div>
                 <div id = "bodytext" class = "D4aba">
-                    <p><font size="6">Offer to Buy Scroll</font><br>
+                        <div class = "paraTitle">
+                                Offer to Buy Scroll
+                            </div>
+                    <p><br>
                         You're desperate to see if there's more information about dragons on the scroll, so eagerly 
                         offer to buy it from the Knight for 20 gold coins.
                         <br><br>
@@ -968,7 +1427,10 @@
                     </p>
                 </div>
                 <div id = "bodytext" class = "D4abb">
-                    <p><font size="6">Steal Scroll</font><br>
+                        <div class = "paraTitle">
+                                Steal Scroll
+                            </div>
+                    <p><br>
                         You begin to buy the Knight more and more beer and soon they are drunk! The Knight falls into 
                         a drunken stupor. While they are quietly snoring, your rummage through their belongings and 
                         grab the scroll!
@@ -984,7 +1446,10 @@
                     </p>
                 </div>
                 <div id = "bodytext" class = "D4abc">
-                    <p><font size="6">Create a Song about the Knight and the Scroll</font><br>
+                        <div class = "paraTitle">
+                                Create a Song about the Knight and the Scroll
+                            </div>
+                    <p><br>
                         You notice the Knight getting more anxious about the scroll and your interest in it. 
                         Thinking quickly, you tell the Knight you are an apprentice to the Bard in the tavern, and 
                         think their quest and the wonderful scroll would make a captivating song, regaling all who 
@@ -1005,7 +1470,10 @@
                     </p>
                 </div>
                 <div id = "bodytext" class = "D4acb">
-                    <p><font size="6">Accept the Offer - Become Squire</font><br>
+                        <div class = "paraTitle">
+                                Accept the Offer to Become a Squire
+                            </div>
+                    <p><br>
                         As the Knight's new Squire, you are eager to set off on the Knight's quest to find a living 
                         Elephant!
                         <br><br>
@@ -1021,7 +1489,10 @@
                     </p>
                 </div>
                 <div id = "bodytext" class = "D5acba">
-                    <p><font size="6">Setup Camp</font><br>
+                        <div class = "paraTitle">
+                                Setup Camp
+                            </div>
+                    <p><br>
                         Weary from your travels, you decide to camp and recover your strength. While setting up camp, 
                         you hear rustling in the bushes and discover a lone Elephant!
                         <br><br>
@@ -1033,7 +1504,10 @@
                     </p>
                 </div>
                 <div id = "bodytext" class = "D6acbaa">
-                    <p><font size="6">Attempt to Capture Elephant</font><br>
+                        <div class = "paraTitle">
+                                Attempt to Capture the Elephant
+                            </div>
+                    <p><br>
                         While you have learnt much about Elephants, it hasn't prepared you for their might and 
                         strength! Outraged at your attempt to capture it, the Elephant tramples you. 
                         <br>
@@ -1043,7 +1517,10 @@
                     </p>
                 </div>
                 <div id = "bodytext" class = "D6acbab">
-                    <p><font size="6">Attempt to Befriend Elephant</font><br>
+                        <div class = "paraTitle">
+                                Attempt to Befriend the Elephant
+                            </div>
+                    <p><br>
                         You slowly approach the elephant so as not to startle it. Sensing a great intelligence and 
                         wisdom in the elephant, you begin to talk to it and retell your travels so far.
                         <br><br>
@@ -1067,7 +1544,10 @@
                 </div>
 
                 <div id = "bodytext" class = "D7acbaba">
-                    <p><font size="6">Dragon's Head</font><br>
+                        <div class = "paraTitle">
+                                Dragon's Head
+                            </div>
+                    <p><br>
                         You try to subdue the dragon by aiming your weapon at its head! Alas! Though you powerfully 
                         strike the dragon's head, it's powerful tail coils around you, constricting you and crushing 
                         your body.
@@ -1076,7 +1556,10 @@
                 </div>
 
                 <div id = "bodytext" class = "D7acbabb">
-                    <p><font size="6">Dragon's Tail</font><br>
+                        <div class = "paraTitle">
+                                Dragon's Tail
+                            </div>
+                    <p><br>
                         You try to subdue the dragon by striking its powerful tail with your weapon. Thankfully your 
                         aim is true and you hit the dragon's tail, causing it to release the struggling elephant.
                         <br><br>
@@ -1086,7 +1569,10 @@
                 </div>
 
                 <div id = "bodytext" class = "dragonEnd">
-                    <p><font size="6">The Dragon</font><br>
+                        <div class = "paraTitle">
+                                The Dragon
+                            </div>
+                    <p><br>
                         While the dragon is incapacitated, you take your time to sketch an illustration of the beast 
                         in your journal, making sure you show its powerful tail. You meticulously record all of the 
                         beast's terrible and wonderful attributes including:
@@ -1102,7 +1588,7 @@
                         - Its preferred prey are Elephants
                         <br><br>
                         <video width = "480" height ="360" class = "videoEmbed" controls="controls">
-                            <source src="dragonAnimate.mp4" type="video/mp4">
+                            <source src="creatureAnimations/dragonAnimate.mp4" type="video/mp4">
                               Your browser does not support the video tag.
                         </video>
                         <br><br>
@@ -1111,7 +1597,10 @@
                 </div>
 
                 <div id = "bodytext" class = "D3ba">
-                    <p><font size="6">Laugh at the Bard's Offer</font><br>
+                        <div class = "paraTitle">
+                                Laugh at the Bard's Offer
+                            </div>
+                    <p><br>
                         Your open disparagement of the Bard's generous offer deeply offends them.
                         <br><br>
                         Overwhelmed by their rage, the Bard smashes their lute over your head, vowing to ensure that 
@@ -1129,7 +1618,10 @@
                 </div>
 
                 <div id = "bodytext" class = "D3bb">
-                    <p><font size="6">Excitedly Accept Bard's Offer</font><br>
+                        <div class = "paraTitle">
+                                Excitedly Accept Bard's Offer
+                            </div>
+                    <p><br>
                         You cannot contain your excitement at the Bard's offer and enthusiastically thank them for 
                         taking you on as their apprentice.Thinking of all the songs you can learn to help you in your 
                         search for Uncle Philip's beasts, and the strange places you could visit, you throw yourself 
@@ -1146,7 +1638,10 @@
                 </div>
 
                 <div id = "bodytext" class = "D4bba">
-                    <p><font size="6">Strike it out on your own</font><br>
+                        <div class = "paraTitle">
+                                Strike it out on your own
+                            </div>
+                    <p><br>
                         You tell the Bard that you wish to end your apprenticeship and make your own way in the world 
                         as a Bard. You get into an argument with the Bard, yelling at them that you have more talent 
                         and skill that they do.
@@ -1163,7 +1658,10 @@
                 </div>
 
                 <div id = "bodytext" class = "D4bbb">
-                    <p><font size="6">Leave quietly in the night</font><br>
+                        <div class = "paraTitle">
+                                Leave quietly in the night
+                            </div>
+                    <p><br>
                         You are unsure of how the Bard will react to you asking to end your apprenticeship early, 
                         so you decide to sneak away in the middle of the night while they are fast asleep.
                         <br><br>
@@ -1176,7 +1674,10 @@
                 </div>
 
                 <div id = "bodytext" class = "D3ca">
-                    <p><font size="6">Offer to trade a spool of wool</font><br>
+                        <div class = "paraTitle">
+                                Offer to trade a spool of wool
+                            </div>
+                    <p><br>
                         You offer the merchant a small spool of rough, unspun wool. 
                         The Merchant frowns at the paltry trade offer. They certainly misjudged you and refuse to waste 
                         any more of their time on you when you clearly have nothing of value to offer.
@@ -1190,7 +1691,10 @@
                 </div>
 
                 <div id = "bodytext" class = "D3cb">
-                    <p><font size="6">Offer to trade a lute</font><br>
+                        <div class = "paraTitle">
+                                Offer to trade your Lute
+                            </div>
+                    <p><br>
                         As you tell the Merchant of your search for a dragon to complete Uncle Philip's bestiary, you 
                         spot the Merchant eyeing your lute. 
                         <br><br>
@@ -1206,7 +1710,10 @@
                 </div>
 
                 <div id = "bodytext" class = "D4cba">
-                    <p><font size="6">Trade for Broadsword</font><br>
+                        <div class = "paraTitle">
+                                Trade for Broadsword
+                            </div>
+                    <p><br>
                         You decide to trade your lute for a strong looking iron broadsword.
                         The Merchant greedily chuckles, snatches the lute and gives you the broadsword.
                         You pick the broadsword up thinking it would be perfect to help you capture a dragon. Taking a 
@@ -1224,7 +1731,10 @@
                 </div>
 
                 <div id = "bodytext" class = "D4cbb">
-                    <p><font size="6">Trade for Information on Dragons</font><br>
+                        <div class = "paraTitle">
+                                Trade for Information on Dragons
+                            </div>
+                    <p><br>
                         The Merchant seems somewhat disappointed at your choice, but nevertheless honours the trade 
                         and begins to tell you all the information about Dragons they have collected on their trade 
                         journeys. 
@@ -1248,7 +1758,10 @@
                 </div>
 
                 <div id = "bodytext" class = "D3cc">
-                    <p><font size="6">Offer to trade a tattered scroll</font><br>
+                        <div class = "paraTitle">
+                                Offer to trade a tattered scroll
+                            </div>
+                    <p><br>
                         You reluctantly pull a tattered scroll from your satchel and offer it to the Merchant to 
                         look at. Though you haven't looked at in a while, you recall the scroll featuring beautiful 
                         illuminated images and lettering, indicating the care and expense taken to create it.
@@ -1261,7 +1774,10 @@
                 </div>
 
                 <div id = "bodytext" class = "D4cca">
-                    <p><font size="6">Trade for Lance</font><br>
+                        <div class = "paraTitle">
+                                Trade for a Lance
+                            </div>
+                    <p><br>
                         The Merchant tosses you a heavy lance, forcing you to stumble back under its weight.
                         <br><br>
                         As you stumble back from the sudden weight of the lance, you trip over your own feet and fall 
@@ -1272,7 +1788,10 @@
                 </div>
 
                 <div id = "bodytext" class = "D4ccb">
-                    <p><font size="6">Trade for hand mirror</font><br>
+                        <div class = "paraTitle">
+                                Trade for a Hand Mirror
+                            </div>
+                    <p><br>
                         The Merchant gives you the old hand mirror in exchange for the tattered scroll. The Merchant 
                         seems smug with this trade, understanding the scroll comes from a noble family. As you step 
                         away and begin to examine the mirror, you notice its handle is heavier than usual. Finding a 
@@ -1295,7 +1814,10 @@
                 </div>
 
                 <div id = "bodytext" class = "D5ccbb">
-                    <p><font size="6">Continue on your journey alone</font><br>
+                        <div class = "paraTitle">
+                                Continue on your journey alone
+                            </div>
+                    <p><br>
                         You chose the path leading West and continue on your own. You run out of rations a few days 
                         into your travel, and there are no signs of civilisation in the distance. The landscape is 
                         hostile and seems deserted of life or edible plants.
@@ -1306,7 +1828,10 @@
                 </div>
 
                 <div id = "bodytext" class = "D5ccba">
-                    <p><font size="6">Travel with the hunting party</font><br>
+                        <div class = "paraTitle">
+                                Travel with the Hunting Party
+                            </div>
+                    <p><br>
                         You walk up to the hunting party and introduce yourself and your quest to find a dragon. 
                         They are a rowdy group, but welcome you to their party with open arms. 
                         <br><br>
@@ -1325,7 +1850,10 @@
                 </div>
 
                 <div id = "bodytext" class = "D6ccbaa">
-                    <p><font size="6">Use Spear</font><br>
+                        <div class = "paraTitle">
+                                Use Spear
+                            </div>
+                    <p><br>
                         As the hunting party make camp, you notice that the Panther has circled back. You think it 
                         might try to attack the hunters while they are resting.
                         <br><br>
@@ -1340,7 +1868,10 @@
                 </div>
 
                 <div id = "bodytext" class = "D6ccbab">
-                    <p><font size="6">Use Rope</font><br>
+                        <div class = "paraTitle">
+                                Use Rope
+                            </div>
+                    <p><br>
                         As the hunting party make camp, you notice that the Panther has circled back. You think it 
                         might try to attack the hunters while they are resting.
                         <br><br>
@@ -1356,7 +1887,10 @@
                 </div>
 
                 <div id = "bodytext" class = "D6ccbac">
-                    <p><font size="6">Use Mirror</font><br>
+                        <div class = "paraTitle">
+                                Use Mirror
+                            </div>
+                    <p><br>
                         As the hunting party make camp, you notice that the Panther has circled back. You think it 
                         might try to attack the hunters while they are resting.
                         <br><br>
@@ -1381,7 +1915,10 @@
                 </div>
 
                 <div id = "bodytext" class = "D7ccbaca">
-                    <p><font size="6">Sell Panther</font><br>
+                        <div class = "paraTitle">
+                                Sell Panther
+                            </div>
+                    <p><br>
                         As the Panther gazes at its reflection in the mirror, you and the hunting party take it to the 
                         Merchant in town.
                         <br><br>
@@ -1398,7 +1935,10 @@
                 </div>
 
                 <div id = "bodytext" class = "D7ccbacb">
-                    <p><font size="6">Use Panther to trap Dragon</font><br>
+                        <div class = "paraTitle">
+                                Use the Panther to trap the Dragon
+                            </div>
+                    <p><br>
                         Deciding to use the Panther as bait to capture a dragon, you and the hunters set off to the 
                         arid lands in search of a Dragon. Travelling for several days and nights, you and the hunters 
                         are exhausted by the heat and decide to set up a camp at the base of a hill dotted with small 
@@ -1409,7 +1949,7 @@
                         to shimmer and shine and before you know it a fearsome serpent with wings appears!
                         <br><br>
                         <video width = "480" height ="360" class = "videoEmbed" controls="controls">
-                            <source src="dragonAnimate.mp4" type="video/mp4">
+                        
                               Your browser does not support the video tag.
                         </video>
                         <br><br>
@@ -1432,7 +1972,10 @@
 <!-------------------------------------- START PHOENIX NARRATIVE ---------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------------------------------->
                 <div id = "bodytext" class = "P1" class = "bodyTextP">
-                    <font size="6">The Quest Begins</font><br>
+                        <div class = "paraTitle">
+                                The Quest Begins
+                            </div>
+                    <br>
                     You decide to pursue the Phoenix. You’ve heard of the creature before, but you’ve never seen one 
                     in the flesh. A note your Uncle has scribbled at the bottom of the page outlines the address of a 
                     local spice merchant. A long arrow stemming from the note indicates that the address and the 
@@ -1448,6 +1991,14 @@
                     to collect more wares for my shop tomorrow. I know both of these places are of great importance 
                     to the story of the Phoenix. I would be honored if you were to join me.”
                     <br><br>
+                    <div id="lightP">
+                            <a class="boxclose" id="boxclose" onclick="lightbox_closeP();"></a>
+                            <video id="phoenixBeginning" width="600" controls>
+                                <source src="creatureAnimations/phoenixBeginning.mp4" type="video/mp4">
+                                <!--Browser does not support <video> tag -->
+                              </video>
+                        </div>
+                        <div id="fadeP" onClick="lightbox_closeP();"></div>
                     What an opportunity! You decide to follow the man to:
                     <br><br>
                     -INDIA
@@ -1456,7 +2007,10 @@
                 </div>
 
                 <div id = "bodytext" class = "P2a" class = "bodyTextP">
-                    <font size="6">Egypt</font><br>
+                        <div class = "paraTitle">
+                                Travel to Egypt
+                            </div>
+                    <br>
                     You go with the man to Egypt. It takes you several months to make your way there and when you 
                     arrive at your destination you are informed that it was once the site of ancient Heliopolis. You 
                     make camp just outside town with your now close friend, whom you’ve come to know as Anasti.
@@ -1477,7 +2031,10 @@
                 </div>
 
                 <div id = "bodytext" class = "P2b" class = "bodyTextP">
-                    <font size="6">India</font><br>
+                        <div class = "paraTitle">
+                                Travel to India
+                            </div>
+                    <br>
                     You travel with your new friend by boat to the exotic lands of India. As you sail towards the port 
                     city, disaster strikes. Your ship runs aground on some submerged rocks before you are able to make 
                     it to the shore line. After waiting for what feels like hours, some local fishermen spot you and 
@@ -1498,7 +2055,10 @@
                     </div>
                 </div>
                 <div id = "bodytext" class = "P3ba" class = "bodyTextP">
-                    <font size="6">Resurrection</font><br>
+                        <div class = "paraTitle">
+                                Listen to a man speak about Resurrection
+                            </div>
+                    <br>
                     “You see child, the bird which you seek has the ability to be reborn. Every 500 years it flies to 
                     the ancient city of Heliopolis to die and be resurrected out of the flames. In your country where 
                     the Christian faith prevails there is a belief that the Phoenix is a metaphor for Jesus Christ, who 
@@ -1507,7 +2067,10 @@
                     Phoenix would be resurrected.”
                 </div>
                 <div id = "bodytext" class = "P3bb" class = "bodyTextP">
-                    <font size="6">Death</font><br>
+                        <div class = "paraTitle">
+                                Listen to a man speak about Death
+                            </div>
+                   <br>
                     “At the end of its lifecycle, the Phoenix incinerates itself on a funeral pyre, not unlike what we 
                     use here in India. From the ashes the new form begins to grow: first a worm, then a small bird, and 
                     finally the Phoenix in all its glory, just as it was before its death. Typically, this all occurred 
@@ -1515,7 +2078,10 @@
                     great bird will fly through the frankincense tree, filling its wings with precious spices.”
                 </div>
                 <div id = "bodytext" class = "P3bc" class = "bodyTextP">
-                    <font size="6">Karma</font><br>
+                        <div class = "paraTitle">
+                                Listen to a man speak about Karma
+                            </div>
+                    <br>
                     “In the Hindu religion, we believe in a cycle of cause and effect - that each man or woman’s actions 
                     will lead to an outcome that reflects those actions. This then has an effect on the body we inhabit 
                     in the next life. In our religion the Phoenix is known as the god Garuda, who represents birth and 
@@ -1523,8 +2089,11 @@
                     Perhaps these righteous causes are the reason the Phoenix continues to resurrect as himself in his 
                     holy form.”
                 </div>
-                <div id = "bodytext" class = "P4ba" class = "bodyTextP">
-                    <font size="6">Continue</font><br>
+                <div id = "bodytext" class = "continueText" class = "bodyTextP">
+                        <div class = "paraTitle">
+                                Continue
+                            </div>
+                    <br>
                     After your stay with the fishermen, you continue on your journey with your now good friend, who 
                     you have come to know as Anasti. His need to procure spices brings you back across the ocean, to 
                     Egypt and the city of Cairo. When you arrive, the pair of you settle at an inn for the evening. 
@@ -1534,7 +2103,10 @@
                     evening.
                 </div>
                 <div id = "bodytext" class = "P3aa" class = "bodyTextP">
-                    <font size="6">The Feathers</font><br>
+                        <div class = "paraTitle">
+                                The Feathers
+                            </div>
+                    <br>
                     You go with the man who offers to show you where the feathers may be. You both make your way 
                     through the winding streets of what is now known as Cairo, moving farther and farther away from 
                     your friends. You stomach begins to turn as you follow the man down a narrow alleyway. 
@@ -1548,7 +2120,10 @@
                     You are left to bleed out in the street, not to be found until the next day.
                 </div>
                 <div id = "bodytext" class = "P3ab" class = "bodyTextP">
-                    <font size="6">Listen to Story</font><br>
+                        <div class = "paraTitle">
+                                Listen to Story
+                            </div>
+                   <br>
                     You sit and look on intently as the man begins his tale.
                     <br><br>
                     “There is a magnificent bird, with luminous red feathers that resides in the depths of India. 
@@ -1573,7 +2148,10 @@
                     to take him up on his offer.
                 </div>
                 <div id = "bodytext" class = "P3ac" class = "bodyTextP">
-                    <font size="6">Shown Around Town</font><br>
+                        <div class = "paraTitle">
+                                Shown Around Town
+                            </div>
+                    <br>
                     You and your new merchant friend set out for the city of Cairo the next morning. Your friend is 
                     very knowledgeable about the history of the area, informing you that the city is built over the 
                     site of ancient Heliopolis. He takes you past libraries and bazaars, holy buildings and less than 
@@ -1592,14 +2170,20 @@
                 </div>
 
                 <div id = "bodytext" class = "P4aca" class = "bodyTextP">
-                    <font size="6">The Bird Watching Manual</font>
+                        <div class = "paraTitle">
+                                The Bird Watching Manual
+                            </div>
+                   
                     You take the bird watching manual, I mean you are on the lookout for a big bird, right? 
                     Unfortunately, there is no section that covers the Phoenix, or anything close to it. This 
                     part on the ostrich looks interesting though…
                 </div>
 
                 <div id = "bodytext" class = "P4acb" class = "bodyTextP">
-                    <font size="6">Map of Heliopolis</font><br>
+                        <div class = "paraTitle">
+                                Map of Heliopolis
+                            </div>
+                    <br>
                     There’s something familiar about this map, like you’ve walked through its streets before. Come to 
                     think of it, you have! This must be the area that the merchant took you through just this morning. 
                     How convenient. You study the landmarks in the map, keeping the story of the Phoenix in mind. 
@@ -1616,13 +2200,19 @@
                 </div>
 
                 <div id = "bodytext" class = "P5accb" class = "bodyTextP">
-                    <font size="6">Alcohol</font><br>
+                        <div class = "paraTitle">
+                                Alcohol
+                            </div>
+                    <br>
                     The symbol you chose leads you to the site of what was actually an ancient ale house. 
                     You choose another from the map.
                 </div>
 
                 <div id = "bodytext" class = "P5acca" class = "bodyTextP">
-                    <font size="6">The Phoenix</font><br>
+                        <div class = "paraTitle">
+                                The Phoenix
+                            </div>
+                   ><br>
                     You follow the rudimentary directions laid out in the map, which resemble the streets of modern 
                     times. They lead you to a small opening in the streets, where a large flat stone lays. Your heart 
                     skips a beat as you realise this must be the site of the altar where the Phoenix sets itself 
@@ -1631,7 +2221,7 @@
                     hundred other spices. Could it be?
                     <br><br>
                     <video width = "480" height ="360" class = "videoEmbed" controls="controls">
-                        <source src="phoenixAnimate.mp4" type="video/mp4">
+                        <source src="creatureAnimations/phoenixAnimate.mp4" type="video/mp4">
                           Your browser does not support the video tag.
                     </video>
                     <br><br>
@@ -1649,7 +2239,10 @@
                 </div>
 
                 <div id = "bodytext" class = "P5accc" class = "bodyTextP">
-                    <font size="6">Palace</font><br>
+                        <div class = "paraTitle">
+                                Palace
+                            </div>
+                    <br>
                     What an incredible place! This must have been the site of an ancient palace. Not what you 
                     were looking for, unfortunately.
                     
@@ -1661,32 +2254,621 @@
 <!---------------------------------------------------------------------------------------------------------------------->
 
 
+<!------------------------------------------------------------------------------------------------------------->
+<!------------------------------------- START HYDRUS NARRATIVE ------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------->
+
+<div id = "bodytext" class = "H1" class = "bodyTextH">
+        <div class = "paraTitle">
+                The quest for the Hydrus begins
+        </div>
+        You decide to pursue the Hydrus, one of the more obscure creatures on your uncle’s list. Next to the 
+        creature’s name is a drawing of what appears to be a crocodile, you’re unsure though because you’ve 
+        never seen one in the flesh. Luckily your friend, a healer in the town, knows a great deal about 
+        fantastical creatures. You decide to travel to her house.
+        <br><br>
+     At her house your friend Calypso analyses the crude drawing, “Hmm yes. That is a crocodile if ever I have 
+     seen one, although I must admit they are more fierce in the flesh.”
+     <br><br>
+     “Do you know where I can find one of these creatures? Are they in they rivers? Oceans?”
+     <br><br>
+     “Crocodiles prefer fresh water, that is true, but you will not find them around here my friend. To see these 
+     ancient beasts you will need to travel to the waters of the Nile in Egypt.”
+     <br><br>   
+     <div id="lightH">
+            <a class="boxclose" id="boxclose" onclick="lightbox_closeH();"></a>
+            <video id="hydrusBeginning" width="600" controls>
+                <source src="creatureAnimations/dragonBeginning.mp4" type="video/mp4">
+                <!--Browser does not support <video> tag -->
+              </video>
+        </div>
+        <div id="fadeH" onClick="lightbox_close();"></div>
+     On hearing this information you decide to…
+     <br><br>
+     Travel to Egypt
+     <br>
+     Develop an alternative plan
+</div>
+
+<div id = "bodytext" class = "H2a" class = "bodyTextH">
+        <div class = "paraTitle">
+                Travel to Egypt
+        </div>
+        You thank Calypso for her wisdom and continue on your way. In the port you find a ship that will 
+        take you all the way to Egypt. Once you arrive and are offloaded into the city of Cairo, you are 
+        inundated with new smells and sights. There are people bustling all around. After scanning the area 
+        you notice in the distance a large italicised ‘i’, “Ah ha! A tourist information centre!” 
+        <br><br>
+     You hastily make your way there. Once inside a man at the front desk greets you warmly.
+     <br><br>
+     “Hello there traveller, how may I help you today? I should let you know that I have special offers 
+     available on three tours around the city at the moment - they’re 50% off!”
+     <br><br>
+     “That sounds great actually, mind telling me about them?”
+     <br><br>
+     “The first is a boat ride down the Nile, with lunch included by the riverside. The second, a tour of 
+     our ancient landmarks, such as the site of Heliopolis. The third, and this is my favourite, is a 
+     walking tour through the markets of Cairo, it shows off the city’s broad range of foods, spices, 
+     fabrics and precious wares.”
+     <br><br>
+    You decide to pay for a tour of…
+    <br><br>
+    The Nile
+    <br>
+    The ancient landmarks
+    <br>
+    The markets
+ </div>
+
+<div id = "bodytext" class = "H2b" class = "bodyTextH">
+        <div class = "paraTitle">
+                Hatch an alternative plan
+        </div>
+        Egypt? You don’t have time to go to Egypt! There’s plenty of fresh water here in England, you’re sure 
+        you can find one of these beasts a little closer to home. You thank Calypso for her wisdom and continue 
+        on your way. You make your way down to the riverside nearby, it’s quiet. No birds chirping, no small 
+        animals rustling around. Something’s wrong, you can feel it. Maybe you got lucky and one of those 
+        crocodiles does infact inhabit the waters here. Then your stomach drops, because you hear a 
+        soul-shattering howl. It’s a pack of wild dogs and they look like they haven’t eaten in ages. 
+        Luckily for them, you look like a tasty snack. Unluckily for you, it’s dinner time.
+</div>
+
+<div id = "bodytext" class = "H3aa" class = "bodyTextH">
+        <div class = "paraTitle">
+                The Nile
+        </div>
+        “Really? I mean it’s just a big long river, nothing special. Okay then, here’s your ticket. Don’t forget 
+        to inscribe a review on the tablet out the front.”
+        <br><br>
+        You arrive at the pick up location down by the river. A large wooden boat with a thatched awning makes 
+        its way to you and the other tour passengers. You’re all loaded on board and the tour begins.
+        <br><br>
+        “Ladies and gentlemen welcome to the Nile River Tour, my name is Chione and I’ll be your guide for today. 
+        Lunch will be served just after noon and we ask that you please do not put any arms or legs over the 
+        sides of the boat, as they may be abruptly torn from your body by crocodiles.”
+        <br><br>
+   Of course, crocodiles! The clue that Uncle Philip gave me. The Hydrus must be nearby. You learn a lot during 
+   the first half of your tour, but nothing particularly helpful with your quest. The boat pulls up to the 
+   riverside for lunch and you hitch to a jetty near a small tree-shaded area. Now’s your opportunity, you 
+   seek out your tour guide and ask her about the mythical beast you seek. 
+   <br><br>
+        “The Hydrus huh? Wow you don’t get too many people asking about that one. Listen not a lot is known 
+        about it but I can tell you all the information I have.”
+        <br><br>
+        “That would be fantastic if you could. I hear they may be affiliated with the crocodiles of the Nile?”
+        <br><br>
+   The tour guide nods her head, “Yeah you could say that, or you could say they’re ancient enemies. Hydruses 
+   are known to prey on crocodiles, they’ll coat themselves with slippery mud on the banks of the river before 
+   sliding into the crocodile’s open mouth. Once inside the belly...well…” the tour guide trails off.
+   <br><br>
+        “Come on you can tell me, I’m not squeamish.”
+        <br><br>
+        “Once inside the belly the Hydrus just sorta… eats its way out of the crocodile, consuming the animal 
+        from the inside out, killing it.”
+        <br><br>
+        “But why?”
+        <br><br>
+        “My understanding is that the crocodile signifies Hell, and the Hydrus represents your Christian Jesus. 
+        The whole process is analogous for Jesus travelling through Hell to free trapped souls.” 
+        <br><br>
+        This information has been incredibly helpful, you’re able to come up with a few plans to catch the 
+        Hydrus. You decide to choose…
+        <br><br>
+   Wait by the river, near a bask of crocodiles.
+   <br>
+   Ask the tour guide if you can use her boat.
+   <br>
+   ‘Borrow’ the boat without asking
+</div>
+
+<div id = "bodytext" class = "H3ab" class = "bodyTextH">
+        <div class = "paraTitle">
+                The Ancient Landmarks
+        </div>
+        “Ah, interested in history are we? You won’t be disappointed! Here’s your ticket, enjoy your time here in Cairo friend.”
+        <br><br>
+        You complete the tour and it was interesting, although it didn’t really reveal anything helpful to you. Heliopolis was 
+        fantastic though, you heard the tour guide mention something about the great Phoenix migrating there too…
+</div>
+
+<div id = "bodytext" class = "H3ac" class = "bodyTextH">
+        <div class = "paraTitle">
+            The Markets
+        </div>
+        “Oh I’m so glad my friend, you will not be disappointed! The tour group should be leaving in just a moment from outside the centre. Here is 
+        your ticket, keep it safe!”
+        <br><br>
+        You wait in line, talking to your fellow group members. There’s a man from a town not far away from where you grew up, and a young couple 
+        who’s visiting all the way from Russia. The tour guide greets you and you start on your way. The streets are packed to the brim with people, 
+        and all incredibly narrow. The twists and turns make it hard to keep up with your group. Before you know it you are lost completely in the 
+        middle of Cairo.
+</div>
+
+<div id = "bodytext" class = "H4aaa" class = "bodyTextH">
+        <div class = "paraTitle">
+                Wait by the river
+        </div>
+        You thank the tour guide for her help and head out on your own down the banks of the river. The sun is beating down quite heavily, 
+        making you kind of delirious. Because of this, you decide to locate a bask of crocodiles in the hope that maybe a wild Hydrus would also be 
+        lurking nearby. It doesn’t take long before you a group of the beasts on the bank. You wait for a while behind a tuft of reeds, but 
+        eventually the sun becomes too much to bear. You decide to go for a quick dip in the water. Big mistake. You barely make it waist 
+        deep before you feel a tremendous pain shoot up your leg. Then you see the blood. You’ve been caught by a crocodile hiding in the 
+        murky water. So long friend, it’s been nice knowing you.
+</div>
+
+<div id = "bodytext" class = "H4aab" class = "bodyTextH">
+        <div class = "paraTitle">
+                Ask to borrow the boat
+        </div>
+        “Listen, thank you so much for your help.” You continue to explain the quest you’ve been sent on by your great uncle.
+        <br><br> 
+        “I see, well that does sound fascinating.” the tour guide says ponderously. 
+        <br><br>
+        “I don’t suppose you could loan me your boat for an hour to catch one of these creatures? I need to locate some live crocodiles to use as 
+        bait but it would be a whole lot safer for me if I were to do so from the boat.”
+        <br><br>
+        “Oh no, absolutely not. You’re insane for even asking.
+        <br><br>
+        You press your guide further but it’s not use, she’s adamant that you will not be using her boat. She’s keeping a close eye on you 
+        too now, so it’s not like you can even abscond with the vessel. Sometimes it’s just better to say sorry rather than please.
+</div>
+
+<div id = "bodytext" class = "H4aac" class = "bodyTextH">
+        <div class = "paraTitle">
+                Steal the boat
+        </div>
+        You thank the tour guide and tell her you actually have to go and move your bowels. She rolls her eyes and points towards the water.
+        <br><br>
+     “Just keep an eye out for crocs!”
+     <br><br>
+    Once you’re a good distance away from her you run over to the boat. You untether it from the jetty and the current immediately begins to 
+    carry you away. You can hear the tour guide cursing you from the bank of the river. “Thief! Thief!” you hear her scream. But you’re not a 
+    thief! You fully intend to return the boat to her at a later time. 
+    <br><br>
+     The boat whisks you down the river and it isn’t long before you encounter a large group of crocodiles basking in the sun. You throw the 
+     anchor overboard, nearly throwing your back out as you do so. The boat comes to an abrupt halt and all is quiet except for the rushing of 
+     the river beneath you. Your eyes dart around the area where the crocodiles are. Finally you think you’ve spotted something peculiar. There’s 
+     a pair of wings peaking out above a cluster of reeds. Funny though, they don’t look like those of a bird, more like a gigantic bee’s? Surely 
+     this is the creature. The wings dip down below the plant life, then you see a small dog-like foot step out from behind the scrub. Then a nose, 
+     the creature looks like a slender fox, or a mongoose. You watch it lather itself in mud, rolling around, ensuring every whisker has a thick 
+     coating of the slippery stuff. It then skulks its way over to the crocodiles, selecting its prey carefully. It slides into the mouth of a 
+     sleeping croc, who doesn’t even stir during the process. Then it’s gone. 
+     <br><br>
+     There’s no movement for a couple minutes and you think the event is over. Then, all of a sudden, you hear a tremendous hiss come from the 
+     ancient reptile. It wakes up and begins to writhe in pain. Its belly swells and before you know it, the fox-like creature has popped its 
+     head out of the crocodile’s abdomen. You mind is blown, the tour guide was right! You sketch the creature quickly, trying carefully to get 
+     its features down as accurately as possible. When you return home you write about the amazing experience at length. As for the tour guide’s 
+     boat well… I’m sure she’ll find it one day.
+</div>
+
+<!------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------- END HYDRUS NARRATIVE ------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------->
+
+<!------------------------------------------------------------------------------------------------------------->
+<!----------------------------------- START BASILISK NARRATIVE ------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------->
+
+
+<div id = "bodytext" class = "B1" class = "bodyTextB">
+        <div class = "paraTitle">
+                The quest for the Basilisk begins
+        </div>
+        It's been many days since you received Uncle Philip's letter, and you have read it many times. Each 
+        time you re-read the letter, you find your quill circling around one entry on Uncle Philip's list of 
+        creatures to document: the Basilisk. A brief note in Uncle Philip’s handwriting is what piques your 
+        interest: “Though title bestowed of ‘Little King’, great misfortunes and demise do run afoul thanks 
+        to this serpent fowl.”
+        <br><br>
+        <div id="lightB">
+                <a class="boxclose" id="boxclose" onclick="lightbox_closeB();"></a>
+                <video id="basiliskBeginning" width="600" controls>
+                    <source src="creatureAnimations/basiliskBeginning.mp4" type="video/mp4">
+                    <!--Browser does not support <video> tag -->
+                  </video>
+            </div>
+            <div id="fadeB" onClick="lightbox_close();"></div>
+        You decide to mull over this note a bit more as you roam family’s great estate and:
+        <br><br>
+        Wander the forest
+        <br>
+        Visit the chicken coop
+        <br>
+        Visit the underground grotto
+</div>
+
+<div id = "bodytext" class = "B2a" class = "bodyTextB">
+        <div class = "paraTitle">
+                Wander the Forest
+        </div>
+        As you enter the nearby forest, you wander around the great oak trees, enjoying the sunlight streaming 
+        through the branches. As you walk further into the forest, you can hear a bubbling brook. As you get 
+        closer to the stream you hear a raspy squeak coming from the base of a nearby tree.
+        <br><br>
+        You head over to the tree and look down to see a baby weasel (kit) shivering amongst the leaves. 
+        While you know that weasels are clever creatures and chase mice and snakes, they aren’t very popular….
+        <br><br>
+        You decide to:
+        <br><br>
+        Abandon the baby weasel
+        <br>
+        Raise and train the weasel as a pet
+</div>
+
+<div id = "bodytext" class = "B2b" class = "bodyTextB">
+        <div class = "paraTitle">
+                Visit Chicken Coop
+        </div>
+        Thinking of Uncle Philip’s cryptic note talking about the basilisk being a “serpent fowl”, you decide 
+        that the chicken coop could be the best place to go to and check out the fowl nearest to you. 
+        <br><br>
+        Entering the coop, you are comforted by the soft clucking of the chickens, and notice the many eggs 
+        left for the maids to collect for the kitchen. You think to yourself you may as well collect the eggs 
+        while you’re here, and manage to fill a basket with them.
+        <br><br>
+        You decide to take the eggs to:
+        <br><br>
+        The Market to sell them
+        <br>
+        The maids in the Kitchen
+</div>
+
+<div id = "bodytext" class = "B2c" class = "bodyTextB">
+        <div class = "paraTitle">
+                Visit the Undergdound Grotto
+        </div>
+        You haven’t visited the underground grotto in a while - it always gave you the creeps with all the 
+        statues of scary and unfamiliar creatures in the flickering torchlight. Perhaps there might be clues 
+        hidden here to help you find a Basilisk...after all, Uncle Philip is rumoured to have designed the 
+        grotto himself.
+        <br><br>
+        Before you start exploring the dark, dank grotto, you remember its entry is located at the centre of 
+        the great hedge maze. You can’t quite remember if the correct path to the grotto is from the North-West 
+        entry or the South-East entry.
+        <br><br>
+        <img src="undergroundGrotto.png" alt="Underground Grotto">
+        <br><br>
+        Thinking you have at least a 50-50 chance, you choose the:
+        <br><br>
+        South-East entry
+        <br>
+        North-West entry
+</div>
+
+<div id = "bodytext" class = "B3aa" class = "bodyTextB">
+        <div class = "paraTitle">
+                Abandon the Weasel
+        </div>
+        As you walk along the bank of the stream, you just can’t shake the feeling of guilt for leaving the little 
+        weasel alone under the tree. While weasels might be considered dirty animals, they are clever and actually 
+        rather cute… you wonder if you made the proper Christian decision leaving it to fend for itself.
+        <br><br>
+        Lost in your train of thought, you step on a wet, mossy rock by the bank of the stream. You slip and fall into the 
+        shallow stream, hitting your head, knocking yourself unconscious. Unfortunately, your unconscious body lands in 
+        the stream and while the stream is shallow, you nevertheless drown.
+        <br><br>
+        End of Journey.
+</div>
+
+<div id = "bodytext" class = "B3ab" class = "bodyTextB">
+        <div class = "paraTitle">
+                Raise the Weasel as a pet
+        </div>
+        You slowly approach the shivering little weasel and crouch down to offer it a piece of cheese from your pocket. 
+        The weasel nibbles the cheese and affectionately rubs its head against your hand in thanks. You pick it up and 
+        carry it home, where you ask the gamekeeper for advice on how to raise the kit.
+        <br><br>
+        The gamekeeper tells you to feed the weasel its favourite foods, including eggs as a treat to help with training. 
+        They also mention an old story of how the weasel is the only creature that can kill a strange creature with the 
+        body of a rooster and the tail of a snake - a basilisk.
+        <br><br>
+        You spend several weeks bonding with the weasel and training it to do simple tricks! It truly is a clever little 
+        creature! As you begin to think about leaving home to explore new lands and search for a basilisk, a travelling 
+        circus comes to the local village. You decide to visit the circus, and the weasel follows you along. 
+        <br><br>
+        The leader of the circus notices the weasel walking alongside you and asks you why a wild creature is so friendly 
+        to you. You explain it is your pet and that you have trained it to do many tricks. The circus leader is fascinated 
+        and thinks the weasel would be a great addition to their circus and asks if you would give it to them.
+        <br><br>
+        You don’t want to just give away the weasel you raised, so you decide to:
+        <br><br>
+        Sell the weasel to the travelling circus
+        <br>
+        Join the travelling circus
+</div>
+
+<div id = "bodytext" class = "B3ba" class = "bodyTextB">
+        <div class = "paraTitle">
+                The Market
+        </div>
+        You head into the small village near your family estate and wander the market to find someone to sell your eggs to. 
+        As you wander through the market stalls, you come across a person dressed in colourful but tattered robes and long, 
+        twisted grey hair. The person turns to you and smiles crookedly, saying “Hello young adventurer, word around the 
+        market is you’re continuing your Uncle’s work to find a basilisk… As a sorcerer, I am quite familiar with this beast
+         - ‘Little King’ it be known as in different languages, it is also known as the ‘King of Serpents’.... For more tales 
+         of the Basilisk, payment be six of your eggs”
+        <br><br>
+        Without thinking you hand over six of your eggs and the sorcerer continues: “Little King, King of Serpents, lover of 
+        dry places, the basilisk’s power be its deadly gaze, hiss and stench… Its bite will make ye afeared of water and only 
+        one creature can kill it - a clever little creature that chases mice and snakes…”. With that, the sorcerer turns to 
+        walks away and seems to vanish into the crowd.
+        <br><br>
+        Spooked by the mysterious sorcerer, you head home, completely forgetting to sell your basket of eggs.
+
+</div>
+
+<div id = "bodytext" class = "B3bb" class = "bodyTextB">
+        <div class = "paraTitle">
+                Maids in the Kitchen
+        </div>
+        You enter the warm kitchen and set the basket of eggs down on a side table. You try to get the attention of one of 
+        the maids or cooks, but they’re all so busy bustling around with their chores and gossiping that they don’t notice you. 
+        As you’re about to leave, you overhear a maid tell the cook interesting things they’ve heard at the market: “Oi, did ya
+         hear? Apparently there’s a mad sorcerer in the village market telling strange tales! Eddard heard tell the story of a 
+         vile beastie that prefers the dry, Arid Lands with deathly powers. It be called the “Little King.”.
+         <br><br>
+        You wonder if this could be the Basilisk, known as the “Little King” mentioned in Uncle Philip’s note... 
+        <br><br>
+        With so many maids and cooks in the kitchen, it’s getting hot and you decide to leave and:
+        <br><br>
+        Take the eggs and sell them at the Market [Jump to The Market(3a)]
+        <br>
+        Start your journey to the Arid Lands [Jump to Arid Lands(4b2)]
+</div>
+
+<div id = "bodytext" class = "B3ca" class = "bodyTextB">
+        <div class = "paraTitle">
+                South-East Entry
+        </div>
+        Alas, the odds weren’t in your favour! You spend several exhausting hours desperately wandering the maze with its two 
+        metre high hedges, hoping to either stumble across the entry to the grotto or any other exit. 
+        <br><br>
+        You finally manage to find a way out of the maze, but are so exhausted from your efforts you need some comforting pottage 
+        (hearty stew) and a nap to recover. 
+        <br><br>
+        Choose another area of the estate to explore. [Return to Basilisk (1) / Button options for Forest/Chicken Coop/Grotto]
+</div>
+
+<div id = "bodytext" class = "B3cb" class = "bodyTextB">
+        <div class = "paraTitle">
+                North-West Entry
+        </div>
+        Phew! After a few dead ends, you eventually make it to the entry of the underground grotto and hear the steady drip of 
+        water coming from the dark space beyond. Fortunately you have a flint with you and grabbing an old torch from the wall 
+        nearby, light it so you can find your way about the grotto.
+        <br><br>
+        The cavern-like space has a row of small stone statues on marble stands along one side. As you approach them, they cast 
+        strange shadows in the firelight - strange creatures that don’t look like anything you’ve ever seen before. You notice 
+        that each of the statues has a word engraved into the base. The one nearest to you seems to be broken. Reading its 
+        engraving, it says “Basilisk” - how exciting! You hurriedly look it over and see if you can piece it back together to get 
+        some idea of what a Basilisk might look like.
+        <br><br>
+        As you start to piece the statue back together, you wonder what this Basilisk could be? The statue seems to be a combination of a Rooster, with the tail of a snake - how strange! You notice that there also seems to be a handful of yellow sand on the stand - this doesn’t seem to be native to your area.  
+        <br><br>
+        You decide you need to leave home to find a Basilisk, and head in the direction of the:
+        <br><br>
+        River country
+        <br>
+        Arid lands    
+</div>
+
+<div id = "bodytext" class = "B4aba" class = "bodyTextB">
+        <div class = "paraTitle">
+                Sell the Weasel
+        </div>
+        You think if you can sell the weasel for enough gold, this could pay for your travelling costs to search for a basilisk. 
+        You agree to the circus leader’s offer of five gold coins for the talented little weasel and hand it over in exchange for 
+        the coins.
+        <br><br>
+        As the weasel sees you leave without it, it struggles against the circus leader’s grasp and races after you. You try to 
+        hand it back to the circus leader, but the weasel clutches at your hand, desperate to stay with you. As the circus leader 
+        takes the weasel from you, it deeply scratches your hand. 
+        <br><br>
+        You head home, however, an infection sets in your open scratch and you become fevered the next day. In your delirious 
+        state, you wonder what has happened to the clever little weasel before slipping away from your infection.
+        <br><br>
+        End of Journey.
+        
+</div>
+
+<div id = "bodytext" class = "B4abb" class = "bodyTextB">
+        <div class = "paraTitle">
+                Join the Travelling Circus
+        </div>
+        You can’t bear the thought of selling your pet to the circus, so you offer to perform with the weasel for the circus, 
+        if they allow you to travel with them. Surprisingly the circus leader agrees and you set off for new towns. After travelling 
+        for several weeks, the circus sets up camp outside a village in the heart of the dry, hot, arid lands. You hear whispers from 
+        the other members of the circus, talking about strange deaths of the villagers who seem to have died with no signs of injuries 
+        or struggles. 
+        <br><br>
+        You feel worried about this different land, and the weasel seems to be uneasy, acting in ways it hasn’t before…. That night as 
+        you go to bed, you worry that the weasel might run away while you’re asleep.
+        <br><br>
+        You decide to:
+        <br><br>
+        Put the weasel on a leash
+        <br>
+        Let the weasel travel unleashed
+</div>
+
+<div id = "bodytext" class = "B4cba" class = "bodyTextB">
+        <div class = "paraTitle">
+                River Country
+        </div>
+        You feel confident about your journey as you travel to the River country - a delta of serpentine rivers and streams that make 
+        bountiful farmland. “Serpentine rivers...” you think to yourself - perhaps here is where you’ll find a Rooster with the tail of a 
+        snake…. But as the days go by, and weeks stretch into months, your search reveals nothing. Despite this, you can’t bring yourself to 
+        leave this beautiful region and continue your search for a Basilisk. 
+        <br><br>
+        You decide to live the rest of your life in the River country, without responsibilities or any earthly worries - after all, you 
+        barely knew your Uncle Philip, and was never much interested in animals - fantastical or otherwise!
+        <br><br>
+        End of Journey.
+</div>
+
+<div id = "bodytext" class = "B4cbb" class = "bodyTextB">
+        <div class = "paraTitle">
+            Arid Lands
+        </div>
+        After travelling for many weeks, you find yourself on the edge of the arid lands - a hot, dry region that seems to get more sandy 
+        the further you travel. At least you think you’re on the right track - the sand here seems to be the same as the sand you found in 
+        the grotto. Could you be following in Uncle Philip’s footsteps to a basilisk?
+        <br><br>
+        Parched from the scorching sun, you’re relieved to see a small well surrounded by palm trees up ahead. As you desperately draw water 
+        from the well to drink, you notice a skinny weasel looking up at you with pleading eyes. While you know that weasels are clever 
+        creatures and chase mice and snakes, they aren’t very popular….
+        <br><br>
+        You decide to:
+        <br><br>
+        Shoo the weasel away
+        <br>
+        Give the weasel some water and some of your rations 
+</div>
+
+
+<div id = "bodytext" class = "B5abba" class = "bodyTextB">
+        <div class = "paraTitle">
+            Put the Weasel on a leash
+        </div>
+        You wake with a start in the middle of the night - there seems to be something moving near your tent. You leave the tent with the 
+        weasel straining to escape its leash and follow you. The light from the moon shows the silhouette of a large rooster…with a long 
+        tail - this must be a Basilisk! 
+        <Br><br>
+        Before you can utter a word, the head of the Basilisk turns and two great glowing eyes meet your gaze and a hissing sound fills 
+        your ears. Those eyes and the hiss are the last things you see and hear before you perish - it seems at least one attribute of 
+        the Basilisk is its deadly gaze, which explains the mysterious deaths of the villagers.
+        <br><br>
+        End of Journey.
+</div>
+
+
+<div id = "bodytext" class = "B5abbb" class = "bodyTextB">
+        <div class = "paraTitle">
+            Let the Weasel travel unleashed
+        </div>
+        You wake with a start in the middle of the night - there seems to be something moving near your camp. The light from the moon shows 
+        the silhouette of a large rooster… with a long tail - this must be a Basilisk! Before you can say a word, the little weasel jumps on 
+        the Basilisk, fiercely biting it! 
+        <br><br>
+        This seems to severely wound the basilisk and it lies with its eyes and mouth closed. The little weasel follows you cautiously as you 
+        approach the creature….
+</div>
+
+<div id = "bodytext" class = "B5cbba" class = "bodyTextB">
+        <div class = "paraTitle">
+            Shoo the Weasel
+        </div>
+        You shoo the weasel away, but it keeps coming back to you, seemingly trying to tell you something. Impatiently, you kick some sand 
+        at the weasel, finally driving it away, and allowing you to get some rest.
+        <br><br>
+        You wake with a start in the middle of the night - there seems to be something moving near the well. The light from the moon shows 
+        the silhouette of a large rooster…with a long tail - this must be a Basilisk! 
+        <br><br>
+        Before you can utter a word, the head of the Basilisk turns and two great glowing eyes meet your gaze. Those eyes are the last thing 
+        you see before you perish - it seems at least one attribute of the Basilisk is its deadly gaze, a pity you didn’t know that before 
+        you set out on your journey.
+        <br><br>
+        End of Journey.
+</div>
+
+<div id = "bodytext" class = "B5cbbb" class = "bodyTextB">
+        <div class = "paraTitle">
+            Give the Weasel water
+        </div>
+        The poor little weasel looked so pathetic, you couldn’t resist giving it a sip of water from your cupped hands and some dried dates. 
+        Showing its appreciation, it affectionately rubs its head against your leg and walks away. It looks back at you obviously wanting you 
+        to follow it to a palm tree on the other side of the well.
+        <br><br>
+        As you approach the palm tree, you notice something at its base. With a small scream of surprise, you realise it’s a skeleton clutching 
+        an old scroll! You pick the scroll up and begin to read the shaky handwriting: “It has been many days in pursuit of the basilisk that 
+        killed many people in my village with its deadly gaze and hiss. Last night as I lay resting it attempted to attack me - I survived by 
+        closing my eyes and stuffing my ears with wool to resist its hiss. Alas it managed to bite me and soon I felt a growing fear at the very 
+        thought of water! It is here as I grow weak from the bite and the fear of water preventing me from drinking, that I write this note to 
+        caution travellers to this area! BEWARE THE BASILISK”
+        <br><br>
+        You wake with a start in the middle of the night - there seems to be something moving near the well. The light from the moon  shows the 
+        silhouette of a large rooster…with a long tail - this must be a Basilisk! Before you can say a word, the little weasel has reappeared 
+        and jumps on the Basilisk, biting it! 
+        <br><br>
+        This seems to severely wound the basilisk and it lies with its eyes and mouth closed. The little weasel follows you cautiously as you approach 
+        the creature….
+</div>
+
+<div id = "bodytext" class = "endB" class = "bodyTextB">
+        <div class = "paraTitle">
+            The Basilisk
+        </div>
+        With the Basilisk safely knocked out, you warily circle it, eager to document this powerful creature. With your journal at the ready, you 
+        begin to sketch the creature with a body of Rooster and a tail of a snake, and create a detailed list of its special attributes including:
+        <br><br>
+        -         Ability to kill from a distance with its gaze, scent or its hiss
+        -        Vulnerability to weasels – they are the only creature that can kill a Basilisk
+        -        Prefers dry climates or places
+        -        Its bite can cause the victim to become hydrophobic (scared of water)     
+        -        Fire from its mouth can kill birds
+        -        Is known as the “King of Serpents”
+        <br><br>
+        You relocate the sleeping Basilisk to a place far away from people it could harm. As you release the Basilisk, you make a swift getaway as 
+        it begins to stir, pleased with your accomplishment – Uncle Philip would be proud with your growing Bestiary! 
+</div>
+
+
+<!------------------------------------------------------------------------------------------------------------->
+<!------------------------------------ END BASILISK NARRATIVE ------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------->
+
+
+
+
                 <!------------------------------------------------------------------>
                 <!------------------------- INVENTORY------------------------------->
                 <!------------------------------------------------------------------>
                 <div id = "inventory">
+                    <div class = "inventoryText">
+                            Your Bestiary
+                    </div>
                     <div id = "basiliskInv">
-                        <img id = "basiliskInvT" class = "top" src="basiliskC_c.png" alt="The Basilisk, a flying animal with 
+                        <img id = "basiliskInvT" class = "top" src="creatureSketches/basiliskC_c.png" onclick = "basiliskModal()" alt="The Basilisk, a flying animal with 
                             large wings and a long neck. Colourised image.">
-                        <img id = "basiliskInvB" class = "bottom" src="basiliskB.png" alt="The Basilisk, a flying animal with 
+                        <img id = "basiliskInvB" class = "bottom" src="creatureSketches/basiliskB.png" alt="The Basilisk, a flying animal with 
                             large wings and a long neck. Black and white image.">
                         
                     </div>
                     <div id = "dragonInv">
-                        <img id = "dragonInvT" src="dragonC_c.png" onclick = "dragonModal()" alt="The Dragon, a flying reptilian animal. Colourised.">
-                        <img id = "dragonInvB" src="dragonB.png" alt="The Dragon, a flying reptilian animal. Black and white.">
+                        <img id = "dragonInvT" src="creatureSketches/dragonC_c.png" onclick = "dragonModal()" alt="The Dragon, a flying reptilian animal. Colourised.">
+                        <img id = "dragonInvB" src="creatureSketches/dragonB.png" alt="The Dragon, a flying reptilian animal. Black and white.">
                     </div>
                     <div id = "phoenixInv">
-                        <img id = "phoenixInvT" src="phoenixC1.png" onclick = "phoenixModal()" alt="The Phoenix, a brightly coloured flying animal. Colourised.">
-                        <img id = "phoenixInvB" src="phoenixB1.png" alt="The Phoenix, a brightly coloured flying animal. Black and white.">
+                        <img id = "phoenixInvT" src="creatureSketches/phoenixC1.png" onclick = "phoenixModal()" alt="The Phoenix, a brightly coloured flying animal. Colourised.">
+                        <img id = "phoenixInvB" src="creatureSketches/phoenixB1.png" alt="The Phoenix, a brightly coloured flying animal. Black and white.">
                     </div>
                     <div id = "hydrusInv">
-                        <img id = "hydrusInvT" src="hydrusC_c.png" alt="The Hydrus. Colourised.">
-                        <img id = "hydrusInvB" src="hydrusB.png" alt="The Hydrus. Black and white.">
+                        <img id = "hydrusInvT" src="creatureSketches/hydrusC_c.png" onclick = "hydrusModal()" alt="The Hydrus. Colourised.">
+                        <img id = "hydrusInvB" src="creatureSketches/hydrusB.png" alt="The Hydrus. Black and white.">
                     </div>
                     <div id = "unicornInv">
-                        <img id = "unicornInvT" src="unicornC_c.png" onclick = "unicornModal()" alt="The Unicorn. Colourised.">
-                        <img id = "unicornInvB" src="unicornB.png" alt="The Unicorn. Black and white.">
+                        <img id = "unicornInvT" src="creatureSketches/unicornC_c.png" onclick = "unicornModal()" alt="The Unicorn. Colourised.">
+                        <img id = "unicornInvB" src="creatureSketches/unicornB.png" alt="The Unicorn. Black and white.">
                     </div>
                 </div>
 
@@ -1697,24 +2879,35 @@
                     <!-- Modal content -->
                         <div class="modal-contentU">
                             <span class="close" onclick="closeModal()">&times;</span>
-                            <p><strong>The Unicorn</strong><br><br>
-                                NEED TO ADD UNICORN BESTIARY PROFILE HERE<br><br>
-                                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
-                                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
-                                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
-                                voluptatem sequi nesciunt. 
-                                <br><br>
-                                <img src="unicornOrg.jpg" alt="Unicorn">
-                                <br><br>
-                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
-                                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et 
-                                dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum 
-                                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
-                                consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse 
-                                quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla 
-                                pariatur?"
-                            </p>
+                            <div class = "modalContentAnimal">
+                                    <div>
+                                        <img src="orgSketches/unicornOrg.jpg" class = "modalImgAnimal" alt="Unicorn">
+                                    </div>
+                                    <div class = "modalTextAnimal">
+                                            <div class = "modalHead">The Unicorn</div><br>
+                                            Though the unicorn is mostly associated as a white horse with a 
+                                            single horn on its forehead in current popular culture, in medieval 
+                                            bestiaries, the unicorn could have the body of a goat, ass or a 
+                                            horse. It has great speed, is strong and fierce and cannot be 
+                                            captured unless a maiden attracts it.
+                                            <br><br>
+                                            In bestiaries, unicorns signify Jesus Christ, and its horn signifies 
+                                            the unity between God and Christ.
+                                            <br><br>
+                                            <strong>Real or Mythical?</strong><br>
+                                            This creature is mythical!<br>
+                                            Unicorns feature heavily in fantasy genres and pop-culture today. 
+                                            From heraldic coats of arms, television shows and rainbow unicorn 
+                                            trends and memes, the unicorn continues to be one of the most 
+                                            popular mythical beasts from medieval bestiaries.
+                                            <br><br>
+                                            <strong>View the original:</strong>
+                                            You can view the dragon illustration in the British Library’s 
+                                            digitised bestiary <a href="http://www.bl.uk/turning-the-pages/?id=32841b35-03d4-40d5-a218-0e9effb1843a&type=book" 
+                                            target="_blank"> Royal MS 12 C. xix</a>
+                                             on Folios 9v - 10.
+                                    </div>
+                                </div>
                         </div>
                 </div>
                 <!----------------------------------------------------------------------------------->
@@ -1728,24 +2921,36 @@
                     <!-- Modal content -->
                         <div class="modal-contentD">
                             <span class="close" onclick="closeModal()">&times;</span>
-                            <p><strong>The Dragon</strong><br><br>
-                                NEED TO ADD DRAGON BESTIARY PROFILE HERE<br><br>
-                                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
-                                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
-                                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
-                                voluptatem sequi nesciunt. 
-                                <br><br>
-                                <img src="dragonOrg.jpg" alt="Dragon">
-                                <br><br>
-                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
-                                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et 
-                                dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum 
-                                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
-                                consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse 
-                                quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla 
-                                pariatur?"
-                            </p>
+                            <div class = "modalContentAnimal">
+                                    <div>
+                                        <img src="orgSketches/dragonOrg.jpg" class = "modalImgAnimal" alt="Dragon">
+                                    </div>
+                                    <div class = "modalTextAnimal">
+                                            <div class = "modalHead">The Dragon</div><br>
+                                            In this illustration the dragon is standing on the back of its 
+                                            enemy the elephant, with its powerful snake-like tail coiling around 
+                                            the elephant’s legs.
+                                            <br><br>
+                                            The greatest of all the serpents, the dragon is usually associated 
+                                            with the Devil. As the dragon’s strength lies in its tail and not 
+                                            it’s jaw like one would expect, this attribute is also an allegory 
+                                            for how the Devil’s strength lies in its power of deceit.
+                                            <br><br>
+                                            <strong>Real or Mythical?</strong><br>
+                                            This creature is mythical!<br>
+                                            A combination of a snake with a crest, claws and wings, the dragon 
+                                            is a mythical beast that has maintained popularity in modern 
+                                            literature and the arts. Popular books, TV shows and films that 
+                                            feature dragons include the Harry Potter series, Game of Thrones 
+                                            and other fantasy and fairy tale stories.
+                                            <br><br>
+                                            <strong>View the original:</strong>
+                                            You can view the dragon illustration in the British Library’s 
+                                            digitised bestiary <a href="http://www.bl.uk/turning-the-pages/?id=32841b35-03d4-40d5-a218-0e9effb1843a&type=book" 
+                                            target="_blank"> Royal MS 12 C. xix</a>
+                                             on Folios 61v - 62.
+                                    </div>
+                                </div>
                         </div>
                 </div>
                 <!----------------------------------------------------------------------------------->
@@ -1759,40 +2964,133 @@
                     <!-- Modal content -->
                         <div class="modal-contentP">
                             <span class="close" onclick="closeModal()">&times;</span>
-                            <p><strong>The Phoenix</strong><br><br>
-                                NEED TO ADD PHOENIX BESTIARY PROFILE HERE<br><br>
-                                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
-                                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
-                                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
-                                voluptatem sequi nesciunt. 
-                                <br><br>
-                                <img src="phoenixOrg.jpg" alt="Dragon">
-                                <br><br>
-                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
-                                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et 
-                                dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum 
-                                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
-                                consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse 
-                                quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla 
-                                pariatur?"
-                            </p>
+                            <div class = "modalContentAnimal">
+                                    <div>
+                                        <img src="orgSketches/phoenixOrg.jpg" class = "modalImgAnimal" alt="Phoenix">
+                                    </div>
+                                    <div class = "modalTextAnimal">
+                                            <div class = "modalHead">The Phoenix</div><br>
+                                            The phoenix is a creature known in many ancient stories and has many 
+                                            variations. In medieval bestiaries, the Phoenix has two main stories 
+                                            it is known by: one story is that the phoenix lives in India, goes 
+                                            to a Frankincense tree for the spice and is reborn from flames from 
+                                            an altar in Heliopolis as a worm before growing back into a phoenix.
+                                             The other story is explores how the phoenix is from Arabia and how
+                                              there is only one phoenix in the world at any one time.
+                                              <br><br>
+                                            The phoenix’s rebirth from flames signifies Jesus Christ’s 
+                                            resurrection after his crucifixion. 
+                                            <br><br>
+                                            <strong>Real or Mythical?</strong><br>
+                                            This creature is mythical!<br>
+                                            Just like its representation in medieval bestiaries, phoenix’s 
+                                            continue to be associated with rebirth and regeneration. They are 
+                                            popular creatures in fantasy genres and popular culture. Popular 
+                                            references to and of phoenix’s include: Fawkes the phoenix from the 
+                                            Harry Potter series and X-Men comic book character Jean Grey 
+                                            (Phoenix/Dark Phoenix).
+                                            <br><br>
+                                            <strong>View the original:</strong>
+                                            You can view the phoenix illustration in the British Library’s 
+                                            digitised bestiary <a href="http://www.bl.uk/turning-the-pages/?id=32841b35-03d4-40d5-a218-0e9effb1843a&type=book" 
+                                            target="_blank"> Royal MS 12 C. xix</a>
+                                             on Folios 49v - 50.
+                                    </div>
+                                </div>
                         </div>
                 </div>
                 <!----------------------------------------------------------------------------------->
                 <!------------------------ END PHOENIX INFORMATION MODAL ---------------------------->
                 <!----------------------------------------------------------------------------------->
 
+                <!----------------------------------------------------------------------------------->
+                <!----------------------------- HYDRUS INFORMATION MODAL ---------------------------->
+                <!----------------------------------------------------------------------------------->
+                <div id="myModalH" class="modalH">
+                        <!-- Modal content -->
+                            <div class="modal-contentH">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <div class = "modalContentAnimal">
+                                        <div>
+                                            <img src="orgSketches/hydrusOrg.JPG" class = "modalImgAnimal" alt="Hydrus">
+                                        </div>
+                                        <div class = "modalTextAnimal">
+                                                <div class = "modalHead">The Hydrus</div><br>
+                                                The hydrus is a water-based creature that lives in the Nile and 
+                                                is the enemy of crocodiles. In this illustration the hydrus can 
+                                                be seen destroying a crocodile with its tail hanging out of the
+                                                 crocodiles mouth, and its head coming through its stomach.
+                                                <br><br>
+                                                Within bestiaries, crocodiles are seen as an allegory for hell, 
+                                                where the hydrus represents Jesus Christ who goes to hell to 
+                                                bring back imprisoned souls.
+                                                <br><br>
+                                                <strong>Real or Mythical?</strong><br>
+                                                This creature is mythical!<br>
+                                                <br><br>
+                                                <strong>View the original:</strong>
+                                                You can view the hydrus illustration in the British Library’s 
+                                                digitised bestiary <a href="http://www.bl.uk/turning-the-pages/?id=32841b35-03d4-40d5-a218-0e9effb1843a&type=book" 
+                                                target="_blank"> Royal MS 12 C. xix</a>
+                                                 on Folios 12v - 13.
+                                        </div>
+                                    </div>
+                            </div>
+                    </div>
+                    <!----------------------------------------------------------------------------------->
+                    <!------------------------- END HYDRUS INFORMATION MODAL ---------------------------->
+                    <!----------------------------------------------------------------------------------->
+
+
+                <!----------------------------------------------------------------------------------->
+                <!--------------------------- BASILISK INFORMATION MODAL ---------------------------->
+                <!----------------------------------------------------------------------------------->
+                <div id="myModalB" class="modalB">
+                        <!-- Modal content -->
+                            <div class="modal-contentB">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <div class = "modalContentAnimal">
+                                        <div>
+                                            <img src="orgSketches/basiliskOrg.jpg" class = "modalImgAnimal" alt="Basilisk">
+                                        </div>
+                                        <div class = "modalTextAnimal">
+                                                <div class = "modalHead">The Basilisk</div><br>
+                                                While the basilisk in modern popular culture is depicted more as 
+                                                a snake or serpent, in many medieval bestiaries, it is shown as 
+                                                a creature with the body of a rooster and the tail of a snake. 
+                                                In the British Library’s Royal MS 12 C. xix, there are several 
+                                                creatures associated with the basilisk as part of the ‘serpent’ 
+                                                genus, including the Regulus and Sibilis. 
+                                                <br><br>
+                                                <strong>Real or Mythical?</strong><br>
+                                                This creature is mythical!<br>
+                                                The basilisk is a combination of a rooster’s body with a snake’s 
+                                                tail. A recent depiction of a basilisk in pop-culture is the 
+                                                basilisk from the Harry Potter and the Chamber of Secrets 
+                                                (book and film).
+                                                <br><br>
+                                                <strong>View the original:</strong>
+                                                You can view the hydrus illustration in the British Library’s 
+                                                digitised bestiary <a href="http://www.bl.uk/turning-the-pages/?id=32841b35-03d4-40d5-a218-0e9effb1843a&type=book" 
+                                                target="_blank"> Royal MS 12 C. xix</a>
+                                                 on Folios 62v - 63.
+                                        </div>
+                                    </div>
+                            </div>
+                    </div>
+                    <!----------------------------------------------------------------------------------->
+                    <!------------------------- END BASILISK INFORMATION MODAL -------------------------->
+                    <!----------------------------------------------------------------------------------->
 
             </div>
             <!------------- ENGLISH SCRIPT NAVIGATION BUTTONS------------------------>    
             <div id="navigation" class = "prologue" class = "buttonp1">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
                     <button id = "navigationButton" onclick="enterDragon(); lightbox_openD()">DRAGON</button>
-                    <button id = "navigationButton" onclick="enterHydrus()">#HYDRUS</button>
+                    <button id = "navigationButton" onclick="enterHydrus(); lightbox_openH()">HYDRUS</button>
                     <button id = "navigationButton" onclick="enterUnicorn(); lightbox_openU()">UNICORN</button>
-                    <button id = "navigationButton" onclick="enterBasilisk()">#BASILISK</button>
-                    <button id = "navigationButton" onclick="enterPhoenix()">PHOENIX</button>
+                    <button id = "navigationButton" onclick="enterBasilisk(); lightbox_openB()">BASILISK</button>
+                    <button id = "navigationButton" onclick="enterPhoenix(); lightbox_openP()">PHOENIX</button>
             </div>
             
             <!------------------------------ UNICORN NAVIGATION----------------------->
@@ -2194,7 +3492,7 @@
                 <button id = "navigationButton" onclick="anotherListen()">Listen to another Man</button>
             </div>
 
-            <div id="navigation" class = "P4ba" class = "buttona1">
+            <div id="navigation" class = "continueText" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
                 <button id = "navigationButton" onclick="goTown()">Continue</button>
             </div>
@@ -2256,6 +3554,170 @@
             </div>
 
             <!------------------------------------------------------------------------->
+            <!----------------------------- HYDRUS NAVIGATION ------------------------->
+            <!------------------------------------------------------------------------->
+            <div id="navigation" class = "H1" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="travelEgypt()">Egypt</button>
+                    <button id = "navigationButton" onclick="altPlan()">Alternative Plan</button>
+            </div>
+
+            <div id="navigation" class = "H2a" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goNile()">Nile</button>
+                    <button id = "navigationButton" onclick="goLandmarks()">Ancient Landmarks</button>
+                    <button id = "navigationButton" onclick="goMarkets()">Markets</button>
+            </div>
+
+            <div id="navigation" class = "H2b" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+
+            <div id="navigation" class = "H3aa" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="waitRiver()">Wait byRiver</button>
+                    <button id = "navigationButton" onclick="borrowBoat()">Borrow Boat</button>
+                    <button id = "navigationButton" onclick="stealBoat(); toggleHydrus()">Steal Boat</button>
+            </div>
+
+            <div id="navigation" class = "H3ab" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+
+            <div id="navigation" class = "H3ac" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+
+            <div id="navigation" class = "H4aaa" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+
+            <div id="navigation" class = "H4aab" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+
+            <div id="navigation" class = "H4aac" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+
+            <!------------------------------------------------------------------------->
+            <!----------------------------- BASILISK NAVIGATION ----------------------->
+            <!------------------------------------------------------------------------->
+            <div id="navigation" class = "B1" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="wanderForest()">Wander Forest</button>
+                    <button id = "navigationButton" onclick="chickenCoop()">Chicken Coop</button>
+                    <button id = "navigationButton" onclick="grotto()">Grotto</button>
+            </div>
+
+            <div id="navigation" class = "B2a" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="abandonWeasel()">Abandon Weasel</button>
+                    <button id = "navigationButton" onclick="raisePet()">Raise as Pet</button>
+            </div>
+
+            <div id="navigation" class = "B2b" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="markets()">Market</button>
+                    <button id = "navigationButton" onclick="maids()">Maids</button>
+            </div>
+
+            <div id="navigation" class = "B2c" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="seEntry()">South-East</button>
+                    <button id = "navigationButton" onclick="nwEntry()">North-West</button>
+            </div>
+
+            <div id="navigation" class = "B3aa" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+
+            <div id="navigation" class = "B3ab" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="sellWeasel()">Sell Weasel</button>
+                    <button id = "navigationButton" onclick="joinCircus()">Join Circus</button>
+            </div>
+
+            <div id="navigation" class = "B3ba" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick = "wanderForest()">Return to Forest</button>
+                    <button id = "navigationButton" onclick = "grotto()">Go to Grotto</button>
+
+            </div>
+
+            <div id="navigation" class = "B3bb" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick = "markets()">The Market</button>
+                    <button id = "navigationButton" onclick = "goArid()">Arid Lands</button>
+
+            </div>
+
+            <div id="navigation" class = "B3ca" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick = "enterBasilisk()">Start Again</button>
+            </div>
+
+            <div id="navigation" class = "B3cb" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick = "goRiver()">River Country</button>
+                    <button id = "navigationButton" onclick = "goArid()">Arid Lands</button>
+            </div>
+
+            <div id="navigation" class = "B4aba" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+
+            <div id="navigation" class = "B4abb" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="onLeash()">On Leash</button>
+                    <button id = "navigationButton" onclick="offLeash()">Off Leash</button>
+            </div>
+
+            <div id="navigation" class = "B4cba" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+
+            <div id="navigation" class = "B4cbb" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="shooWeasel()">Shoo Weasel</button>
+                    <button id = "navigationButton" onclick="giveWater()">Give Water</button>
+            </div>
+
+            <div id="navigation" class = "B5abba" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+
+            <div id="navigation" class = "B5abbb" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="endBasilisk(); toggleBasilisk()">Basilisk</button>
+            </div>
+
+            <div id="navigation" class = "B5cbba" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+
+            <div id="navigation" class = "B5cbbb" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="endBasilisk(); toggleBasilisk()">Basilisk</button>
+            </div>
+
+            <div id="navigation" class = "endB" class = "buttona1">
+                    <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                    <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+            </div>
+
+            <!------------------------------------------------------------------------->
             <!---////////////////////////////////////////////////////////////////////-->
             <!----------------- ENGLISH SCRIPT SCORE UPDATE----------------------------> 
             <div id="score">
@@ -2280,23 +3742,49 @@
 
         
 
-        <!------------------------------------------------------------------>
-        <!-------------------START MANDARIN LANGUAGE DIV-------------------->
-        <!------------------------------------------------------------------>
+        <!----------------------------------------------------------------------------------------------->
+        <!---------------------------------- START MANDARIN LANGUAGE DIV -------------------------------->
+        <!----------------------------------------------------------------------------------------------->
         <div id = "mandarinScript"> 
                 <div class="container">
                     <div class = "title">
-                        <h1>本节将以中文讲</h1>
+                        <font size = "30">本节将以中文讲</font><br>
+                        <font size = "5">Read along. Decide your path. Document five fantastical creatures to complete the 
+                                adventure.</font>
                     </div>
-                    <div class = "subTitle">  
-                        <h2>这次用普通话讲了一个“选择自己的冒险”故事</h2>
-                    </div>
+                    
                     <div class = "content">
-                        <div id="pathway">
-                            Which paths have you chosen to get here?
-                            No content in here at the moment...
-                            
+                    <div id="pathway">
+                            <div class = "pathwaySec">
+                                    Encountered Creatures
+                            </div>   
+                <!------------------------------------------------------------------>
+                <!--------------------- ENCOUNTERED CREATURES----------------------->
+                <!------------------------------------------------------------------>
+                <div id = "encountered">
+                        <div class = "inventoryText"></div>
+                        <div id = "tigerInv"></div>
+                        <div id = "weaselInv"></div>
+                        <div id = "pantherInv"></div>
+                        <div id = "ostrichInv"></div>
+                        <div id = "elephantInv"></div>
+                    </div>               
+                    </div>
+
+
+                <div class="container">
+            
+                <div id = "bodytext" class = "prologueM">
+                        <div class = "paraTitle">
+                                故事介绍
                         </div>
+                        </p>
+                        <p>你收到一封来自远方的神秘叔叔菲利普·德·索恩的信，他向你布置了一项非常重要的任务。他毕生的工作就是对神奇动物进行分类。然而，在他年老的时候，他追捕这些野兽的能力已经减弱了。他命令你继续他的工作:记录他名单上剩下的生物。菲利普叔叔给你的首要建议，以及一路上你所获得的线索，将会引导你去追踪这些生物。在游戏结束时，你已经用你一路上收集到的所有信息写了一个你自己的动物寓言(原始资料)。
+                        </p>
+                </div>
+
+
+
 
 <!-------------------------------------------------------------------------------------------------------------------->
 <!------------------------------------ BEGIN DRAGON NARRATIVE (MANDARIN) --------------------------------------------->
@@ -2345,24 +3833,43 @@
                                 <p>现在我们的角色会发生什么？谁知道。没人会
                                 </p>
                         </div>
-                        <div id = "bodytext" class = "winM">
-                                <p><strong>YOU HAVE WON THE GAME</strong> <br>
-                                    恭喜。去晒太阳，享受动物的陪伴。 
-                                </p>
-                                <p>Well....you're the champion.....go and CELEBRATE GOOD TIMES ! 
-                                </p>
-                        </div>
-                        <div id = "bodytext" class = "loseM">
-                                <p><strong>Aw no. Aw no. Aw no. THE GAME IS LOST</strong> <br>
-                                    除了抱歉，今天不是您的日子，我真的不知道该说些什么。 
-                                </p>
-                                <p>Well....what else do you want me to say here....you lost....
-                                </p>
-                        </div>
+                        
+                        
         
-                        <div id = "inventory">
-                            <p>The inventory will display here</p>
+                <!------------------------------------------------------------------>
+                <!------------------------- INVENTORY------------------------------->
+                <!------------------------------------------------------------------>
+                <div id = "inventory">
+                        <div class = "inventoryText">
+                            
                         </div>
+                        <div id = "basiliskInv">
+                            <img id = "basiliskInvT" class = "top" src="creatureSketches/basiliskC_c.png" onclick = "basiliskModal()" alt="The Basilisk, a flying animal with 
+                                large wings and a long neck. Colourised image.">
+                            <img id = "basiliskInvB" class = "bottom" src="creatureSketches/basiliskB.png" alt="The Basilisk, a flying animal with 
+                                large wings and a long neck. Black and white image.">
+                            
+                        </div>
+                        <div id = "dragonInv">
+                            <img id = "dragonInvT" src="creatureSketches/dragonC_c.png" onclick = "dragonModal()" alt="The Dragon, a flying reptilian animal. Colourised.">
+                            <img id = "dragonInvB" src="creatureSketches/dragonB.png" alt="The Dragon, a flying reptilian animal. Black and white.">
+                        </div>
+                        <div id = "phoenixInv">
+                            <img id = "phoenixInvT" src="creatureSketches/phoenixC1.png" onclick = "phoenixModal()" alt="The Phoenix, a brightly coloured flying animal. Colourised.">
+                            <img id = "phoenixInvB" src="creatureSketches/phoenixB1.png" alt="The Phoenix, a brightly coloured flying animal. Black and white.">
+                        </div>
+                        <div id = "hydrusInv">
+                            <img id = "hydrusInvT" src="creatureSketches/hydrusC_c.png" onclick = "hydrusModal()" alt="The Hydrus. Colourised.">
+                            <img id = "hydrusInvB" src="creatureSketches/hydrusB.png" alt="The Hydrus. Black and white.">
+                        </div>
+                        <div id = "unicornInv">
+                            <img id = "unicornInvT" src="creatureSketches/unicornC_c.png" onclick = "unicornModal()" alt="The Unicorn. Colourised.">
+                            <img id = "unicornInvB" src="creatureSketches/unicornB.png" alt="The Unicorn. Black and white.">
+                        </div>
+                    </div>
+                    <!---------------------------------------------------------------------------------------->
+                    <!---------------------------------------- END INVENTORY --------------------------------->
+                    <!---------------------------------------------------------------------------------------->
         
                     </div>            
                     <div id="navigationM" class = "pa1M">
@@ -2396,8 +3903,9 @@
                 </div>
             </div>
 
-
-        <!--END MANDARIN LANGUAGE DIV-->
+        <!---------------------------------------------------------------------------------------->
+        <!----------------------------- END MANDARIN LANGUAGE DIV -------------------------------->
+        <!---------------------------------------------------------------------------------------->
         <script src="scripts.js"></script>
         <script src="scriptsM.js"></script>
     </body>

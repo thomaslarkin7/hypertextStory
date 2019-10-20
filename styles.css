@@ -6,14 +6,14 @@ body{
 #loadOverlay{
     position: fixed;
     display: block;
-    width: auto;
+    width: 100%;
     height: auto;
     text-align: center;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.990);
+    background-color: #0f0f0f;
     z-index: 1;
 }
 
@@ -45,13 +45,13 @@ body{
     position: absolute;
     width: 100%;
     height: 30%;
-    top: 40vh;
+    top: 50vh;
 }
 
 .imgBannerCol{
     
     float: left;
-    width: 19.5%;
+    width: 19.0%;
     height: 100%;
     
 }
@@ -119,6 +119,51 @@ body{
     display: none;
 }
 
+/* Modal Content About the Bestiary (AB)*/
+.modalAB{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 10vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content About the Bestiary*/
+.modal-contentAB {
+    background-color: #707070;
+    background-image: url("https://www.transparenttextures.com/patterns/textured-paper.png");
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: black;
+    text-align: justify;
+    margin: auto;
+    padding: 15px;
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 60%;
+    max-height: calc(100vh - 30vh);
+    overflow-y: auto;
+}
+
+.modalContentABTitle{
+    font-family: 'Alegreya', serif;
+    font-size: 35px;
+}
+
+img.bestiaryIMG{
+    position: relative;
+    width: 50%;
+    display:block;
+    margin:auto;
+}
+
+
 .modal{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -144,6 +189,7 @@ body{
     width: 60%;
 }
 
+/* Modal Content Unicorn*/
 .modalU{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -158,7 +204,7 @@ body{
     background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 }
 
-/* Modal Content */
+/* Modal Content Unicorn*/
 .modal-contentU {
     background-color: #fefefe;
     font-family: 'Lato', sans-serif;
@@ -172,6 +218,7 @@ body{
     overflow-y: auto;
 }
 
+/* Modal Content Dragon*/
 .modalD{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -186,7 +233,7 @@ body{
     background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 }
 
-/* Modal Content */
+/* Modal Content Dragon*/
 .modal-contentD {
     background-color: #fefefe;
     font-family: 'Lato', sans-serif;
@@ -215,7 +262,7 @@ body{
     background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 }
 
-/* Modal Content */
+/* Modal Content Phoenix */
 .modal-contentP {
     background-color: #fefefe;
     font-family: 'Lato', sans-serif;
@@ -228,6 +275,234 @@ body{
     max-height: calc(100vh - 30vh);
     overflow-y: auto;
 }
+
+/*MODAL Content Hydrus*/
+.modalH{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 10vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content Hydrus */
+.modal-contentH {
+    background-color: #fefefe;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    margin: auto;
+    padding: 15px;
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 60%;
+    max-height: calc(100vh - 30vh);
+    overflow-y: auto;
+}
+
+
+/*MODAL Content Basilisk*/
+.modalB{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 10vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content Basilisk */
+.modal-contentB {
+    background-color: #fefefe;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    margin: auto;
+    padding: 15px;
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 60%;
+    max-height: calc(100vh - 30vh);
+    overflow-y: auto;
+}
+
+.modalHead{
+    font-family: 'Alegreya', serif;
+    padding: 1vh;
+    font-size: 30px;
+}
+
+.modalImgAnimal{
+    float: left;
+    width: 50%;
+}
+
+.modalTextAnimal{
+    float: right;
+    padding: 2vh;
+    width: 45%;
+}
+
+
+
+
+/*MODAL Content Tiger*/
+.modalT{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 10vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content Tiger */
+.modal-contentT {
+    background-color: #fefefe;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    margin: auto;
+    padding: 15px;
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 75%;
+    max-height: calc(100vh - 30vh);
+    overflow-y: auto;
+}
+
+/*MODAL Content Weasel*/
+.modalW{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 10vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content Weasel */
+.modal-contentW {
+    background-color: #fefefe;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    margin: auto;
+    padding: 15px;
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 75%;
+    max-height: calc(100vh - 30vh);
+    overflow-y: auto;
+}
+
+/*MODAL Content Panther*/
+.modalPth{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 10vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content Panther */
+.modal-contentPth {
+    background-color: #fefefe;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    margin: auto;
+    padding: 15px;
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 75%;
+    max-height: calc(100vh - 30vh);
+    overflow-y: auto;
+}
+
+/*MODAL Content Ostrich*/
+.modalO{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 10vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content Ostrich */
+.modal-contentO {
+    background-color: #fefefe;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    margin: auto;
+    padding: 15px;
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 75%;
+    max-height: calc(100vh - 30vh);
+    overflow-y: auto;
+}
+
+/*MODAL Content Elephant*/
+.modalE{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 10vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content Elephant */
+.modal-contentE {
+    background-color: #fefefe;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    margin: auto;
+    padding: 15px;
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 75%;
+    max-height: calc(100vh - 30vh);
+    overflow-y: auto;
+}
+
+
+
+
 
 /* The Close Button */
 .close {
@@ -248,16 +523,39 @@ body{
     padding: 0vh;
     margin-left: auto;
     margin-right: auto;
-    border: solid black;
+   
 }
 
 .title {  
     font-family: 'Alegreya', serif;
-    color: black;
-    background-color: rgb(243, 184, 184);
-    height: 16vh;
+    color: white;
+    background-color: rgb(29, 29, 28);
+   
+    height: 20vh;
     text-align: center;
 }  
+
+#bestiaryButton{
+    position: relative;
+    font-family: 'Alegreya', serif;
+    margin: 0 auto;
+    color: black;
+    background-color: #755c3d;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+    border: 4px solid rgb(125, 32, 11);
+    font-size: 24px;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#bestiaryButton:hover {
+    background-color: #000000;
+    border: 5px solid white;
+    color: white;
+  }
+
+
 .subtitle { 
     font-family: 'Alegreya', serif; 
     font-size: 25px;
@@ -276,31 +574,159 @@ body{
 }
 
 #pathway{
+    position: relative;
     float: left;
+    font-family: 'Lato', sans-serif;
     padding: 1vh;
     width: 18%;
     color: white;
-    font-style: bold;
-    border: solid yellow;
+    font-size: 20px;
+    height: 54vh;
+}
+
+#tigerEnc{
+    position: absolute;
+    top: 15%;
+    height: 25%;
+    width: 95%;
+}
+
+#tigerEncT{
+    position: absolute;
+    right: 25%;
+    width: 80%;
+    top:-70%;
+}
+
+#tigerEncT:hover{
+    -webkit-transition: all 0.05s linear;
+    transition: all 0.05s linear;
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+#weaselEnc{
+    position: absolute;
+    top: 35%;
+    height: 25%;
+    width: 95%;
+}
+
+#weaselEncT{
+    position: absolute;
+    left: 35%;
+    width: 70%;
+    top:-80%;
+}
+
+#weaselEncT:hover{
+    -webkit-transition: all 0.05s linear;
+    transition: all 0.05s linear;
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+#pantherEnc{
+    position: absolute;
+    height: 25%;
+    top: 55%;
+    width: 95%;
+}
+
+#pantherEncT{
+    position: absolute;
+    right: 35%;
+    width: 70%;
+    top:-80%;
+}
+
+#pantherEncT:hover{
+    -webkit-transition: all 0.05s linear;
+    transition: all 0.05s linear;
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+#ostrichEnc{
+    position: absolute;
+    height: 25%;
+    top: 75%;
+    width: 95%;
+}
+
+#ostrichEncT{
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    top:-80%;
+}
+
+#ostrichEncT:hover{
+    -webkit-transition: all 0.05s linear;
+    transition: all 0.05s linear;
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+#elephantEnc{
+    position: absolute;
+    top: 85%;
+    height: 25%;
+    width: 95%;
+}
+
+#elephantEncT{
+    position: absolute;
+    right: 45%;
+    width: 60%;
+    top:-65%;
+}
+
+#elephantEncT:hover{
+    -webkit-transition: all 0.05s linear;
+    transition: all 0.05s linear;
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+.paraTitle{
+    font-family: 'Alegreya', serif;
+    font-size: 45px;
+}
+
+.narrAudio{
+    float: right;
+    padding: 10px;
+}
+
+.pathwaySec{
+    font-family: 'Alegreya', serif;
+    font-size: 25px;
 }
 
 #bodytext{
     float: left;
     font-size:18px;
-    width: 58%;
+    width: 56%;
     height: 56vh;
     overflow: auto;
     padding: 0px 8px 0px 8px;
-    background-color: rgb(224, 224, 224);
+    background-color: #707070;
+    background-image: url("https://www.transparenttextures.com/patterns/textured-paper.png");
+    /*background-color: rgb(224, 224, 224);  */
     border-radius: 15px;
     border: solid 5px rgb(0, 0, 0);
 }
+
+
 
 .videoEmbed{
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
+
+
 
 #inventory{
     position: relative;
@@ -309,6 +735,12 @@ body{
     height: 54vh;
     width: 18%;
     /* border: solid blueviolet;   */
+}
+
+.inventoryText{
+    font-family: 'Alegreya', serif;
+    color: white;
+    font-size: 25px;
 }
 
 #basiliskInv{
@@ -329,6 +761,14 @@ body{
     width: 80%;
     top:-50%;
 }
+
+#basiliskInvT:hover{
+    -webkit-transition: all 0.05s linear;
+    transition: all 0.05s linear;
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+
 
 .m-fadeOut {
     visibility: hidden;
@@ -414,6 +854,99 @@ body{
     z-index: 1002;
     overflow: visible;
   }
+
+  
+  /*HYDRUS POPUP BEGINNING*/
+#fadeH {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .93;
+    filter: alpha(opacity=80);
+  }
+  
+  #lightH {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 600px;
+    max-height: 360px;
+    margin-left: -300px;
+    margin-top: -180px;
+    border: 2px solid #FFF;
+    background: #FFF;
+    z-index: 1002;
+    overflow: visible;
+  }
+
+
+   /*BASILISK POPUP BEGINNING*/
+#fadeB {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .93;
+    filter: alpha(opacity=80);
+  }
+  
+  #lightB {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 600px;
+    max-height: 360px;
+    margin-left: -300px;
+    margin-top: -180px;
+    border: 2px solid #FFF;
+    background: #FFF;
+    z-index: 1002;
+    overflow: visible;
+  }
+
+     /*PHOENIX POPUP BEGINNING*/
+#fadeP {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .93;
+    filter: alpha(opacity=80);
+  }
+  
+  #lightP {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 600px;
+    max-height: 360px;
+    margin-left: -300px;
+    margin-top: -180px;
+    border: 2px solid #FFF;
+    background: #FFF;
+    z-index: 1002;
+    overflow: visible;
+  }
+  
   
   
   #boxclose {
@@ -520,6 +1053,13 @@ body{
     top:-50%;
 }
 
+#hydrusInvT:hover{
+    -webkit-transition: all 0.05s linear;
+    transition: all 0.05s linear;
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+
 #unicornInv{
     position: absolute;
     top: 75%;
@@ -617,7 +1157,6 @@ body{
 .D6ccbaa{display:none;}
 .D6ccbab{display:none;}
 .D6ccbac{display:none;}
-
 .D6acbab{display:none;}
 .D7acbaba{display:none;}
 .D7acbabb{display:none;}
@@ -637,6 +1176,7 @@ body{
 .P3ab{display:none;}
 .P3ac{display:none;}
 .P3bc{display:none;}
+.continueText{display:none;}
 .P4ba{display:none;}
 .P4aca{display:none;}
 .P4acb{display:none;}
@@ -647,12 +1187,45 @@ body{
 .win{display: none;}
 .lose{display: none;}
 
-/*Mandarin Text Display*/
-.pa1M{display: block;}
+/*HYDRUS DISPLAY*/
+.H1{display:none;}
+.H2a{display:none;}
+.H2b{display:none;}
+.H3aa{display:none;}
+.H3ab{display:none;}
+.H3ac{display:none;}
+.H4aaa{display:none;}
+.H4aab{display:none;}
+.H4aac{display:none;}
+
+/*BASILISK DISPLAY*/
+.B1{display: none;}
+.B2a{display: none;}
+.B2b{display: none;}
+.B2c{display: none;}
+.B3aa{display: none;}
+.B3ab{display: none;}
+.B3ba{display: none;}
+.B3bb{display: none;}
+.B3ca{display: none;}
+.B3cb{display: none;}
+.B4aba{display: none;}
+.B4abb{display: none;}
+.B4cba{display: none;}
+.B4cbb{display: none;}
+.B5abba{display: none;}
+.B5abbb{display: none;}
+.B5cbba{display: none;}
+.B5cbbb{display: none;}
+.endB{display: none;}
+
+/*-------------------------------------------------------------------------*/
+/*--------------------- Mandarin Text Display -----------------------------*/
+/*-------------------------------------------------------------------------*/
+.prologueM{display:block;}
+.pa1M{display: none;}
 .pa2M{display: none;}
 .pa3M{display: none;}
-.winM{display: none;}
-.loseM{display: none;}
 
 
 
@@ -664,8 +1237,7 @@ body{
     vertical-align: middle;
     padding: 0vh 0vh 0vh 0vh;
     height: 6vh;
-    background-color: pink;
-    border: solid brown;
+
 }
 
 #navigationC{
@@ -719,7 +1291,6 @@ body{
     font-weight: bold;
     color: rgb(226, 226, 226);
     clear: both;
-    border: solid rgb(235, 229, 230);
     height: 2.5vh;
     padding: 1vh;
 }
@@ -779,7 +1350,6 @@ body{
     font-size: 15px;
     clear: both;
     color: rgb(250, 250, 250);
-    border: 2px solid turquoise;
     padding: 1vh;
     height: 3.5vh;
 }

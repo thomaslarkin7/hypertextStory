@@ -44,10 +44,18 @@ function modalPopup(){
 }
 
 function closeModal(){
-    document.getElementById("myModal").style.display = "none"; //show the modal on button click
-    document.getElementById("myModalU").style.display = "none"; //show the modal on button click
-    document.getElementById("myModalD").style.display = "none"; //show the modal on button click
-    document.getElementById("myModalP").style.display = "none"; //show the modal on button click
+    document.getElementById("myModal").style.display = "none"; //close the modal on button click
+    document.getElementById("myModalU").style.display = "none"; //close the modal on button click
+    document.getElementById("myModalD").style.display = "none"; //close the modal on button click
+    document.getElementById("myModalP").style.display = "none"; //close the modal on button click
+    document.getElementById("myModalH").style.display = "none"; //close the modal on button click
+    document.getElementById("myModalB").style.display = "none"; //close the modal on button click
+    document.getElementById("myModalT").style.display = "none"; //close the modal on button click
+    document.getElementById("myModalW").style.display = "none"; //close the modal on button click
+    document.getElementById("myModalPth").style.display = "none"; //close the modal on button click
+    document.getElementById("myModalO").style.display = "none"; //close the modal on button click
+    document.getElementById("myModalE").style.display = "none"; //close the modal on button click
+    document.getElementById("myModalAB").style.display = "none"; //close the modal on button click
 }
 
 //Toggle Opacity of the Basilisk Image
@@ -90,23 +98,59 @@ function toggleUnicorn(){
     imgUT.classList.toggle("m-fadeIn");
 }
 
+//Toggle Behind the Bestiary MODAL
+function behindBestiary(){
+    document.getElementById("myModalAB").style.display = "block"; //show the modal on button click
+}
+
 //Toggle UNICORN MODAL
 function unicornModal(){
     document.getElementById("myModalU").style.display = "block"; //show the modal on button click
 }
-
-
 
 //Toggle DRAGON MODAL
 function dragonModal(){
     document.getElementById("myModalD").style.display = "block"; //show the modal on button click
 }
 
-
-
 //Toggle PHOENIX MODAL
 function phoenixModal(){
     document.getElementById("myModalP").style.display = "block"; //show the modal on button click
+}
+
+//Toggle HYDRUS MODAL
+function hydrusModal(){
+    document.getElementById("myModalH").style.display = "block"; //show the modal on button click
+}
+
+//Toggle HYDRUS MODAL
+function basiliskModal(){
+    document.getElementById("myModalB").style.display = "block"; //show the modal on button click
+}
+
+//Toggle TIGER MODAL
+function tigerModal(){
+    document.getElementById("myModalT").style.display = "block"; //show the modal on button click
+}
+
+//Toggle WEASEL MODAL
+function weaselModal(){
+    document.getElementById("myModalW").style.display = "block"; //show the modal on button click
+}
+
+//Toggle PANTHER MODAL
+function pantherModal(){
+    document.getElementById("myModalPth").style.display = "block"; //show the modal on button click
+}
+
+//Toggle OSTRICH MODAL
+function ostrichModal(){
+    document.getElementById("myModalO").style.display = "block"; //show the modal on button click
+}
+
+//Toggle ELEPHANT MODAL
+function elephantModal(){
+    document.getElementById("myModalE").style.display = "block"; //show the modal on button click
 }
 
 
@@ -189,6 +233,32 @@ function goPrologue() {
     //document.getElementsByClassName("bodyTextU")[0].style.display="none";
     //document.getElementsByClassName("bodyTextU")[1].style.display="none";
     //console.log("here we are");
+    document.getElementsByClassName("H2b")[0].style.display="none";
+    document.getElementsByClassName("H2b")[1].style.display="none";
+    document.getElementsByClassName("H3ab")[0].style.display="none";
+    document.getElementsByClassName("H3ab")[1].style.display="none";
+    document.getElementsByClassName("H3ac")[0].style.display="none";
+    document.getElementsByClassName("H3ac")[1].style.display="none";
+    document.getElementsByClassName("H4aaa")[0].style.display="none";
+    document.getElementsByClassName("H4aaa")[1].style.display="none";
+    document.getElementsByClassName("H4aab")[0].style.display="none";
+    document.getElementsByClassName("H4aab")[1].style.display="none";
+    document.getElementsByClassName("H4aac")[0].style.display="none";
+    document.getElementsByClassName("H4aac")[1].style.display="none";
+
+    document.getElementsByClassName("B3aa")[0].style.display="none";
+    document.getElementsByClassName("B3aa")[1].style.display="none";
+    document.getElementsByClassName("B4aba")[0].style.display="none";
+    document.getElementsByClassName("B4aba")[1].style.display="none";
+    document.getElementsByClassName("B5abba")[0].style.display="none";
+    document.getElementsByClassName("B5abba")[1].style.display="none";
+    document.getElementsByClassName("B4cba")[0].style.display="none";
+    document.getElementsByClassName("B4cba")[1].style.display="none";
+    document.getElementsByClassName("B5cbba")[0].style.display="none";
+    document.getElementsByClassName("B5cbba")[1].style.display="none";
+    document.getElementsByClassName("endB")[0].style.display="none";
+    document.getElementsByClassName("endB")[1].style.display="none";
+
     document.getElementsByClassName("prologue")[0].style.display="block";
     document.getElementsByClassName("prologue")[1].style.display="block";
 }
@@ -259,6 +329,7 @@ function lightbox_openD() {
     document.getElementById('lightD').style.display = 'none';
     document.getElementById('fadeD').style.display = 'none';
     lightBoxVideoD.pause();
+    lightBoxVideoD.currentTime = 0;
   }
 
   function lightbox_openU() {
@@ -268,6 +339,54 @@ function lightbox_openD() {
     document.getElementById('fadeU').style.display = 'block';
     lightBoxVideoU.play();
   }
+
+  function lightbox_openH() {
+    var lightBoxVideoH = document.getElementById("hydrusBeginning");
+    window.scrollTo(0, 0);
+    document.getElementById('lightH').style.display = 'block';
+    document.getElementById('fadeH').style.display = 'block';
+    lightBoxVideoH.play();
+  }
+
+  function lightbox_openB() {
+    var lightBoxVideoB = document.getElementById("basiliskBeginning");
+    window.scrollTo(0, 0);
+    document.getElementById('lightB').style.display = 'block';
+    document.getElementById('fadeB').style.display = 'block';
+    lightBoxVideoB.play();
+  }
+
+  function lightbox_closeB() {
+    var lightBoxVideoB = document.getElementById("basiliskBeginning");
+    document.getElementById('lightB').style.display = 'none';
+    document.getElementById('fadeB').style.display = 'none';
+    lightBoxVideoB.pause();
+    lightBoxVideoB.currentTime = 0;
+  }
+
+  function lightbox_closeH() {
+    var lightBoxVideoH = document.getElementById("hydrusBeginning");
+    document.getElementById('lightH').style.display = 'none';
+    document.getElementById('fadeH').style.display = 'none';
+    lightBoxVideoH.pause();
+    lightBoxVideoH.currentTime = 0;
+  }
+
+  function lightbox_openP() {
+    var lightBoxVideoP = document.getElementById("phoenixBeginning");
+    document.getElementById('lightP').style.display = 'block';
+    document.getElementById('fadeP').style.display = 'block';
+    lightBoxVideoP.play();
+  }
+
+  function lightbox_closeP() {
+    var lightBoxVideoP = document.getElementById("phoenixBeginning");
+    document.getElementById('lightP').style.display = 'none';
+    document.getElementById('fadeP').style.display = 'none';
+    lightBoxVideoP.pause();
+    lightBoxVideoP.currentTime = 0;
+    //lightBoxVideoP.play();
+  }
   
   function lightbox_close() {
     var lightBoxVideoD = document.getElementById("dragonBeginning");
@@ -276,13 +395,15 @@ function lightbox_openD() {
     document.getElementById('fadeU').style.display = 'none';
     lightBoxVideoD.pause();
     lightBoxVideoU.pause();
+    lightBoxVideoD.currentTime = 0;
+    lightBoxVideoU.currentTime = 0;
   }
 
 function enterHydrus(){
     document.getElementsByClassName("prologue")[0].style.display="none";
     document.getElementsByClassName("prologue")[1].style.display="none";
-    document.getElementsByClassName("endDragon")[0].style.display="none";
-    document.getElementsByClassName("endDragon")[1].style.display="none";
+    //document.getElementsByClassName("endDragon")[0].style.display="none";
+    //document.getElementsByClassName("endDragon")[1].style.display="none";
     document.getElementsByClassName("P5acca")[0].style.display="none";
     document.getElementsByClassName("P5acca")[1].style.display="none";
     document.getElementsByClassName("H1")[0].style.display="block";
@@ -292,8 +413,12 @@ function enterHydrus(){
 function enterBasilisk(){
     document.getElementsByClassName("prologue")[0].style.display="none";
     document.getElementsByClassName("prologue")[1].style.display="none";
-    document.getElementsByClassName("endDragon")[0].style.display="none";
-    document.getElementsByClassName("endDragon")[1].style.display="none";
+    document.getElementsByClassName("B3ca")[0].style.display="none";
+    document.getElementsByClassName("B3ca")[1].style.display="none";
+    //document.getElementsByClassName("H3ca")[0].style.display="none";
+    //document.getElementsByClassName("H3ca")[1].style.display="none";
+    //document.getElementsByClassName("endDragon")[0].style.display="none";
+    //document.getElementsByClassName("endDragon")[1].style.display="none";
     document.getElementsByClassName("P5acca")[0].style.display="none";
     document.getElementsByClassName("P5acca")[1].style.display="none";
     document.getElementsByClassName("B1")[0].style.display="block";
@@ -864,7 +989,7 @@ function goResurrection(){
     document.getElementsByClassName("P3ba")[0].style.display="block";
     document.getElementsByClassName("P3ba")[1].style.display="block";
     if (triggerR==0){triggerR = 1;}
-    if (triggerK == 1 && triggerD == 1 && triggerK == 1){
+    if (triggerK == 1 && triggerD == 1 && triggerR == 1){
         document.getElementsByClassName("P4ba")[0].style.display="block";
         //document.getElementsByClassName("continueIndia")[1].style.display="block";
     }
@@ -876,7 +1001,7 @@ function goDeath(){
     document.getElementsByClassName("P3bb")[0].style.display="block";
     document.getElementsByClassName("P3bb")[1].style.display="block";
     if (triggerD==0){triggerD = 1;}
-    if (triggerK == 1 && triggerD == 1 && triggerK == 1){
+    if (triggerK == 1 && triggerD == 1 && triggerR == 1){
         document.getElementsByClassName("P4ba")[0].style.display="block";
         //document.getElementsByClassName("continueIndia")[1].style.display="block";
     }
@@ -888,7 +1013,7 @@ function goKarma(){
     document.getElementsByClassName("P3bc")[0].style.display="block";
     document.getElementsByClassName("P3bc")[1].style.display="block";
     if (triggerK==0){triggerK = 1;}
-    if (triggerK == 1 && triggerD == 1 && triggerK == 1){
+    if (triggerK == 1 && triggerD == 1 && triggerR == 1){
         document.getElementsByClassName("P4ba")[0].style.display="block";
         //document.getElementsByClassName("continueIndia")[1].style.display="block";
     }
@@ -915,8 +1040,8 @@ function anotherListen(){
 function goContinue(){
     document.getElementsByClassName("P2b")[0].style.display="none";
     document.getElementsByClassName("P2b")[1].style.display="none";
-    document.getElementsByClassName("P4ba")[0].style.display="block";
-    document.getElementsByClassName("P4ba")[1].style.display="block";
+    document.getElementsByClassName("continueText")[0].style.display="block";
+    document.getElementsByClassName("continueText")[1].style.display="block";
 }
 
 function goFeathers(){
@@ -945,8 +1070,8 @@ function goTown(){
     document.getElementsByClassName("P2a")[1].style.display="none";
     document.getElementsByClassName("P3ab")[0].style.display="none";
     document.getElementsByClassName("P3ab")[1].style.display="none";
-    document.getElementsByClassName("P4ba")[0].style.display="none";
-    document.getElementsByClassName("P4ba")[1].style.display="none";
+    document.getElementsByClassName("continueText")[0].style.display="none";
+    document.getElementsByClassName("continueText")[1].style.display="none";
     document.getElementsByClassName("P3ac")[0].style.display="block";
     document.getElementsByClassName("P3ac")[1].style.display="block";
 }
@@ -994,6 +1119,217 @@ function choosePalace(){
 //----------------------------------------------------------------------------------------------
 //----------------------------- end phoenix narrative functions --------------------------------
 //----------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------------------------
+//------------------------------ start HYDRUS narrative functions ------------------------------
+//----------------------------------------------------------------------------------------------
+function travelEgypt(){
+    document.getElementsByClassName("H1")[0].style.display="none";
+    document.getElementsByClassName("H1")[1].style.display="none";
+    document.getElementsByClassName("H2a")[0].style.display="block";
+    document.getElementsByClassName("H2a")[1].style.display="block";
+}
+
+function altPlan(){
+    document.getElementsByClassName("H1")[0].style.display="none";
+    document.getElementsByClassName("H1")[1].style.display="none";
+    document.getElementsByClassName("H2b")[0].style.display="block";
+    document.getElementsByClassName("H2b")[1].style.display="block";
+}
+
+function goLandmarks(){
+    document.getElementsByClassName("H2a")[0].style.display="none";
+    document.getElementsByClassName("H2a")[1].style.display="none";
+    document.getElementsByClassName("H3ab")[0].style.display="block";
+    document.getElementsByClassName("H3ab")[1].style.display="block";
+}
+
+function goMarkets(){
+    document.getElementsByClassName("H2a")[0].style.display="none";
+    document.getElementsByClassName("H2a")[1].style.display="none";
+    document.getElementsByClassName("H3ac")[0].style.display="block";
+    document.getElementsByClassName("H3ac")[1].style.display="block";
+}
+
+function goNile(){
+    document.getElementsByClassName("H2a")[0].style.display="none";
+    document.getElementsByClassName("H2a")[1].style.display="none";
+    document.getElementsByClassName("H3aa")[0].style.display="block";
+    document.getElementsByClassName("H3aa")[1].style.display="block";
+}
+
+function waitRiver(){
+    document.getElementsByClassName("H3aa")[0].style.display="none";
+    document.getElementsByClassName("H3aa")[1].style.display="none";
+    document.getElementsByClassName("H4aaa")[0].style.display="block";
+    document.getElementsByClassName("H4aaa")[1].style.display="block";
+}
+
+function borrowBoat(){
+    document.getElementsByClassName("H3aa")[0].style.display="none";
+    document.getElementsByClassName("H3aa")[1].style.display="none";
+    document.getElementsByClassName("H4aab")[0].style.display="block";
+    document.getElementsByClassName("H4aab")[1].style.display="block";
+}
+
+function stealBoat(){
+    document.getElementsByClassName("H3aa")[0].style.display="none";
+    document.getElementsByClassName("H3aa")[1].style.display="none";
+    document.getElementsByClassName("H4aac")[0].style.display="block";
+    document.getElementsByClassName("H4aac")[1].style.display="block";
+}
+
+
+
+//----------------------------------------------------------------------------------------------
+//-------------------------------- end HYDRUS narrative functions ------------------------------
+//----------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------------------------
+//---------------------------- start BASILISK narrative functions ------------------------------
+//----------------------------------------------------------------------------------------------
+function wanderForest(){
+    document.getElementsByClassName("B1")[0].style.display="none";
+    document.getElementsByClassName("B1")[1].style.display="none";
+    document.getElementsByClassName("B3ba")[0].style.display="none";
+    document.getElementsByClassName("B3ba")[1].style.display="none";
+    document.getElementsByClassName("B2a")[0].style.display="block";
+    document.getElementsByClassName("B2a")[1].style.display="block";
+}
+
+function chickenCoop(){
+    document.getElementsByClassName("B1")[0].style.display="none";
+    document.getElementsByClassName("B1")[1].style.display="none";
+    document.getElementsByClassName("B2b")[0].style.display="block";
+    document.getElementsByClassName("B2b")[1].style.display="block";
+}
+
+function grotto(){
+    document.getElementsByClassName("B1")[0].style.display="none";
+    document.getElementsByClassName("B1")[1].style.display="none";
+    document.getElementsByClassName("B3ba")[0].style.display="none";
+    document.getElementsByClassName("B3ba")[1].style.display="none";
+    document.getElementsByClassName("B2c")[0].style.display="block";
+    document.getElementsByClassName("B2c")[1].style.display="block";
+}
+
+function abandonWeasel(){
+    document.getElementsByClassName("B2a")[0].style.display="none";
+    document.getElementsByClassName("B2a")[1].style.display="none";
+    document.getElementsByClassName("B3aa")[0].style.display="block";
+    document.getElementsByClassName("B3aa")[1].style.display="block";
+}
+
+function raisePet(){
+    document.getElementsByClassName("B2a")[0].style.display="none";
+    document.getElementsByClassName("B2a")[1].style.display="none";
+    document.getElementsByClassName("B3ab")[0].style.display="block";
+    document.getElementsByClassName("B3ab")[1].style.display="block";
+}
+
+function markets(){
+    document.getElementsByClassName("B2b")[0].style.display="none";
+    document.getElementsByClassName("B2b")[1].style.display="none";
+    document.getElementsByClassName("B3bb")[0].style.display="none";
+    document.getElementsByClassName("B3bb")[1].style.display="none";
+    document.getElementsByClassName("B3ba")[0].style.display="block";
+    document.getElementsByClassName("B3ba")[1].style.display="block";
+}
+
+function maids(){
+    document.getElementsByClassName("B2b")[0].style.display="none";
+    document.getElementsByClassName("B2b")[1].style.display="none";
+    document.getElementsByClassName("B3bb")[0].style.display="block";
+    document.getElementsByClassName("B3bb")[1].style.display="block";
+}
+
+function seEntry(){
+    document.getElementsByClassName("B2c")[0].style.display="none";
+    document.getElementsByClassName("B2c")[1].style.display="none";
+    document.getElementsByClassName("B3ca")[0].style.display="block";
+    document.getElementsByClassName("B3ca")[1].style.display="block";
+}
+
+function nwEntry(){
+    document.getElementsByClassName("B2c")[0].style.display="none";
+    document.getElementsByClassName("B2c")[1].style.display="none";
+    document.getElementsByClassName("B3cb")[0].style.display="block";
+    document.getElementsByClassName("B3cb")[1].style.display="block";
+}
+
+function sellWeasel(){
+    document.getElementsByClassName("B3ab")[0].style.display="none";
+    document.getElementsByClassName("B3ab")[1].style.display="none";
+    document.getElementsByClassName("B4aba")[0].style.display="block";
+    document.getElementsByClassName("B4aba")[1].style.display="block";
+}
+
+function joinCircus(){
+    document.getElementsByClassName("B3ab")[0].style.display="none";
+    document.getElementsByClassName("B3ab")[1].style.display="none";
+    document.getElementsByClassName("B4abb")[0].style.display="block";
+    document.getElementsByClassName("B4abb")[1].style.display="block";
+}
+
+function goRiver(){
+    document.getElementsByClassName("B3cb")[0].style.display="none";
+    document.getElementsByClassName("B3cb")[1].style.display="none";
+    document.getElementsByClassName("B4cba")[0].style.display="block";
+    document.getElementsByClassName("B4cba")[1].style.display="block";
+}
+
+function goArid(){
+    document.getElementsByClassName("B3cb")[0].style.display="none";
+    document.getElementsByClassName("B3cb")[1].style.display="none";
+    document.getElementsByClassName("B3bb")[0].style.display="none";
+    document.getElementsByClassName("B3bb")[1].style.display="none";
+    document.getElementsByClassName("B4cbb")[0].style.display="block";
+    document.getElementsByClassName("B4cbb")[1].style.display="block";
+}
+
+function onLeash(){
+    document.getElementsByClassName("B4abb")[0].style.display="none";
+    document.getElementsByClassName("B4abb")[1].style.display="none";
+    document.getElementsByClassName("B5abba")[0].style.display="block";
+    document.getElementsByClassName("B5abba")[1].style.display="block";
+}
+
+function offLeash(){
+    document.getElementsByClassName("B4abb")[0].style.display="none";
+    document.getElementsByClassName("B4abb")[1].style.display="none";
+    document.getElementsByClassName("B5abbb")[0].style.display="block";
+    document.getElementsByClassName("B5abbb")[1].style.display="block";
+}
+
+function shooWeasel(){
+    document.getElementsByClassName("B4cbb")[0].style.display="none";
+    document.getElementsByClassName("B4cbb")[1].style.display="none";
+    document.getElementsByClassName("B5cbba")[0].style.display="block";
+    document.getElementsByClassName("B5cbba")[1].style.display="block";
+}
+
+function giveWater(){
+    document.getElementsByClassName("B4cbb")[0].style.display="none";
+    document.getElementsByClassName("B4cbb")[1].style.display="none";
+    document.getElementsByClassName("B5cbbb")[0].style.display="block";
+    document.getElementsByClassName("B5cbbb")[1].style.display="block";
+}
+
+function endBasilisk(){
+    document.getElementsByClassName("B5abbb")[0].style.display="none";
+    document.getElementsByClassName("B5abbb")[1].style.display="none";
+    document.getElementsByClassName("B5cbbb")[0].style.display="none";
+    document.getElementsByClassName("B5cbbb")[1].style.display="none";
+    document.getElementsByClassName("endB")[0].style.display="block";
+    document.getElementsByClassName("endB")[1].style.display="block";
+}
+
+
+//----------------------------------------------------------------------------------------------
+//-------------------------------- end BASILISK narrative functions ----------------------------
+//----------------------------------------------------------------------------------------------
+
+
 
 function winGame() {
     //If the button, winBoat is clicked. "Hide" the previous elements and "show" the .win elements

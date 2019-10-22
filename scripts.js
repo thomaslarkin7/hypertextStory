@@ -3,7 +3,7 @@
 //-------------------------------------------------------------------------
 //-------------------Author: T Larkin--------------------------------------
 //-------------------------------------------------------------------------
-//-------------------Last modified: 7/10/19--------------------------------
+//-------------------Last modified: 21/10/19-------------------------------
 
 var aE = []; //an array to store the current active elements on the webpage
 
@@ -50,7 +50,7 @@ function closeModal(){
     document.getElementById("myModalP").style.display = "none"; //close the modal on button click
     document.getElementById("myModalH").style.display = "none"; //close the modal on button click
     document.getElementById("myModalB").style.display = "none"; //close the modal on button click
-    document.getElementById("myModalT").style.display = "none"; //close the modal on button click
+    document.getElementById("myModalC").style.display = "none"; //close the modal on button click
     document.getElementById("myModalW").style.display = "none"; //close the modal on button click
     document.getElementById("myModalPth").style.display = "none"; //close the modal on button click
     document.getElementById("myModalO").style.display = "none"; //close the modal on button click
@@ -128,9 +128,9 @@ function basiliskModal(){
     document.getElementById("myModalB").style.display = "block"; //show the modal on button click
 }
 
-//Toggle TIGER MODAL
-function tigerModal(){
-    document.getElementById("myModalT").style.display = "block"; //show the modal on button click
+//Toggle CRODOCILE MODAL
+function crocodileModal(){
+    document.getElementById("myModalC").style.display = "block"; //show the modal on button click
 }
 
 //Toggle WEASEL MODAL
@@ -268,7 +268,9 @@ function enterUnicorn(){
     document.getElementsByClassName("prologue")[1].style.display="none";
     document.getElementById("myProgressU").style.display = "block"; //show unicorn progress bar
     document.getElementById("myProgressD").style.display = "none"; //hide dragon progress bar
-    document.getElementById("myBarD").style.display = "none"; //hide dragon progress bar
+    document.getElementById("myProgressH").style.display = "none"; //hide hydrus progress bar
+    document.getElementById("myProgressB").style.display = "none"; //hide basilisk progress bar
+    document.getElementById("myProgressP").style.display = "none"; //hide phoenix progress bar
     //document.getElementsByClassName("dragonEnd")[0].style.display="none";
     //document.getElementsByClassName("dragonEnd")[1].style.display="none";
     //document.getElementsByClassName("bodyTextD")[0].style.display="none";
@@ -276,6 +278,10 @@ function enterUnicorn(){
     //document.getElementsByClassName("bodyTextU")[0].style.display="none";
     //document.getElementsByClassName("bodyTextU")[1].style.display="none";
     //document.getElementById("bodyTextD").style.display = "none";
+    document.getElementsByClassName("endB")[0].style.display="none";
+    document.getElementsByClassName("endB")[1].style.display="none";
+    document.getElementsByClassName("H4aac")[0].style.display="none";
+    document.getElementsByClassName("H4aac")[1].style.display="none";
     document.getElementsByClassName("P5acca")[0].style.display="none";
     document.getElementsByClassName("P5acca")[1].style.display="none";
     document.getElementsByClassName("P5acca")[0].style.display="none";
@@ -298,9 +304,15 @@ function enterDragon(){
     document.getElementsByClassName("P5acca")[0].style.display="none";
     document.getElementsByClassName("P5acca")[1].style.display="none";
     var someX = document.getElementsByClassName("D1");
+    document.getElementsByClassName("endB")[0].style.display="none";
+    document.getElementsByClassName("endB")[1].style.display="none";
+    document.getElementsByClassName("H4aac")[0].style.display="none";
+    document.getElementsByClassName("H4aac")[1].style.display="none";
     document.getElementById("myProgressU").style.display = "none"; //hide unicorn progress bar
-    document.getElementById("myBarU").style.display = "none"; //hide unicorn progress bar
     document.getElementById("myProgressD").style.display = "block"; //show dragon progress bar
+    document.getElementById("myProgressH").style.display = "none"; //hide hydrus progress bar
+    document.getElementById("myProgressB").style.display = "none"; //hide basilisk progress bar
+    document.getElementById("myProgressP").style.display = "none"; //hide phoenix progress bar
     document.getElementsByClassName("D1")[0].style.display="block";
 
     document.getElementsByClassName("D1")[1].style.display="block";
@@ -316,7 +328,6 @@ window.document.onkeydown = function(e) {
   }
 
 function lightbox_openD() {
-    console.log("hi hi");
     var lightBoxVideoD = document.getElementById("dragonBeginning");
     window.scrollTo(0, 0);
     document.getElementById('lightD').style.display = 'block';
@@ -338,6 +349,14 @@ function lightbox_openD() {
     document.getElementById('lightU').style.display = 'block';
     document.getElementById('fadeU').style.display = 'block';
     lightBoxVideoU.play();
+  }
+
+  function lightbox_closeU() {
+    var lightBoxVideoU = document.getElementById("unicornBeginning");
+    document.getElementById('lightU').style.display = 'none';
+    document.getElementById('fadeU').style.display = 'none';
+    lightBoxVideoU.pause();
+    lightBoxVideoU.currentTime = 0;
   }
 
   function lightbox_openH() {
@@ -406,6 +425,22 @@ function enterHydrus(){
     //document.getElementsByClassName("endDragon")[1].style.display="none";
     document.getElementsByClassName("P5acca")[0].style.display="none";
     document.getElementsByClassName("P5acca")[1].style.display="none";
+    document.getElementsByClassName("U6babca")[0].style.display="none";
+    document.getElementsByClassName("U6babca")[1].style.display="none";
+    document.getElementsByClassName("U6babcc")[0].style.display="none";
+    document.getElementsByClassName("U6babcc")[1].style.display="none";
+    document.getElementsByClassName("U6acbba")[0].style.display="none";
+    document.getElementsByClassName("U6acbba")[1].style.display="none";
+    document.getElementsByClassName("U6acbbc")[0].style.display="none";
+    document.getElementsByClassName("U6acbbc")[1].style.display="none";
+    document.getElementsByClassName("endB")[0].style.display="none";
+    document.getElementsByClassName("endB")[1].style.display="none";
+    document.getElementById("myProgressU").style.display = "none"; //hide unicorn progress bar
+    document.getElementById("myProgressD").style.display = "none"; //hide dragon progress bar
+    document.getElementById("myProgressH").style.display = "block"; //show hydrus progress bar
+    document.getElementById("myProgressB").style.display = "none"; //hide basilisk progress bar
+    document.getElementById("myProgressP").style.display = "none"; //hide phoenix progress bar
+
     document.getElementsByClassName("H1")[0].style.display="block";
     document.getElementsByClassName("H1")[1].style.display="block";
 }
@@ -415,10 +450,21 @@ function enterBasilisk(){
     document.getElementsByClassName("prologue")[1].style.display="none";
     document.getElementsByClassName("B3ca")[0].style.display="none";
     document.getElementsByClassName("B3ca")[1].style.display="none";
-    //document.getElementsByClassName("H3ca")[0].style.display="none";
-    //document.getElementsByClassName("H3ca")[1].style.display="none";
-    //document.getElementsByClassName("endDragon")[0].style.display="none";
-    //document.getElementsByClassName("endDragon")[1].style.display="none";
+    document.getElementsByClassName("U6babca")[0].style.display="none";
+    document.getElementsByClassName("U6babca")[1].style.display="none";
+    document.getElementsByClassName("U6babcc")[0].style.display="none";
+    document.getElementsByClassName("U6babcc")[1].style.display="none";
+    document.getElementsByClassName("U6acbba")[0].style.display="none";
+    document.getElementsByClassName("U6acbba")[1].style.display="none";
+    document.getElementsByClassName("U6acbbc")[0].style.display="none";
+    document.getElementsByClassName("U6acbbc")[1].style.display="none";
+    document.getElementById("myProgressU").style.display = "none"; //hide unicorn progress bar
+    document.getElementById("myProgressD").style.display = "none"; //hide dragon progress bar
+    document.getElementById("myProgressH").style.display = "none"; //hide hydrus progress bar
+    document.getElementById("myProgressB").style.display = "block"; //show basilisk progress bar
+    document.getElementById("myProgressP").style.display = "none"; //hide phoenix progress bar
+    document.getElementsByClassName("H4aac")[0].style.display="none";
+    document.getElementsByClassName("H4aac")[1].style.display="none";
     document.getElementsByClassName("P5acca")[0].style.display="none";
     document.getElementsByClassName("P5acca")[1].style.display="none";
     document.getElementsByClassName("B1")[0].style.display="block";
@@ -432,12 +478,25 @@ function enterPhoenix(){
     document.getElementsByClassName("U6babca")[1].style.display="none";
     document.getElementsByClassName("U6babcc")[0].style.display="none";
     document.getElementsByClassName("U6babcc")[1].style.display="none";
-    document.getElementsByClassName("U6acbbb")[0].style.display="none";
+    document.getElementsByClassName("U6acbba")[0].style.display="none";
+    document.getElementsByClassName("U6acbba")[1].style.display="none";
+    document.getElementsByClassName("U6acbbc")[0].style.display="none";
+    document.getElementsByClassName("U6acbbc")[1].style.display="none";
+    document.getElementsByClassName("endB")[0].style.display="none";
+    document.getElementsByClassName("endB")[1].style.display="none";
+    document.getElementById("myProgressU").style.display = "none"; //hide unicorn progress bar
+    document.getElementById("myProgressD").style.display = "none"; //hide dragon progress bar
+    document.getElementById("myProgressH").style.display = "none"; //hide hydrus progress bar
+    document.getElementById("myProgressB").style.display = "none"; //hide basilisk progress bar
+    document.getElementById("myProgressP").style.display = "block"; //show phoenix progress bar
+
     //document.getElementsByClassName("U6acbbb")[1].style.display="none";
     document.getElementsByClassName("U6acbbc")[0].style.display="none";
     document.getElementsByClassName("U6acbbc")[1].style.display="none";
-    //document.getElementsByClassName("endDragon")[0].style.display="none";
-    //document.getElementsByClassName("endDragon")[1].style.display="none";
+
+    document.getElementsByClassName("H4aac")[0].style.display="none";
+    document.getElementsByClassName("H4aac")[1].style.display="none";
+
     document.getElementsByClassName("P1")[0].style.display="block";
     document.getElementsByClassName("P1")[1].style.display="block";
 }
@@ -1372,4 +1431,31 @@ function moveU(increment, reset) {
     widthU = widthU + increment; 
     elem.style.width = widthU + '%'; 
     elem.innerHTML = widthU * 1  + '%';
+  }
+
+var widthP = 0;
+function moveP(increment, reset) {
+    if (reset == true){widthP = 0;}
+    var elem = document.getElementById("myBarP");
+    widthP = widthP + increment; 
+    elem.style.width = widthP + '%'; 
+    elem.innerHTML = widthP * 1  + '%';
+  }
+
+var widthH = 0;
+function moveH(increment, reset) {
+    if (reset == true){widthH = 0;}
+    var elem = document.getElementById("myBarH");
+    widthH = widthH + increment; 
+    elem.style.width = widthH + '%'; 
+    elem.innerHTML = widthH * 1  + '%';
+  }
+
+var widthB = 0;
+function moveB(increment, reset) {
+    if (reset == true){widthB = 0;}
+    var elem = document.getElementById("myBarB");
+    widthB = widthB + increment; 
+    elem.style.width = widthB + '%'; 
+    elem.innerHTML = widthB * 1  + '%';
   }

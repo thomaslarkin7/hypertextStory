@@ -56,6 +56,7 @@ function closeModal(){
     document.getElementById("myModalO").style.display = "none"; //close the modal on button click
     document.getElementById("myModalE").style.display = "none"; //close the modal on button click
     document.getElementById("myModalAB").style.display = "none"; //close the modal on button click
+    document.getElementById("dragonSound").pause(); //close the modal on button click
 }
 
 //Toggle Opacity of the Basilisk Image
@@ -278,6 +279,8 @@ function enterUnicorn(){
     //document.getElementsByClassName("bodyTextU")[0].style.display="none";
     //document.getElementsByClassName("bodyTextU")[1].style.display="none";
     //document.getElementById("bodyTextD").style.display = "none";
+    document.getElementsByClassName("U4bbb")[0].style.display="none";
+    document.getElementsByClassName("U4bbb")[1].style.display="none";
     document.getElementsByClassName("endB")[0].style.display="none";
     document.getElementsByClassName("endB")[1].style.display="none";
     document.getElementsByClassName("H4aac")[0].style.display="none";
@@ -293,6 +296,7 @@ function enterUnicorn(){
 function enterDragon(){
     document.getElementsByClassName("prologue")[0].style.display="none";
     document.getElementsByClassName("prologue")[1].style.display="none";
+
     document.getElementsByClassName("U6babca")[0].style.display="none";
     document.getElementsByClassName("U6babca")[1].style.display="none";
     document.getElementsByClassName("U6babcc")[0].style.display="none";
@@ -313,6 +317,7 @@ function enterDragon(){
     document.getElementById("myProgressH").style.display = "none"; //hide hydrus progress bar
     document.getElementById("myProgressB").style.display = "none"; //hide basilisk progress bar
     document.getElementById("myProgressP").style.display = "none"; //hide phoenix progress bar
+
     document.getElementsByClassName("D1")[0].style.display="block";
 
     document.getElementsByClassName("D1")[1].style.display="block";
@@ -555,6 +560,8 @@ function seeClergy(){
 function seePentagram(){
     document.getElementsByClassName("U2b")[0].style.display="none";
     document.getElementsByClassName("U2b")[1].style.display="none";
+    document.getElementsByClassName("U4bba")[0].style.display="none";
+    document.getElementsByClassName("U4bba")[1].style.display="none";
     document.getElementsByClassName("U3ba")[0].style.display="block";
     document.getElementsByClassName("U3ba")[1].style.display="block";
 }
@@ -645,6 +652,8 @@ function trade(){
     document.getElementsByClassName("U3ba")[1].style.display="none";
     document.getElementsByClassName("U4bbc")[0].style.display="none";
     document.getElementsByClassName("U4bbc")[1].style.display="none";
+    document.getElementsByClassName("U4bba")[0].style.display="none";
+    document.getElementsByClassName("U4bba")[1].style.display="none";
     document.getElementsByClassName("U4bab")[0].style.display="block";
     document.getElementsByClassName("U4bab")[1].style.display="block";
 }
@@ -1411,6 +1420,33 @@ function loseGame() {
     document.getElementsByClassName("lose")[0].style.display="block";
     document.getElementsByClassName("lose")[1].style.display="block";
 }
+
+//-------------------------------------------------------------------
+//--------------------- AUDIO PAUSE ---------------------------------
+//-------------------------------------------------------------------
+var thisAudio = document.getElementsByClassName("narrAudio");
+function pauseAudio(){
+    //console.log(thisAudio);
+    for (i = 0; i < thisAudio.length; i++){
+        thisAudio[i].pause();
+        thisAudio[i].currentTime = 0;  
+        }
+}
+
+//-------------------------------------------------------------------
+//------------------- ANIMAL SOUNDS ---------------------------------
+//-------------------------------------------------------------------
+var dragonS = document.getElementById("dragonSound");
+function playDragon(){
+    console.log(dragonS);
+    dragonS.play();}
+
+function pauseDragon(){
+    dragonS.pause();
+    //dragonS.currentTime = 0;
+}
+
+
 
 //-------------------------------------------------------------------------------------------------
 //------------------------------- PROGRESS BAR ----------------------------------------------------

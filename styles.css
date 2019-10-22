@@ -704,10 +704,16 @@ img.bestiaryIMG{
     font-size: 45px;
 }
 
-.narrAudio{
-    float: right;
-    padding: 10px;
+audio{
+    width: 250px;
 }
+
+.narrAudioPos{
+    float: right;
+    padding: 5px;
+}
+
+
 
 .pathwaySec{
     font-family: 'Alegreya', serif;

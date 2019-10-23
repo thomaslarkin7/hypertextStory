@@ -57,6 +57,9 @@ function closeModal(){
     document.getElementById("myModalE").style.display = "none"; //close the modal on button click
     document.getElementById("myModalAB").style.display = "none"; //close the modal on button click
     document.getElementById("dragonSound").pause(); //close the modal on button click
+    document.getElementById("hydrusSound").pause(); //close the modal on button click
+    document.getElementById("phoenixSound").pause(); //close the modal on button click
+    document.getElementById("unicornSound").pause(); //close the modal on button click
 }
 
 //Toggle Opacity of the Basilisk Image
@@ -191,10 +194,14 @@ function goPrologue() {
     document.getElementsByClassName("D5ccbb")[1].style.display="none";
     document.getElementsByClassName("D6ccbaa")[0].style.display="none";
     document.getElementsByClassName("D6ccbaa")[1].style.display="none";
+    document.getElementsByClassName("D6acbaa")[0].style.display="none";
+    document.getElementsByClassName("D6acbaa")[1].style.display="none";
     document.getElementsByClassName("D6ccbab")[0].style.display="none";
     document.getElementsByClassName("D6ccbab")[1].style.display="none";
     document.getElementsByClassName("D7ccbaca")[0].style.display="none";
     document.getElementsByClassName("D7ccbaca")[1].style.display="none";
+    document.getElementsByClassName("dragonEnd")[0].style.display="none";
+    document.getElementsByClassName("dragonEnd")[1].style.display="none";
 
 
     document.getElementsByClassName("U2c")[0].style.display="none";
@@ -272,6 +279,36 @@ function enterUnicorn(){
     document.getElementById("myProgressH").style.display = "none"; //hide hydrus progress bar
     document.getElementById("myProgressB").style.display = "none"; //hide basilisk progress bar
     document.getElementById("myProgressP").style.display = "none"; //hide phoenix progress bar
+
+    document.getElementsByClassName("D3aa")[0].style.display="none";
+    document.getElementsByClassName("D3aa")[1].style.display="none";
+    document.getElementsByClassName("D4aba")[0].style.display="none";
+    document.getElementsByClassName("D4aba")[1].style.display="none";
+    document.getElementsByClassName("D3ba")[0].style.display="none";
+    document.getElementsByClassName("D3ba")[1].style.display="none";
+    document.getElementsByClassName("D4bba")[0].style.display="none";
+    document.getElementsByClassName("D4bba")[1].style.display="none";
+    document.getElementsByClassName("D7acbaba")[0].style.display="none";
+    document.getElementsByClassName("D7acbaba")[1].style.display="none";
+    document.getElementsByClassName("D3ca")[0].style.display="none";
+    document.getElementsByClassName("D3ca")[1].style.display="none";
+    document.getElementsByClassName("D4cba")[0].style.display="none";
+    document.getElementsByClassName("D4cba")[1].style.display="none";
+    document.getElementsByClassName("D4cca")[0].style.display="none";
+    document.getElementsByClassName("D4cca")[1].style.display="none";
+    document.getElementsByClassName("D5ccbb")[0].style.display="none";
+    document.getElementsByClassName("D5ccbb")[1].style.display="none";
+    document.getElementsByClassName("D6ccbaa")[0].style.display="none";
+    document.getElementsByClassName("D6ccbaa")[1].style.display="none";
+    document.getElementsByClassName("D6acbaa")[0].style.display="none";
+    document.getElementsByClassName("D6acbaa")[1].style.display="none";
+    document.getElementsByClassName("D6ccbab")[0].style.display="none";
+    document.getElementsByClassName("D6ccbab")[1].style.display="none";
+    document.getElementsByClassName("D7ccbaca")[0].style.display="none";
+    document.getElementsByClassName("D7ccbaca")[1].style.display="none";
+    document.getElementsByClassName("dragonEnd")[0].style.display="none";
+    document.getElementsByClassName("dragonEnd")[1].style.display="none";
+
     //document.getElementsByClassName("dragonEnd")[0].style.display="none";
     //document.getElementsByClassName("dragonEnd")[1].style.display="none";
     //document.getElementsByClassName("bodyTextD")[0].style.display="none";
@@ -297,6 +334,8 @@ function enterDragon(){
     document.getElementsByClassName("prologue")[0].style.display="none";
     document.getElementsByClassName("prologue")[1].style.display="none";
 
+
+
     document.getElementsByClassName("U6babca")[0].style.display="none";
     document.getElementsByClassName("U6babca")[1].style.display="none";
     document.getElementsByClassName("U6babcc")[0].style.display="none";
@@ -305,6 +344,8 @@ function enterDragon(){
     document.getElementsByClassName("U6acbba")[1].style.display="none";
     document.getElementsByClassName("U6acbbc")[0].style.display="none";
     document.getElementsByClassName("U6acbbc")[1].style.display="none";
+    document.getElementsByClassName("U6acbbb")[0].style.display="none";
+    document.getElementsByClassName("U6acbbb")[1].style.display="none";
     document.getElementsByClassName("P5acca")[0].style.display="none";
     document.getElementsByClassName("P5acca")[1].style.display="none";
     var someX = document.getElementsByClassName("D1");
@@ -438,6 +479,38 @@ function enterHydrus(){
     document.getElementsByClassName("U6acbba")[1].style.display="none";
     document.getElementsByClassName("U6acbbc")[0].style.display="none";
     document.getElementsByClassName("U6acbbc")[1].style.display="none";
+    document.getElementsByClassName("U6acbbb")[0].style.display="none";
+    document.getElementsByClassName("U6acbbb")[1].style.display="none";
+
+    document.getElementsByClassName("D3aa")[0].style.display="none";
+    document.getElementsByClassName("D3aa")[1].style.display="none";
+    document.getElementsByClassName("D4aba")[0].style.display="none";
+    document.getElementsByClassName("D4aba")[1].style.display="none";
+    document.getElementsByClassName("D3ba")[0].style.display="none";
+    document.getElementsByClassName("D3ba")[1].style.display="none";
+    document.getElementsByClassName("D4bba")[0].style.display="none";
+    document.getElementsByClassName("D4bba")[1].style.display="none";
+    document.getElementsByClassName("D7acbaba")[0].style.display="none";
+    document.getElementsByClassName("D7acbaba")[1].style.display="none";
+    document.getElementsByClassName("D3ca")[0].style.display="none";
+    document.getElementsByClassName("D3ca")[1].style.display="none";
+    document.getElementsByClassName("D4cba")[0].style.display="none";
+    document.getElementsByClassName("D4cba")[1].style.display="none";
+    document.getElementsByClassName("D4cca")[0].style.display="none";
+    document.getElementsByClassName("D4cca")[1].style.display="none";
+    document.getElementsByClassName("D5ccbb")[0].style.display="none";
+    document.getElementsByClassName("D5ccbb")[1].style.display="none";
+    document.getElementsByClassName("D6ccbaa")[0].style.display="none";
+    document.getElementsByClassName("D6ccbaa")[1].style.display="none";
+    document.getElementsByClassName("D6acbaa")[0].style.display="none";
+    document.getElementsByClassName("D6acbaa")[1].style.display="none";
+    document.getElementsByClassName("D6ccbab")[0].style.display="none";
+    document.getElementsByClassName("D6ccbab")[1].style.display="none";
+    document.getElementsByClassName("D7ccbaca")[0].style.display="none";
+    document.getElementsByClassName("D7ccbaca")[1].style.display="none";
+    document.getElementsByClassName("dragonEnd")[0].style.display="none";
+    document.getElementsByClassName("dragonEnd")[1].style.display="none";
+
     document.getElementsByClassName("endB")[0].style.display="none";
     document.getElementsByClassName("endB")[1].style.display="none";
     document.getElementById("myProgressU").style.display = "none"; //hide unicorn progress bar
@@ -445,7 +518,8 @@ function enterHydrus(){
     document.getElementById("myProgressH").style.display = "block"; //show hydrus progress bar
     document.getElementById("myProgressB").style.display = "none"; //hide basilisk progress bar
     document.getElementById("myProgressP").style.display = "none"; //hide phoenix progress bar
-
+    document.getElementsByClassName("H4aac")[0].style.display="none";
+    document.getElementsByClassName("H4aac")[1].style.display="none"
     document.getElementsByClassName("H1")[0].style.display="block";
     document.getElementsByClassName("H1")[1].style.display="block";
 }
@@ -463,6 +537,38 @@ function enterBasilisk(){
     document.getElementsByClassName("U6acbba")[1].style.display="none";
     document.getElementsByClassName("U6acbbc")[0].style.display="none";
     document.getElementsByClassName("U6acbbc")[1].style.display="none";
+    document.getElementsByClassName("U6acbbb")[0].style.display="none";
+    document.getElementsByClassName("U6acbbb")[1].style.display="none";
+
+    document.getElementsByClassName("D3aa")[0].style.display="none";
+    document.getElementsByClassName("D3aa")[1].style.display="none";
+    document.getElementsByClassName("D4aba")[0].style.display="none";
+    document.getElementsByClassName("D4aba")[1].style.display="none";
+    document.getElementsByClassName("D3ba")[0].style.display="none";
+    document.getElementsByClassName("D3ba")[1].style.display="none";
+    document.getElementsByClassName("D4bba")[0].style.display="none";
+    document.getElementsByClassName("D4bba")[1].style.display="none";
+    document.getElementsByClassName("D7acbaba")[0].style.display="none";
+    document.getElementsByClassName("D7acbaba")[1].style.display="none";
+    document.getElementsByClassName("D3ca")[0].style.display="none";
+    document.getElementsByClassName("D3ca")[1].style.display="none";
+    document.getElementsByClassName("D4cba")[0].style.display="none";
+    document.getElementsByClassName("D4cba")[1].style.display="none";
+    document.getElementsByClassName("D4cca")[0].style.display="none";
+    document.getElementsByClassName("D4cca")[1].style.display="none";
+    document.getElementsByClassName("D5ccbb")[0].style.display="none";
+    document.getElementsByClassName("D5ccbb")[1].style.display="none";
+    document.getElementsByClassName("D6ccbaa")[0].style.display="none";
+    document.getElementsByClassName("D6ccbaa")[1].style.display="none";
+    document.getElementsByClassName("D6acbaa")[0].style.display="none";
+    document.getElementsByClassName("D6acbaa")[1].style.display="none";
+    document.getElementsByClassName("D6ccbab")[0].style.display="none";
+    document.getElementsByClassName("D6ccbab")[1].style.display="none";
+    document.getElementsByClassName("D7ccbaca")[0].style.display="none";
+    document.getElementsByClassName("D7ccbaca")[1].style.display="none";
+    document.getElementsByClassName("dragonEnd")[0].style.display="none";
+    document.getElementsByClassName("dragonEnd")[1].style.display="none";
+
     document.getElementById("myProgressU").style.display = "none"; //hide unicorn progress bar
     document.getElementById("myProgressD").style.display = "none"; //hide dragon progress bar
     document.getElementById("myProgressH").style.display = "none"; //hide hydrus progress bar
@@ -487,6 +593,38 @@ function enterPhoenix(){
     document.getElementsByClassName("U6acbba")[1].style.display="none";
     document.getElementsByClassName("U6acbbc")[0].style.display="none";
     document.getElementsByClassName("U6acbbc")[1].style.display="none";
+    document.getElementsByClassName("U6acbbb")[0].style.display="none";
+    document.getElementsByClassName("U6acbbb")[1].style.display="none";
+
+    document.getElementsByClassName("D3aa")[0].style.display="none";
+    document.getElementsByClassName("D3aa")[1].style.display="none";
+    document.getElementsByClassName("D4aba")[0].style.display="none";
+    document.getElementsByClassName("D4aba")[1].style.display="none";
+    document.getElementsByClassName("D3ba")[0].style.display="none";
+    document.getElementsByClassName("D3ba")[1].style.display="none";
+    document.getElementsByClassName("D4bba")[0].style.display="none";
+    document.getElementsByClassName("D4bba")[1].style.display="none";
+    document.getElementsByClassName("D7acbaba")[0].style.display="none";
+    document.getElementsByClassName("D7acbaba")[1].style.display="none";
+    document.getElementsByClassName("D3ca")[0].style.display="none";
+    document.getElementsByClassName("D3ca")[1].style.display="none";
+    document.getElementsByClassName("D4cba")[0].style.display="none";
+    document.getElementsByClassName("D4cba")[1].style.display="none";
+    document.getElementsByClassName("D4cca")[0].style.display="none";
+    document.getElementsByClassName("D4cca")[1].style.display="none";
+    document.getElementsByClassName("D5ccbb")[0].style.display="none";
+    document.getElementsByClassName("D5ccbb")[1].style.display="none";
+    document.getElementsByClassName("D6ccbaa")[0].style.display="none";
+    document.getElementsByClassName("D6ccbaa")[1].style.display="none";
+    document.getElementsByClassName("D6acbaa")[0].style.display="none";
+    document.getElementsByClassName("D6acbaa")[1].style.display="none";
+    document.getElementsByClassName("D6ccbab")[0].style.display="none";
+    document.getElementsByClassName("D6ccbab")[1].style.display="none";
+    document.getElementsByClassName("D7ccbaca")[0].style.display="none";
+    document.getElementsByClassName("D7ccbaca")[1].style.display="none";
+    document.getElementsByClassName("dragonEnd")[0].style.display="none";
+    document.getElementsByClassName("dragonEnd")[1].style.display="none";
+
     document.getElementsByClassName("endB")[0].style.display="none";
     document.getElementsByClassName("endB")[1].style.display="none";
     document.getElementById("myProgressU").style.display = "none"; //hide unicorn progress bar
@@ -496,8 +634,8 @@ function enterPhoenix(){
     document.getElementById("myProgressP").style.display = "block"; //show phoenix progress bar
 
     //document.getElementsByClassName("U6acbbb")[1].style.display="none";
-    document.getElementsByClassName("U6acbbc")[0].style.display="none";
-    document.getElementsByClassName("U6acbbc")[1].style.display="none";
+    //document.getElementsByClassName("U6acbbc")[0].style.display="none";
+    //document.getElementsByClassName("U6acbbc")[1].style.display="none";
 
     document.getElementsByClassName("H4aac")[0].style.display="none";
     document.getElementsByClassName("H4aac")[1].style.display="none";
@@ -1424,18 +1562,62 @@ function loseGame() {
 //-------------------------------------------------------------------
 //--------------------- AUDIO PAUSE ---------------------------------
 //-------------------------------------------------------------------
-var thisAudio = document.getElementsByClassName("narrAudio");
+
+//------------------- DRAGON AUDIO PAUSE ----------------------------
+var thisAudioD = document.getElementsByClassName("narrAudio");
 function pauseAudio(){
     //console.log(thisAudio);
-    for (i = 0; i < thisAudio.length; i++){
-        thisAudio[i].pause();
-        thisAudio[i].currentTime = 0;  
+    for (i = 0; i < thisAudioD.length; i++){
+        thisAudioD[i].pause();
+        thisAudioD[i].currentTime = 0;  
+        }
+}
+
+//------------------ UNICORN AUDIO PAUSE ----------------------------
+var thisAudioU = document.getElementsByClassName("narrAudioU");
+function pauseAudioU(){
+    //console.log(thisAudio);
+    for (i = 0; i < thisAudioU.length; i++){
+        thisAudioU[i].pause();
+        thisAudioU[i].currentTime = 0;  
+        }
+}
+
+//------------------ HYDRUS AUDIO PAUSE ----------------------------
+var thisAudioH = document.getElementsByClassName("narrAudioH");
+function pauseAudioH(){
+    //console.log(thisAudio);
+    for (i = 0; i < thisAudioH.length; i++){
+        thisAudioH[i].pause();
+        thisAudioH[i].currentTime = 0;  
+        }
+}
+
+//------------------ BASILISK AUDIO PAUSE ----------------------------
+var thisAudioB = document.getElementsByClassName("narrAudioB");
+function pauseAudioB(){
+    //console.log(thisAudio);
+    for (i = 0; i < thisAudioB.length; i++){
+        thisAudioB[i].pause();
+        thisAudioB[i].currentTime = 0;  
+        }
+}
+
+//------------------ PROLOGUE AUDIO PAUSE ----------------------------
+var thisAudioPrologue = document.getElementsByClassName("narrAudioPrologue");
+function pauseAudioPrologue(){
+    //console.log(thisAudio);
+    for (i = 0; i < thisAudioPrologue.length; i++){
+        thisAudioPrologue[i].pause();
+        thisAudioPrologue[i].currentTime = 0;  
         }
 }
 
 //-------------------------------------------------------------------
 //------------------- ANIMAL SOUNDS ---------------------------------
 //-------------------------------------------------------------------
+
+//-------------- DRAGON SOUND ON MODAL CLICK ------------------------
 var dragonS = document.getElementById("dragonSound");
 function playDragon(){
     console.log(dragonS);
@@ -1446,6 +1628,55 @@ function pauseDragon(){
     //dragonS.currentTime = 0;
 }
 
+//-------------- HYDRUS SOUND ON MODAL CLICK ------------------------
+var hydrusS = document.getElementById("hydrusSound");
+function playHydrus(){
+    //console.log(hydrusS);
+    hydrusS.play();}
+
+function pauseHydrus(){
+    hydrusS.pause();
+    //dragonS.currentTime = 0;
+}
+
+
+//-------------- UNICORN SOUND ON MODAL CLICK ------------------------
+var unicornS = document.getElementById("unicornSound");
+function playUnicorn(){
+    //console.log(hydrusS);
+    unicornS.play();}
+
+function pauseUnicorn(){
+    unicornS.pause();
+    //dragonS.currentTime = 0;
+}
+
+
+//-------------- PHOENIX SOUND ON MODAL CLICK ------------------------
+var phoenixS = document.getElementById("phoenixSound");
+function playPhoenix(){
+    //console.log(hydrusS);
+    phoenixS.play();}
+
+function pausePhoenix(){
+    phoenixS.pause();
+    //dragonS.currentTime = 0;
+}
+
+//-------------------------------------------------------------------
+//------------------- AMBIENT SOUNDS ---------------------------------
+//-------------------------------------------------------------------
+
+//-------------- TAVERN AMBIENCE SOUND ------------------------
+var tavernS = document.getElementById("tavernAmbience");
+function playTavern(){
+    //console.log(hydrusS);
+    tavernS.play();}
+
+function pauseTavern(){
+    tavernS.pause();
+    tavernS.currentTime = 0;
+}
 
 
 //-------------------------------------------------------------------------------------------------

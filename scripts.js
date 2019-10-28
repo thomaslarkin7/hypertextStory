@@ -6,6 +6,11 @@
 //-------------------Last modified: 21/10/19-------------------------------
 
 var aE = []; //an array to store the current active elements on the webpage
+var dragonFound = 0; //set to 1 if Dragon is found
+var hydrusFound = 0; //set to 1 if Hydrus is found
+var basiliskFound = 0; //set to 1 if Basilisk is found
+var unicornFound = 0; //set to 1 if Unicorn is found
+var phoenixFound = 0; //set to 1 if Phoenix is found
 
 //turn on the loadOverlay
 function loadOn(){
@@ -56,10 +61,14 @@ function closeModal(){
     document.getElementById("myModalO").style.display = "none"; //close the modal on button click
     document.getElementById("myModalE").style.display = "none"; //close the modal on button click
     document.getElementById("myModalAB").style.display = "none"; //close the modal on button click
+
+    document.getElementById("myModalCon").style.display = "none"; //close the modal on button click
+    
     document.getElementById("dragonSound").pause(); //close the modal on button click
     document.getElementById("hydrusSound").pause(); //close the modal on button click
     document.getElementById("phoenixSound").pause(); //close the modal on button click
     document.getElementById("unicornSound").pause(); //close the modal on button click
+    document.getElementById("basiliskSound").pause(); //close the modal on button click
 }
 
 //Toggle Opacity of the Basilisk Image
@@ -68,14 +77,17 @@ function toggleBasilisk(){
     var imgBT = document.getElementById("basiliskInvT");
     imgBB.classList.toggle("m-fadeOut");
     imgBT.classList.toggle("m-fadeIn");
+    basiliskFound = 1;
 }
 
 //Toggle Opacity of the Dragon Image
+
 function toggleDragon(){
     var imgDB = document.getElementById("dragonInvB");
     var imgDT = document.getElementById("dragonInvT");
     imgDB.classList.toggle("m-fadeOut");
     imgDT.classList.toggle("m-fadeIn");
+    dragonFound = 1;
 }
 
 //Toggle Opacity of the Phoenix Image
@@ -84,6 +96,7 @@ function togglePhoenix(){
     var imgPT = document.getElementById("phoenixInvT");
     imgPB.classList.toggle("m-fadeOut");
     imgPT.classList.toggle("m-fadeIn");
+    phoenixFound = 1;
 }
 
 //Toggle Opacity of the Hydrus Image
@@ -92,6 +105,7 @@ function toggleHydrus(){
     var imgHT = document.getElementById("hydrusInvT");
     imgHB.classList.toggle("m-fadeOut");
     imgHT.classList.toggle("m-fadeIn");
+    hydrusFound = 1;
 }
 
 //Toggle Opacity of the Unicorn Image
@@ -100,6 +114,28 @@ function toggleUnicorn(){
     var imgUT = document.getElementById("unicornInvT");
     imgUB.classList.toggle("m-fadeOut");
     imgUT.classList.toggle("m-fadeIn");
+    console.log("Unicorn Has Been Found");
+    unicornFound = 1;
+}
+
+//Check to see if all of the animals have been found ! 
+function checkComplete(){
+    console.log("Checking for Complete")
+    if (unicornFound == 1 && phoenixFound == 1 && 
+        hydrusFound == 1 && basiliskFound == 1 && 
+        dragonFound == 1){
+            var endGameButton = document.getElementsByClassName("endGame");
+            for (var i = 0; i < endGameButton.length; i++){
+                endGameButton[i].style.display = "block";
+            }
+            //document.getElementById("myModalCon").style.display = "block"; //show the modal on button click
+            //do something here
+        }
+}
+
+//"Congratulations Modal"
+function goCongratulations(){
+    document.getElementById("myModalCon").style.display = "block"; //show the modal on button click
 }
 
 //Toggle Behind the Bestiary MODAL
@@ -269,6 +305,9 @@ function goPrologue() {
 
     document.getElementsByClassName("prologue")[0].style.display="block";
     document.getElementsByClassName("prologue")[1].style.display="block";
+
+    console.log("Dragon Found ", dragonFound, "Phoenix Found ", phoenixFound, 
+    "Unicorn Found ", unicornFound, "Basilisk Found ", basiliskFound, "Hydrus Found ", hydrusFound);
 }
 
 function enterUnicorn(){
@@ -333,9 +372,6 @@ function enterUnicorn(){
 function enterDragon(){
     document.getElementsByClassName("prologue")[0].style.display="none";
     document.getElementsByClassName("prologue")[1].style.display="none";
-
-
-
     document.getElementsByClassName("U6babca")[0].style.display="none";
     document.getElementsByClassName("U6babca")[1].style.display="none";
     document.getElementsByClassName("U6babcc")[0].style.display="none";
@@ -358,9 +394,7 @@ function enterDragon(){
     document.getElementById("myProgressH").style.display = "none"; //hide hydrus progress bar
     document.getElementById("myProgressB").style.display = "none"; //hide basilisk progress bar
     document.getElementById("myProgressP").style.display = "none"; //hide phoenix progress bar
-
     document.getElementsByClassName("D1")[0].style.display="block";
-
     document.getElementsByClassName("D1")[1].style.display="block";
 }
 
@@ -373,6 +407,7 @@ window.document.onkeydown = function(e) {
     }
   }
 
+//------ DRAGON beginning video popup --------
 function lightbox_openD() {
     var lightBoxVideoD = document.getElementById("dragonBeginning");
     window.scrollTo(0, 0);
@@ -388,7 +423,28 @@ function lightbox_openD() {
     lightBoxVideoD.pause();
     lightBoxVideoD.currentTime = 0;
   }
+//---------------------------------------------
 
+//------ DRAGON end video popup --------
+function lightbox_openDEnd() {
+    var lightBoxVideoDE = document.getElementById("dragonEndV");
+    window.scrollTo(0, 0);
+    document.getElementById('lightDEndV').style.display = 'block';
+    document.getElementById('fadeDEndV').style.display = 'block';
+    lightBoxVideoDE.play();
+    
+  }
+
+  function lightbox_closeDEndV() {
+    var lightBoxVideoDE = document.getElementById("dragonEndV");
+    document.getElementById('lightDEndV').style.display = 'none';
+    document.getElementById('fadeDEndV').style.display = 'none';
+    lightBoxVideoDE.pause();
+    lightBoxVideoDE.currentTime = 0;
+  }
+//---------------------------------------------
+
+//------ UNICORN beginning video popup --------
   function lightbox_openU() {
     var lightBoxVideoU = document.getElementById("unicornBeginning");
     window.scrollTo(0, 0);
@@ -404,7 +460,28 @@ function lightbox_openD() {
     lightBoxVideoU.pause();
     lightBoxVideoU.currentTime = 0;
   }
+//---------------------------------------------
 
+//------ UNICORN end video popup --------
+function lightbox_openUEnd() {
+    var lightBoxVideoUE = document.getElementById("unicornEndV");
+    window.scrollTo(0, 0);
+    //console.log(lightbox_openUEnd);
+    document.getElementById('lightUEndV').style.display = 'block';
+    document.getElementById('fadeUEndV').style.display = 'block';
+    lightBoxVideoUE.play();
+  }
+
+  function lightbox_closeUEndV() {
+    var lightBoxVideoUE = document.getElementById("unicornEndV");
+    document.getElementById('lightUEndV').style.display = 'none';
+    document.getElementById('fadeUEndV').style.display = 'none';
+    lightBoxVideoUE.pause();
+    lightBoxVideoUE.currentTime = 0;
+  }
+//---------------------------------------------
+
+//------ HYDRUS beginning video popup --------
   function lightbox_openH() {
     var lightBoxVideoH = document.getElementById("hydrusBeginning");
     window.scrollTo(0, 0);
@@ -413,6 +490,34 @@ function lightbox_openD() {
     lightBoxVideoH.play();
   }
 
+  function lightbox_closeH() {
+    var lightBoxVideoH = document.getElementById("hydrusBeginning");
+    document.getElementById('lightH').style.display = 'none';
+    document.getElementById('fadeH').style.display = 'none';
+    lightBoxVideoH.pause();
+    lightBoxVideoH.currentTime = 0;
+  }
+//---------------------------------------------
+
+//------ HYDRUS end video popup --------
+function lightbox_openHEnd() {
+    var lightBoxVideoHE = document.getElementById("hydrusEndV");
+    window.scrollTo(0, 0);
+    document.getElementById('lightHEndV').style.display = 'block';
+    document.getElementById('fadeHEndV').style.display = 'block';
+    lightBoxVideoHE.play();
+  }
+
+  function lightbox_closeHEndV() {
+    var lightBoxVideoHE = document.getElementById("hydrusEndV");
+    document.getElementById('lightHEndV').style.display = 'none';
+    document.getElementById('fadeHEndV').style.display = 'none';
+    lightBoxVideoHE.pause();
+    lightBoxVideoHE.currentTime = 0;
+  }
+//---------------------------------------------
+
+//------ BASILISK beginning video popup --------
   function lightbox_openB() {
     var lightBoxVideoB = document.getElementById("basiliskBeginning");
     window.scrollTo(0, 0);
@@ -428,15 +533,27 @@ function lightbox_openD() {
     lightBoxVideoB.pause();
     lightBoxVideoB.currentTime = 0;
   }
+//----------------------------------------------
 
-  function lightbox_closeH() {
-    var lightBoxVideoH = document.getElementById("hydrusBeginning");
-    document.getElementById('lightH').style.display = 'none';
-    document.getElementById('fadeH').style.display = 'none';
-    lightBoxVideoH.pause();
-    lightBoxVideoH.currentTime = 0;
+//------ BASILISK end video popup --------
+function lightbox_openBEnd() {
+    var lightBoxVideoBE = document.getElementById("basiliskEndV");
+    window.scrollTo(0, 0);
+    document.getElementById('lightBEndV').style.display = 'block';
+    document.getElementById('fadeBEndV').style.display = 'block';
+    lightBoxVideoBE.play();
   }
 
+  function lightbox_closeBEndV() {
+    var lightBoxVideoBE = document.getElementById("basiliskEndV");
+    document.getElementById('lightBEndV').style.display = 'none';
+    document.getElementById('fadeBEndV').style.display = 'none';
+    lightBoxVideoBE.pause();
+    lightBoxVideoBE.currentTime = 0;
+  }
+//---------------------------------------------
+
+//------ PHOENIX beginning video popup --------
   function lightbox_openP() {
     var lightBoxVideoP = document.getElementById("phoenixBeginning");
     document.getElementById('lightP').style.display = 'block';
@@ -450,8 +567,26 @@ function lightbox_openD() {
     document.getElementById('fadeP').style.display = 'none';
     lightBoxVideoP.pause();
     lightBoxVideoP.currentTime = 0;
-    //lightBoxVideoP.play();
   }
+//--------------------------------------------
+
+//------ PHOENIX end video popup --------
+function lightbox_openPEnd() {
+    var lightBoxVideoPE = document.getElementById("phoenixEndV");
+    window.scrollTo(0, 0);
+    document.getElementById('lightPEndV').style.display = 'block';
+    document.getElementById('fadePEndV').style.display = 'block';
+    lightBoxVideoPE.play();
+  }
+
+  function lightbox_closePEndV() {
+    var lightBoxVideoPE = document.getElementById("phoenixEndV");
+    document.getElementById('lightPEndV').style.display = 'none';
+    document.getElementById('fadePEndV').style.display = 'none';
+    lightBoxVideoPE.pause();
+    lightBoxVideoPE.currentTime = 0;
+  }
+//---------------------------------------------
   
   function lightbox_close() {
     var lightBoxVideoD = document.getElementById("dragonBeginning");
@@ -829,6 +964,13 @@ function spices(){
     document.getElementsByClassName("U4bab")[1].style.display="none";
     document.getElementsByClassName("U5babb")[0].style.display="block";
     document.getElementsByClassName("U5babb")[1].style.display="block";
+}
+
+function chooseAgain(){
+    document.getElementsByClassName("U5babb")[0].style.display="none";
+    document.getElementsByClassName("U5babb")[1].style.display="none";
+    document.getElementsByClassName("U4bab")[0].style.display="block";
+    document.getElementsByClassName("U4bab")[1].style.display="block";
 }
 
 function charismaPotion(){
@@ -1603,6 +1745,16 @@ function pauseAudioB(){
         }
 }
 
+//------------------ PHOENIX AUDIO PAUSE ----------------------------
+var thisAudioP = document.getElementsByClassName("narrAudioP");
+function pauseAudioP(){
+    //console.log(thisAudio);
+    for (i = 0; i < thisAudioP.length; i++){
+        thisAudioP[i].pause();
+        thisAudioP[i].currentTime = 0;  
+        }
+}
+
 //------------------ PROLOGUE AUDIO PAUSE ----------------------------
 var thisAudioPrologue = document.getElementsByClassName("narrAudioPrologue");
 function pauseAudioPrologue(){
@@ -1660,6 +1812,17 @@ function playPhoenix(){
 
 function pausePhoenix(){
     phoenixS.pause();
+    //dragonS.currentTime = 0;
+}
+
+//-------------- BASILISK SOUND ON MODAL CLICK ------------------------
+var basiliskS = document.getElementById("basiliskSound");
+function playBasilisk(){
+    //console.log(hydrusS);
+    basiliskS.play();}
+
+function pauseBasilisk(){
+    basiliskS.pause();
     //dragonS.currentTime = 0;
 }
 

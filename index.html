@@ -23,8 +23,12 @@
                 <source src="Narration/phoenixAudio/pheonixSound.mp3" type="audio/mpeg">
             </audio>
 
+            <audio loop id = "basiliskSound">
+                <source src="Narration/basiliskAudio/basilisksound.mp3" type="audio/mpeg">
+            </audio>
+
             <audio loop id = "tavernAmbience">
-                <source src="Narration/dragonAudio/tavernambience.mp3" type="audio/mpeg">
+                <source src="Narration/dragonAudio/tavernambienceFIXED.mp3" type="audio/mpeg">
             </audio>
             <audio loop id = "egyptAmbience">
                 <source src="Narration/dragonAudio/tavernambience.mp3" type="audio/mpeg">
@@ -297,7 +301,7 @@
                                 <span class="close" onclick="closeModal()">&times;</span>
                                 <div class = "modalContentAnimal">
                                     <div>
-                                        <img src="orgSketches/hydrusOrg.JPG" class = "modalImgAnimal" alt="Crocodile">
+                                        <img src="orgSketches/hydrusOrg.jpg" class = "modalImgAnimal" alt="Crocodile">
                                     </div>
                                     <div class = "modalTextAnimal">
                                             <div class = "modalHead">The Crocodile</div>
@@ -514,7 +518,14 @@
 <!---------------------------------- BEGIN UNICORN NARRATIVE --------------------------------------------------------->
 <!-------------------------------------------------------------------------------------------------------------------->
 
-                
+<div id="lightUEndV">
+        <a class="boxclose" id="boxclose" onclick="lightbox_closeUEndV();"></a>
+        <video id="unicornEndV" width="600" controls>
+            <source src="creatureAnimations/unicornEnd.mp4" type="video/mp4">
+            <!--Browser does not support <video> tag -->
+          </video>
+</div>
+<div id="fadeUEndV" onClick="lightbox_closeUEndV();"></div>
                 <!--------------------------------------------------------------------->
                 <!--------------------- UNICORN LEVEL 1 ------------------------------->
                 <!--------------------------------------------------------------------->
@@ -575,6 +586,7 @@
                                 <li>An alchemist</li>
                                 <li>A member of the clergy</li>
                             </ul> 
+                        
                             </p>
                 </div>
                 <div id = "bodytext" class = "U2b">
@@ -617,7 +629,7 @@
                                             bottom of its cover</li>
                                 <li>The diary and address book of Brother David</li>
                             </ul> 
-                
+                       
                         </p>
                 </div>
                 <div id = "bodytext" class = "U2c">
@@ -644,13 +656,8 @@
                             You ponder the idea for a while. You’ve always liked your old neighbour, he’s been kind 
                             to you, treating you like his very own child. You accept his offer, and the quest for those 
                             fantastical creatures fades from your mind. 
-                            <div id="lightU">
-                                    <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
-                                    <video id="unicornBeginning" width="600" controls>
-                                        <source src="creatureAnimations/unicornEnd.mp4" type="video/mp4">
-                                        <!--Browser does not support <video> tag -->
-                                    </video>
-                            </div>
+                            <br><br>
+                            End of Journey.
                         </p>
                 </div>
                 <!--------------------------------------------------------------------->
@@ -676,7 +683,8 @@
                             from the window above you yelling Thief! Thief! You try to run but the garb you had been 
                             trying so frantically to put on catches beneath your feet, causing you to trip. Before you 
                             manage to make it back to your feet, you are surrounded. 
-                            <br>
+                            <br><br>
+                            End of Journey.
                             </p>
                 </div>
                 <div id = "bodytext" class = "U3ab">
@@ -883,6 +891,8 @@
                         you stand up however you hear a hissing voice coming from behind you…
                         <br><br>
                         “It was a shame you had to leave so soon. I see you read my book. At least now you know what happens next.”
+                        <br><br>
+                        End of Journey.
                 </div>
                 <!--------------------------------------------------------------------->
                 <!--------------------- UNICORN LEVEL 4 ------------------------------->
@@ -902,7 +912,8 @@
                         settling in for… well you know what. As you take your set above the hole in the wooden plank 
                         you hear a creak. Then you hear a crack. The next thing you know the entire apparatus has fallen
                         into the moat below, taking you, your *waste* and part of the castle wall with it. 
-                        <br>
+                        <br><br>
+                        End of Journey.
                 </div>
                 <div id = "bodytext" class = "U4abb">
                         <div class = "paraTitle">
@@ -975,6 +986,7 @@
                         likely trying to pilfer me for money! The book I hold in my hands is entirely blank, except 
                         for the ornate cover. Guards, seize this con artist!”
                         <br><br>
+                        End of Journey.
                         
                 </div>
                 <div id = "bodytext" class = "U4baa">
@@ -992,7 +1004,8 @@
                         make a swift getaway with the… brochure. Unfortunately, it appears she has enchanted feet that 
                         plant her firmly on the ground at all times. Infuriated at your rude behaviour she casts a hex 
                         on you, causing you to turn inside out.
-                        <br>
+                        <br><br>
+                        End of Journey.
                 </div>
                 <div id = "bodytext" class = "U4bab">
                         <div class = "paraTitle">
@@ -1038,7 +1051,7 @@
                         you sneak downstairs to retrieve the poster from the other book. Folding it carefully, you put 
                         it in your pocket for later and return upstairs to your bed chamber. You will set out for the 
                         nearby town in the morning.<br><br>
-                        
+                        End of Journey.
                         <br>
                 </div>
                 <div id = "bodytext" class = "U4bbb">
@@ -1105,6 +1118,7 @@
                             I don’t recall ever seeing your face before! Not only are you an agitator, you are an 
                             imposter as well! Guards, seize this wretched soul and send them to the gallows!”
                         <br><br>
+                        End of Journey
                 </div>
 
                 <div id = "bodytext" class = "U4acb">
@@ -1161,6 +1175,7 @@
                         be caught by normal means, and either way your quest is not to harm the animal, it is to 
                         document it and ensure its protection… odd choice there friend.
                         <br><br>
+                        End of Journey
                 </div>
 
                 <div id = "bodytext" class = "U5babb">
@@ -1237,6 +1252,7 @@
                             the unicorn… not even an artist hopped up of speed potion. This potion will not be useful 
                             to you. Try another.
                         <br><br>
+                        End of Journey.
                 </div>
 
                 <div id = "bodytext" class = "U5abbb">
@@ -1263,8 +1279,8 @@
                         that the sleeping potion’s effect lasts for 100 years. 
                         <br><br>
                         Until then, old timer.
-                       
                         <br><br>
+                        End of Journey.
                 </div>
 
                 <div id = "bodytext" class = "U5abbc">
@@ -1323,6 +1339,7 @@
                         tortured in the dungeon below the castle for treason. Who knew the King had such a short 
                         temper?
                         <br><br>
+                        End of Journey.
                 </div>
                 <div id = "bodytext" class = "U5acbb">
                         <div class = "paraTitle">
@@ -1392,6 +1409,10 @@
                             you move from behind the rock. Quickly, you sketch its likeness, to be properly illustrated 
                             later, and jot down any important notes from the experience. The first creature on your uncle’s 
                             list has been found! Congratulations. 
+                            <br><br>
+                            <div id = "navigationC">
+                                <button id = "navigationButton" class = "endGame" onclick="goCongratulations()">CONGRATULATIONS</button>
+                        </div>
                         <br><br>
                 </div>
                 <div id = "bodytext" class = "U6babcb">
@@ -1408,6 +1429,7 @@
                             Petunia doesn’t take kindly to your advances, no offense but you’re just not her type. 
                             The charisma potion must not have worked.
                         <br><br>
+                        End of Journey. 
                 </div>
                 <div id = "bodytext" class = "U6babcc">
                         <div class = "paraTitle">
@@ -1439,7 +1461,11 @@
                             Quickly, you sketch its likeness, to be properly illustrated later, and jot down any important notes from the 
                             experience. The first creature on your uncle’s list has been found! 
                             <br><br>
-                            Congratulations. 
+                            Congratulations.
+                            <br><br>
+                            <div id = "navigationC">
+                                <button id = "navigationButton" class = "endGame" onclick="goCongratulations()">CONGRATULATIONS</button>
+                        </div>
                         <br><br>
                 </div>
                 <div id = "bodytext" class = "U6acbba">
@@ -1462,6 +1488,7 @@
                             Dissatisfied with the outcome Eleanor flies into a rage, cursing the creature, the King 
                             and yourself. Maybe she wasn’t as sweet as the King made her out to be…
                         <br><br>
+                        End of Journey. 
                 </div>
                 <div id = "bodytext" class = "U6acbbb">
                         <div class = "paraTitle">
@@ -1494,6 +1521,9 @@
                             escape before the King’s men can butcher it. As for yourself, you run into the trees, 
                             remaining hidden from the King’s guards for several days until the coast is clear. 
                         <br><br>
+                        <div id = "navigationC">
+                                <button id = "navigationButton" class = "endGame" onclick="goCongratulations()">CONGRATULATIONS</button>
+                        </div>
                 </div>
                 <div id = "bodytext" class = "U6acbbc">
                         <div class = "paraTitle">
@@ -1526,6 +1556,9 @@
                             escape before the King’s men can butcher it. As for yourself, you run into the trees, 
                             remaining hidden from the King’s guards for several days until the coast is clear. 
                         <br><br>
+                        <div id = "navigationC">
+                                <button id = "navigationButton" class = "endGame" onclick="goCongratulations()">CONGRATULATIONS</button>
+                        </div>
                 </div>
 
                 <!--------------------------------------------------------------------->
@@ -1543,7 +1576,14 @@
 <!-------------------------------------------------------------------------------------------------------------------->
 <!------------------------------------ BEGIN DRAGON NARRATIVE -------------------------------------------------------->
 <!-------------------------------------------------------------------------------------------------------------------->
-               
+<div id="lightDEndV">
+        <a class="boxclose" id="boxclose" onclick="lightbox_closeDEndV();"></a>
+        <video id="dragonEndV" width="600" controls>
+            <source src="creatureAnimations/dragonEnd.mp4" type="video/mp4">
+            <!--Browser does not support <video> tag -->
+          </video>
+</div>
+<div id="fadeDEndV" onClick="lightbox_closeDEndV();"></div>     
 
 <div id = "bodytext" class = "D1" class = "bodyTextD">
         <div class = "paraTitle">
@@ -1556,7 +1596,7 @@
                 </div>     
         </div>
                     <p><br>
-                        <button id = "navigationButton" onclick = "pauseTavern()">Mute Ambient</button>
+                        <button id = "navigationButton" onclick = "pauseTavern()">Mute Tavern Noise</button>
                         <br><br>
                         Re-reading Uncle Philip’s letter, one name on the list stands out to you in bold lettering: 
                         DRAGON.
@@ -1993,6 +2033,10 @@
                         <br><br>
                         You are exhausted after your endeavours, but proud that you have managed to find and document 
                         a fantastical beast from Uncle Philip's list to add to your growing Bestiary.
+                        <br><br>
+                        <div id = "navigationC">
+                                <button id = "navigationButton" class = "endGame" onclick="goCongratulations()">CONGRATULATIONS</button>
+                        </div>
                 </div>
 
                 <div id = "bodytext" class = "D3ba">
@@ -2018,8 +2062,7 @@
                         Your infection gets worse and worse, until you eventually fall unconscious and perish while 
                         still in the stocks.
                         <br><br>
-                        End of Journey. 
-                        
+                        End of Journey.
                 </div>
 
                 <div id = "bodytext" class = "D3bb">
@@ -2462,11 +2505,6 @@
                         the camp. As you walk through the camp ground, the Panther begins to stir and wakes. The air seems 
                         to shimmer and shine and before you know it a fearsome serpent with wings appears!
                         <br><br>
-                            <video width = "480" height ="360" class = "videoEmbed" controls="controls">
-                                <source src="creatureAnimations/dragonAnimate.mp4" type="video/mp4">
-                                  Your browser does not support the video tag.
-                                  </video>
-                            <br><br>
                         This must be a Dragon! You stand frozen in fear as the Dragon seems to coil up ready to strike at 
                         you. As the Dragon sets to attack you, a fearsome roar stuns you both - the Panther has noticed the 
                         Dragon and as one of its enemies has let out a vicious snarl and a sweet-smelling breath comes from 
@@ -2485,9 +2523,25 @@
 <!---------------------------------------------------------------------------------------------------------------------->
 <!-------------------------------------- START PHOENIX NARRATIVE ---------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------------------------------->
-                <div id = "bodytext" class = "P1" class = "bodyTextP">
+<div id="lightPEndV">
+        <a class="boxclose" id="boxclose" onclick="lightbox_closePEndV();"></a>
+        <video id="phoenixEndV" width="600" controls>
+            <source src="creatureAnimations/phoenixEnd.mp4" type="video/mp4">
+            <!--Browser does not support <video> tag -->
+          </video>
+</div>
+
+<div id="fadePEndV" onClick="lightbox_closePEndV();"></div>               
+
+<div id = "bodytext" class = "P1" class = "bodyTextP">
                         <div class = "paraTitle">
                                 The Quest Begins
+                                <div class = "narrAudioPos">
+                                        <audio controls class = "narrAudioP">
+                                                <source src="Narration/phoenixAudio/P1.mp3" type="audio/mpeg">
+                                                Your browser does not support the audio element.
+                                        </audio>
+                                </div>
                             </div>
                     <br>
                     You decide to pursue the Phoenix. You’ve heard of the creature before, but you’ve never seen one 
@@ -2524,6 +2578,12 @@
                 <div id = "bodytext" class = "P2a" class = "bodyTextP">
                         <div class = "paraTitle">
                                 Travel to Egypt
+                                <div class = "narrAudioPos">
+                                        <audio controls class = "narrAudioP">
+                                                <source src="Narration/phoenixAudio/P2a.mp3" type="audio/mpeg">
+                                                Your browser does not support the audio element.
+                                        </audio>
+                                </div>
                             </div>
                     <br>
                     You go with the man to Egypt. It takes you several months to make your way there and when you 
@@ -2548,6 +2608,12 @@
                 <div id = "bodytext" class = "P2b" class = "bodyTextP">
                         <div class = "paraTitle">
                                 Travel to India
+                                <div class = "narrAudioPos">
+                                        <audio controls class = "narrAudioP">
+                                                <source src="Narration/phoenixAudio/P2b.mp3" type="audio/mpeg">
+                                                Your browser does not support the audio element.
+                                        </audio>
+                                </div>
                             </div>
                     <br>
                     You travel with your new friend by boat to the exotic lands of India. As you sail towards the port 
@@ -2572,6 +2638,12 @@
                 <div id = "bodytext" class = "P3ba" class = "bodyTextP">
                         <div class = "paraTitle">
                                 Listen to a man speak about Resurrection
+                                <div class = "narrAudioPos">
+                                        <audio controls class = "narrAudioP">
+                                                <source src="Narration/phoenixAudio/P3ba.mp3" type="audio/mpeg">
+                                                Your browser does not support the audio element.
+                                        </audio>
+                                </div>
                             </div>
                     <br>
                     “You see child, the bird which you seek has the ability to be reborn. Every 500 years it flies to 
@@ -2584,6 +2656,12 @@
                 <div id = "bodytext" class = "P3bb" class = "bodyTextP">
                         <div class = "paraTitle">
                                 Listen to a man speak about Death
+                                <div class = "narrAudioPos">
+                                        <audio controls class = "narrAudioP">
+                                                <source src="Narration/phoenixAudio/P3bb.mp3" type="audio/mpeg">
+                                                Your browser does not support the audio element.
+                                        </audio>
+                                </div>
                             </div>
                    <br>
                     “At the end of its lifecycle, the Phoenix incinerates itself on a funeral pyre, not unlike what we 
@@ -2595,6 +2673,12 @@
                 <div id = "bodytext" class = "P3bc" class = "bodyTextP">
                         <div class = "paraTitle">
                                 Listen to a man speak about Karma
+                                <div class = "narrAudioPos">
+                                        <audio controls class = "narrAudioP">
+                                                <source src="Narration/phoenixAudio/P3bc.mp3" type="audio/mpeg">
+                                                Your browser does not support the audio element.
+                                        </audio>
+                                </div>
                             </div>
                     <br>
                     “In the Hindu religion, we believe in a cycle of cause and effect - that each man or woman’s actions 
@@ -2607,6 +2691,12 @@
                 <div id = "bodytext" class = "continueText" class = "bodyTextP">
                         <div class = "paraTitle">
                                 Continue
+                                <div class = "narrAudioPos">
+                                        <audio controls class = "narrAudioP">
+                                                <source src="Narration/phoenixAudio/continueText.mp3" type="audio/mpeg">
+                                                Your browser does not support the audio element.
+                                        </audio>
+                                </div>
                             </div>
                     <br>
                     After your stay with the fishermen, you continue on your journey with your now good friend, who 
@@ -2620,6 +2710,12 @@
                 <div id = "bodytext" class = "P3aa" class = "bodyTextP">
                         <div class = "paraTitle">
                                 The Feathers
+                                <div class = "narrAudioPos">
+                                        <audio controls class = "narrAudioP">
+                                                <source src="Narration/phoenixAudio/P3aa.mp3" type="audio/mpeg">
+                                                Your browser does not support the audio element.
+                                        </audio>
+                                </div>
                             </div>
                     <br>
                     You go with the man who offers to show you where the feathers may be. You both make your way 
@@ -2637,6 +2733,12 @@
                 <div id = "bodytext" class = "P3ab" class = "bodyTextP">
                         <div class = "paraTitle">
                                 Listen to Story
+                                <div class = "narrAudioPos">
+                                        <audio controls class = "narrAudioP">
+                                                <source src="Narration/phoenixAudio/P3ab.mp3" type="audio/mpeg">
+                                                Your browser does not support the audio element.
+                                        </audio>
+                                </div>
                             </div>
                    <br>
                     You sit and look on intently as the man begins his tale.
@@ -2665,6 +2767,12 @@
                 <div id = "bodytext" class = "P3ac" class = "bodyTextP">
                         <div class = "paraTitle">
                                 Shown Around Town
+                                <div class = "narrAudioPos">
+                                        <audio controls class = "narrAudioP">
+                                                <source src="Narration/phoenixAudio/P3ac.mp3" type="audio/mpeg">
+                                                Your browser does not support the audio element.
+                                        </audio>
+                                </div>
                             </div>
                     <br>
                     You and your new merchant friend set out for the city of Cairo the next morning. Your friend is 
@@ -2691,6 +2799,12 @@
                 <div id = "bodytext" class = "P4aca" class = "bodyTextP">
                         <div class = "paraTitle">
                                 The Bird Watching Manual
+                                <div class = "narrAudioPos">
+                                        <audio controls class = "narrAudioP">
+                                                <source src="Narration/phoenixAudio/P4aca.mp3" type="audio/mpeg">
+                                                Your browser does not support the audio element.
+                                        </audio>
+                                </div>
                             </div>
                    
                     You take the bird watching manual, I mean you are on the lookout for a big bird, right? 
@@ -2701,6 +2815,12 @@
                 <div id = "bodytext" class = "P4acb" class = "bodyTextP">
                         <div class = "paraTitle">
                                 Map of Heliopolis
+                                <div class = "narrAudioPos">
+                                        <audio controls class = "narrAudioP">
+                                                <source src="Narration/phoenixAudio/P4acb.mp3" type="audio/mpeg">
+                                                Your browser does not support the audio element.
+                                        </audio>
+                                </div>
                             </div>
                     <br>
                     There’s something familiar about this map, like you’ve walked through its streets before. Come to 
@@ -2723,6 +2843,12 @@
                 <div id = "bodytext" class = "P5accb" class = "bodyTextP">
                         <div class = "paraTitle">
                                 Alcohol
+                                <div class = "narrAudioPos">
+                                        <audio controls class = "narrAudioP">
+                                                <source src="Narration/phoenixAudio/P5accb.mp3" type="audio/mpeg">
+                                                Your browser does not support the audio element.
+                                        </audio>
+                                </div>
                             </div>
                     <br>
                     The symbol you chose leads you to the site of what was actually an ancient ale house. 
@@ -2732,8 +2858,14 @@
                 <div id = "bodytext" class = "P5acca" class = "bodyTextP">
                         <div class = "paraTitle">
                                 The Phoenix
+                                <div class = "narrAudioPos">
+                                        <audio controls class = "narrAudioP">
+                                                <source src="Narration/phoenixAudio/P5acca.mp3" type="audio/mpeg">
+                                                Your browser does not support the audio element.
+                                        </audio>
+                                </div>
                             </div>
-                   ><br>
+                   <br>
                     You follow the rudimentary directions laid out in the map, which resemble the streets of modern 
                     times. They lead you to a small opening in the streets, where a large flat stone lays. Your heart 
                     skips a beat as you realise this must be the site of the altar where the Phoenix sets itself 
@@ -2757,11 +2889,21 @@
                     kindling below it ablaze. Over the next few days you document and sketch the resurrection process 
                     of the great bird before returning home to pursue the rest of the creatures on your uncle’s 
                     list.
+                    <br><br>
+                    <div id = "navigationC">
+                        <button id = "navigationButton" class = "endGame" onclick="goCongratulations()">CONGRATULATIONS</button>
+                </div>
                 </div>
 
                 <div id = "bodytext" class = "P5accc" class = "bodyTextP">
                         <div class = "paraTitle">
                                 Palace
+                                <div class = "narrAudioPos">
+                                        <audio controls class = "narrAudioP">
+                                                <source src="Narration/phoenixAudio/P5accc.mp3" type="audio/mpeg">
+                                                Your browser does not support the audio element.
+                                        </audio>
+                                </div>
                             </div>
                     <br>
                     What an incredible place! This must have been the site of an ancient palace. Not what you 
@@ -2778,6 +2920,15 @@
 <!------------------------------------------------------------------------------------------------------------->
 <!------------------------------------- START HYDRUS NARRATIVE ------------------------------------------------>
 <!------------------------------------------------------------------------------------------------------------->
+<div id="lightHEndV">
+        <a class="boxclose" id="boxclose" onclick="lightbox_closeHEndV();"></a>
+        <video id="hydrusEndV" width="600" controls>
+            <source src="creatureAnimations/hydrusEnd.mp4" type="video/mp4">
+            <!--Browser does not support <video> tag -->
+          </video>
+</div>
+
+<div id="fadeHEndV" onClick="lightbox_closeHEndV();"></div>
 
 <div id = "bodytext" class = "H1" class = "bodyTextH">
         <div class = "paraTitle">
@@ -2871,6 +3022,8 @@
         crocodiles does infact inhabit the waters here. Then your stomach drops, because you hear a 
         soul-shattering howl. It’s a pack of wild dogs and they look like they haven’t eaten in ages. 
         Luckily for them, you look like a tasty snack. Unluckily for you, it’s dinner time.
+        <br><br>
+        End of Journey
 </div>
 
 <div id = "bodytext" class = "H3aa" class = "bodyTextH">
@@ -2941,6 +3094,8 @@
         <br><br>
         You complete the tour and it was interesting, although it didn’t really reveal anything helpful to you. Heliopolis was 
         fantastic though, you heard the tour guide mention something about the great Phoenix migrating there too…
+        <br><br>
+        End of Journey
 </div>
 
 <div id = "bodytext" class = "H3ac" class = "bodyTextH">
@@ -2960,6 +3115,8 @@
         who’s visiting all the way from Russia. The tour guide greets you and you start on your way. The streets are packed to the brim with people, 
         and all incredibly narrow. The twists and turns make it hard to keep up with your group. Before you know it you are lost completely in the 
         middle of Cairo.
+        <br><br>
+        End of Journey.       
 </div>
 
 <div id = "bodytext" class = "H4aaa" class = "bodyTextH">
@@ -2978,6 +3135,8 @@
         eventually the sun becomes too much to bear. You decide to go for a quick dip in the water. Big mistake. You barely make it waist 
         deep before you feel a tremendous pain shoot up your leg. Then you see the blood. You’ve been caught by a crocodile hiding in the 
         murky water. So long friend, it’s been nice knowing you.
+        <br><br>
+        End of Journey. 
 </div>
 
 <div id = "bodytext" class = "H4aab" class = "bodyTextH">
@@ -3040,6 +3199,10 @@
      head out of the crocodile’s abdomen. You mind is blown, the tour guide was right! You sketch the creature quickly, trying carefully to get 
      its features down as accurately as possible. When you return home you write about the amazing experience at length. As for the tour guide’s 
      boat well… I’m sure she’ll find it one day.
+     <br><br>
+     <div id = "navigationC">
+        <button id = "navigationButton" class = "endGame" onclick="goCongratulations()">CONGRATULATIONS</button>
+</div>
 </div>
 
 <!------------------------------------------------------------------------------------------------------------->
@@ -3049,7 +3212,15 @@
 <!------------------------------------------------------------------------------------------------------------->
 <!----------------------------------- START BASILISK NARRATIVE ------------------------------------------------>
 <!------------------------------------------------------------------------------------------------------------->
+<div id="lightBEndV">
+        <a class="boxclose" id="boxclose" onclick="lightbox_closeBEndV();"></a>
+        <video id="basiliskEndV" width="600" controls>
+            <source src="creatureAnimations/basiliskEnd.mp4" type="video/mp4">
+            <!--Browser does not support <video> tag -->
+          </video>
+</div>
 
+<div id="fadeBEndV" onClick="lightbox_closeBEndV();"></div>
 
 <div id = "bodytext" class = "B1" class = "bodyTextB">
         <div class = "paraTitle">
@@ -3544,7 +3715,36 @@
         <br><br>
         You relocate the sleeping Basilisk to a place far away from people it could harm. As you release the Basilisk, you make a swift getaway as 
         it begins to stir, pleased with your accomplishment – Uncle Philip would be proud with your growing Bestiary! 
+        <br><br>
+        <div id = "navigationC">
+                <button id = "navigationButton" class = "endGame" onclick="goCongratulations()">CONGRATULATIONS</button>
+        </div>
 </div>
+
+<div id="myModalCon" class="modal">
+        <!-- Modal content -->
+            <div class="modal-contentCon">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div id = congratulationsHead>
+                        Congratulations!
+                </div>
+                <div id = congratulationsBody>
+                        You have successfully completed the Bestiary. Uncle Philip would be so proud.
+                        If you would like to learn more about each of the animals discovered 
+                        (as well as some of the animals encountered along the way), click on the images of 
+                        the animals on this webpage.
+                        <br><br>
+                        If you are interested in learning more about Medieval Bestiaries, click on the 
+                        "Behind the Bestiary" button at the top of the webpage.
+                        <br><br>
+                        Perhaps you would like to play the game again, to discover different adventures, endings,
+                        mishaps and good-fortunes? If so, click on the button titled "Menu" to be redirected to
+                        the loading screen.
+                        <br><br>
+                        Farewell adventurer, on what has been a successfully completed mission of great importance!
+                </div>
+            </div>
+        </div>
 
 
 <!------------------------------------------------------------------------------------------------------------->
@@ -3562,11 +3762,10 @@
                             Your Bestiary
                     </div>
                     <div id = "basiliskInv">
-                        <img id = "basiliskInvT" class = "top" src="creatureSketches/basiliskC_c.png" onclick = "basiliskModal()" alt="The Basilisk, a flying animal with 
+                        <img id = "basiliskInvT" class = "top" src="creatureSketches/basiliskC_c.png" onclick = "basiliskModal(); playBasilisk()" alt="The Basilisk, a flying animal with 
                             large wings and a long neck. Colourised image.">
                         <img id = "basiliskInvB" class = "bottom" src="creatureSketches/basiliskB.png" alt="The Basilisk, a flying animal with 
                             large wings and a long neck. Black and white image.">
-                        
                     </div>
                     <div id = "dragonInv">
                         <img id = "dragonInvT" src="creatureSketches/dragonC_c.png" onclick = "dragonModal(); playDragon()" alt="The Dragon, a flying reptilian animal. Colourised.">
@@ -3777,6 +3976,8 @@
                                         </div>
                                         <div class = "modalTextAnimal">
                                                 <div class = "modalHead">The Basilisk</div><br>
+                                                <button id = "navigationButton" onclick = "pauseBasilisk()">Mute Basilisk</button>
+                                                <br><br>
                                                 While the basilisk in modern popular culture is depicted more as 
                                                 a snake or serpent, in many medieval bestiaries, it is shown as 
                                                 a creature with the body of a rooster and the tail of a snake. 
@@ -3820,11 +4021,11 @@
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
                     <button id = "navigationButton" onclick="seeKing(); moveU(15, false); pauseAudioU()">The King</button>
                     <button id = "navigationButton" onclick="seeMonk(); moveU(15, false); pauseAudioU()">The Monk</button>
-                    <button id = "navigationButton" onclick="seeDoctor(); pauseAudioU()">The Doctor</button>
+                    <button id = "navigationButton" onclick="seeDoctor(); pauseAudioU(); lightbox_openUEnd()">The Doctor</button>
             </div>
             <div id="navigation" class = "U2a" class = "buttona2">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick="seeAristocracy(); pauseAudioU()">Aristocracy</button>
+                    <button id = "navigationButton" onclick="seeAristocracy(); pauseAudioU(); lightbox_openUEnd()">Aristocracy</button>
                     <button id = "navigationButton" onclick="seeAlchemist(); moveU(15, false); pauseAudioU()">Alchemist</button>
                     <button id = "navigationButton" onclick="seeClergy(); moveU(15, false); pauseAudioU()">Clergy</button>
             </div>
@@ -3832,7 +4033,7 @@
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
                     <button id = "navigationButton" onclick="seePentagram(); moveU(15, false); pauseAudioU()">Pentagram</button>
                     <button id = "navigationButton" onclick="seeFiligree(); moveU(15, false); pauseAudioU()">Filigree</button>
-                    <button id = "navigationButton" onclick="seeDiary(); pauseAudioU()">Diary</button>
+                    <button id = "navigationButton" onclick="seeDiary(); pauseAudioU(); lightbox_openUEnd()">Diary</button>
             </div>
             <div id="navigation" class = "U2c" class = "buttona2">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
@@ -3840,24 +4041,24 @@
             </div>
             <div id="navigation" class = "U3ab" class = "buttona2">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick="seePrivy(); pauseAudioU()">Privy</button>
+                    <button id = "navigationButton" onclick="seePrivy(); pauseAudioU(); lightbox_openUEnd()">Privy</button>
                     <button id = "navigationButton" onclick="seeLaboratory(); moveU(25, false); pauseAudioU()">Laboratory</button>
-                    <button id = "navigationButton" onclick="seeWhereKing(); pauseAudioU()">Where is the King?</button>
+                    <button id = "navigationButton" onclick="seeWhereKing(); pauseAudioU(); lightbox_openUEnd()">Where is the King?</button>
             </div>
             <div id="navigation" class = "U3ac" class = "buttona2">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick="chastiseKing(); pauseAudioU()">Chastise King</button>
+                    <button id = "navigationButton" onclick="chastiseKing(); pauseAudioU(); lightbox_openUEnd()">Chastise King</button>
                     <button id = "navigationButton" onclick="huntingOffer(); moveU(15, false); pauseAudioU()">Hunting Offer</button>
             </div>
             <div id="navigation" class = "U3bb" class = "buttona2">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick="returnBook(); pauseAudioU()">Return Book</button>
+                    <button id = "navigationButton" onclick="returnBook(); pauseAudioU(); lightbox_openUEnd()">Return Book</button>
                     <button id = "navigationButton" onclick="readUnicornChap(); pauseAudioU()">Read Unicorn Chapter</button>
                     <button id = "navigationButton" onclick="womansAddress(); pauseAudioU()">Woman's Address</button>
             </div>
             <div id="navigation" class = "U3ba" class = "buttona2">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick="pushOver(); pauseAudioU()">Push Her Over</button>
+                    <button id = "navigationButton" onclick="pushOver(); pauseAudioU(); lightbox_openUEnd()">Push Her Over</button>
                     <button id = "navigationButton" onclick="trade(); moveU(15, false); pauseAudioU()">Trade</button>
             </div>
             <div id="navigation" class = "U3bc" class = "buttona2">
@@ -3868,9 +4069,9 @@
 
             <div id="navigation" class = "U4bab" class = "buttona2">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick="enchantSpear(); pauseAudioU()">Spear</button>
+                    <button id = "navigationButton" onclick="enchantSpear(); pauseAudioU();lightbox_openUEnd()">Spear</button>
                     <button id = "navigationButton" onclick="spices(); pauseAudioU()">Spices</button>
-                    <button id = "navigationButton" onclick="charismaPotion(); moveU(15); pauseAudioU()">Potion</button>
+                    <button id = "navigationButton" onclick="charismaPotion(); moveU(15, false); pauseAudioU()">Potion</button>
             </div>
 
             <div id="navigation" class = "U4bbc" class = "buttona2">
@@ -3885,7 +4086,7 @@
 
             <div id="navigation" class = "U4acb" class = "buttona2">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick="holdRandom(); pauseAudioU()">Hold Ransom</button>
+                    <button id = "navigationButton" onclick="holdRandom(); pauseAudioU(); lightbox_openUEnd()">Hold Ransom</button>
                     <button id = "navigationButton" onclick="realTechnique(); moveU(15, false); pauseAudioU()">Real Technique</button>
             </div>
             <div id="navigation" class = "U4baa" class = "buttona2">
@@ -3894,7 +4095,8 @@
             </div>
             <div id="navigation" class = "U4bba" class = "buttona2">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick="seePentagram(); moveU(0, true); pauseAudioU()">Continue</button>
+                    <button id = "navigationButton" onclick="goPrologue(); moveU(0, true); pauseAudioU()">Choose Another Animal</button>
+                  <!--  <button id = "navigationButton" onclick="seePentagram(); moveU(0, true); pauseAudioU()">Continue</button>  -->
             </div>
             <div id="navigation" class = "U4aba" class = "buttona2">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
@@ -3910,8 +4112,8 @@
             </div>
             <div id="navigation" class = "U4abb" class = "buttona2">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick="chooseSpeed(); pauseAudioU()">Speed</button>
-                    <button id = "navigationButton" onclick="chooseSleeping(); pauseAudioU()">Sleeping</button>
+                    <button id = "navigationButton" onclick="chooseSpeed(); pauseAudioU(); lightbox_openUEnd()">Speed</button>
+                    <button id = "navigationButton" onclick="chooseSleeping(); pauseAudioU(); lightbox_openUEnd()">Sleeping</button>
                     <button id = "navigationButton" onclick="charismaPotion2(); moveU(15, false); pauseAudioU()">Charisma</button>
             </div>
             <div id="navigation" class = "U5baba" class = "buttona2">
@@ -3931,25 +4133,30 @@
                     <button id = "navigationButton" onclick="goPrologue(); moveU(0, true); pauseAudioU()">Choose Another Animal</button>
             </div>
 
+            <div id="navigation" class = "U5babb" class = "buttona2">
+                <button id = "navigationButton" onclick = "loadOn()">Menu</button>
+                <button id = "navigationButton" onclick="chooseAgain(); pauseAudioU()">Try Again</button>
+                </div>
+
             <div id="navigation" class = "U5babc" class = "buttona2">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick="complimentPetunia(); toggleUnicorn(); moveU(30, false); pauseAudioU()">Compliment Petunia</button>
-                    <button id = "navigationButton" onclick="makeMove(); pauseAudioU()">Make a Move</button>
-                    <button id = "navigationButton" onclick="askFavor(); toggleUnicorn(); moveU(30, false); pauseAudioU()">Ask Favor</button>
+                    <button id = "navigationButton" onclick="complimentPetunia(); toggleUnicorn();  pauseAudioU(); checkComplete()">Compliment Petunia</button>
+                    <button id = "navigationButton" onclick="makeMove(); pauseAudioU(); lightbox_openUEnd()">Make a Move</button>
+                    <button id = "navigationButton" onclick="askFavor(); pauseAudioU(); toggleUnicorn(); checkComplete()">Ask Favor</button>
             </div>
 
             <div id="navigation" class = "U5abbc" class = "buttona2">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick="complimentPetunia(); moveU(30, false); pauseAudioU()">Compliment Petunia</button>
+                    <button id = "navigationButton" onclick="complimentPetunia(); moveU(30, false); pauseAudioU(); toggleUnicorn(); checkComplete()">Compliment Petunia</button>
                     <button id = "navigationButton" onclick="makeMove(); pauseAudioU()">Make a Move</button>
-                    <button id = "navigationButton" onclick="askFavor(); moveU(30, false); pauseAudioU()">Ask Favor</button>
+                    <button id = "navigationButton" onclick="askFavor(); moveU(30, false); pauseAudioU(); toggleUnicorn(); checkComplete()">Ask Favor</button>
             </div>
 
             <div id="navigation" class = "U5acbb" class = "buttona2">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick="eleanor(); pauseAudioU()">Eleanor</button>
-                    <button id = "navigationButton" onclick="daphne(); toggleUnicorn(); pauseAudioU()">Daphne</button>
-                    <button id = "navigationButton" onclick="mildred(); toggleUnicorn(); pauseAudioU()">Mildred</button>
+                    <button id = "navigationButton" onclick="eleanor(); pauseAudioU(); lightbox_openUEnd()">Eleanor</button>
+                    <button id = "navigationButton" onclick="daphne(); toggleUnicorn(); pauseAudioU(); checkComplete()">Daphne</button>
+                    <button id = "navigationButton" onclick="mildred(); toggleUnicorn(); pauseAudioU(); checkComplete()">Mildred</button>
             </div>
 
 
@@ -4018,7 +4225,7 @@
 
             <div id="navigation" class = "D2a" class = "buttona1" class = "bodyTextD">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="lookEmblem(); pauseAudio(); pauseTavern()">Look at Emblem</button>
+                <button id = "navigationButton" onclick="lookEmblem(); pauseAudio(); pauseTavern(); lightbox_openDEnd()">Look at Emblem</button>
                 <button id = "navigationButton" onclick="readScroll(); pauseAudio(); pauseTavern()">Read Scroll</button>
                 <button id = "navigationButton" onclick="joinQuest(); move(10); pauseAudio(); pauseTavern()">Join Quest</button>
             </div>
@@ -4035,7 +4242,7 @@
 
             <div id="navigation" class = "D3ab" class = "buttona1" class = "bodyTextD">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="buyScroll(); pauseAudio()">Buy Scroll</button>
+                <button id = "navigationButton" onclick="buyScroll(); pauseAudio(); lightbox_openDEnd()">Buy Scroll</button>
                 <button id = "navigationButton" onclick="stealScroll(); pauseAudio()">Steal Scroll</button>
                 <button id = "navigationButton" onclick="makeSong(); pauseAudio()">Make Song</button>
             </div>
@@ -4074,26 +4281,26 @@
 
             <div id="navigation" class = "D5acba" class = "buttona1" class = "bodyTextD">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="captureElephant(); pauseAudio()">Capture Elephant</button>
+                <button id = "navigationButton" onclick="captureElephant(); pauseAudio(); lightbox_openDEnd()">Capture Elephant</button>
                 <button id = "navigationButton" onclick="befriendElephant(); move(10, false); pauseAudio()">Befriend Elephant</button>
             </div>
             <div id="navigation" class = "D6acbab" class = "buttona1" class = "bodyTextD">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="aimHead(); pauseAudio()">Aim for the Head</button>
+                <button id = "navigationButton" onclick="aimHead(); pauseAudio(); lightbox_openDEnd()">Aim for the Head</button>
                 <button id = "navigationButton" onclick="aimTail(); move(25, false); pauseAudio()">Aim for the Tail</button>
             </div>
             <div id="navigation" class = "D7acbabb" class = "buttona1" class = "bodyTextD">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="dragonEnd(); toggleDragon(); move(25, false); pauseAudio()">The Dragon</button>
+                <button id = "navigationButton" onclick="dragonEnd(); toggleDragon(); move(25, false); pauseAudio(); checkComplete()">The Dragon</button>
             </div>
             <div id="navigation" class = "D2b" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="laughOpenly(); pauseAudio(); pauseTavern()">Laugh Openly</button>
+                <button id = "navigationButton" onclick="laughOpenly(); pauseAudio(); pauseTavern(); lightbox_openDEnd()">Laugh Openly</button>
                 <button id = "navigationButton" onclick="acceptOffer(); pauseAudio(); pauseTavern()">Accept Offer</button>
             </div>
             <div id="navigation" class = "D3bb" class = "buttona1">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick="goSolo(); pauseAudio()">Go Solo</button>
+                    <button id = "navigationButton" onclick="goSolo(); pauseAudio(); lightbox_openDEnd()">Go Solo</button>
                     <button id = "navigationButton" onclick="leaveQuietly(); pauseAudio()">Leave Quietly</button>
                 </div>
             <div id="navigation" class = "D3ba" class = "buttona1">
@@ -4146,51 +4353,53 @@
 
             <div id="navigation" class = "D2c" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="unspunWool(); pauseAudio(); pauseTavern()">Unspun Wool</button>
+                <button id = "navigationButton" onclick="unspunWool(); pauseAudio(); pauseTavern(); lightbox_openDEnd()">Unspun Wool</button>
                 <button id = "navigationButton" onclick="tradeLute(); pauseAudio(); pauseTavern()">A Lute</button>
                 <button id = "navigationButton" onclick="tradeScroll(); pauseAudio(); pauseTavern()">A Tattered Scroll</button>
             </div>
 
             <div id="navigation" class = "D3cb" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="ironBroadsword(); pauseAudio()">Iron Broadsword</button>
+                <button id = "navigationButton" onclick="ironBroadsword(); pauseAudio(); lightbox_openDEnd()">Iron Broadsword</button>
                 <button id = "navigationButton" onclick="infoDragons(); pauseAudio()">Information</button>
             </div>
 
+            <!--
             <div id="navigation" class = "D4cbb" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
                 <button id = "navigationButton" onclick="joinHunting(); pauseAudio()">Join Hunting Party</button>
                 <button id = "navigationButton" onclick="infoDragons(); pauseAudio()">Pay for Safe Passage</button>
             </div>
+                -->
 
             <div id="navigation" class = "D3cc" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="tradeLance(); pauseAudio()">Lance</button>
+                <button id = "navigationButton" onclick="tradeLance(); pauseAudio(); lightbox_openDEnd()">Lance</button>
                 <button id = "navigationButton" onclick="tradeMirror(); pauseAudio()">Hand Mirror</button>
             </div>
 
             <div id="navigation" class = "D4ccb" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
                 <button id = "navigationButton" onclick="huntingEast(); pauseAudio()">Hunting party East</button>
-                <button id = "navigationButton" onclick="aloneWest(); pauseAudio()">Along West</button>
+                <button id = "navigationButton" onclick="aloneWest(); pauseAudio(); lightbox_openDEnd()">Along West</button>
             </div>
 
             <div id="navigation" class = "D5ccba" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="useSpear(); pauseAudio()">Use spear</button>
-                <button id = "navigationButton" onclick="useCoil(); pauseAudio()">Use rope coil</button>
+                <button id = "navigationButton" onclick="useSpear(); pauseAudio(); lightbox_openDEnd()">Use spear</button>
+                <button id = "navigationButton" onclick="useCoil(); pauseAudio(); lightbox_openDEnd()">Use rope coil</button>
                 <button id = "navigationButton" onclick="useHandMirror(); pauseAudio()">Use hand mirror</button>
             </div>
 
             <div id="navigation" class = "D6ccbac" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="sellPanther(); pauseAudio()">Sell Panther</button>
+                <button id = "navigationButton" onclick="sellPanther(); pauseAudio(); lightbox_openDEnd()">Sell Panther</button>
                 <button id = "navigationButton" onclick="trapDragon(); pauseAudio()">Use Panther to Trap Dragon</button>
             </div>
 
             <div id="navigation" class = "D7ccbacb" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="dragonEnd(); toggleDragon(); pauseAudio()">The Dragon</button>
+                <button id = "navigationButton" onclick="dragonEnd(); toggleDragon(); pauseAudio(); checkComplete()">The Dragon</button>
             </div>
 
             <div id="navigation" class = "D4cbb" class = "buttona1">
@@ -4212,91 +4421,91 @@
             <!------------------------------------------------------------------------->
             <div id="navigation" class = "P1" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="goIndia(); moveP(25, false)">India</button>
-                <button id = "navigationButton" onclick="goEgypt(); moveP(25, false)">Egypt</button>
+                <button id = "navigationButton" onclick="goIndia(); moveP(25, false); pauseAudioP()">India</button>
+                <button id = "navigationButton" onclick="goEgypt(); moveP(25, false); pauseAudioP()">Egypt</button>
             </div>
 
             <div id="navigation" class = "P2b" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="goResurrection()">Resurrection</button>
-                <button id = "navigationButton" onclick="goDeath()">Death</button>
-                <button id = "navigationButton" onclick="goKarma()">Karma</button>
+                <button id = "navigationButton" onclick="goResurrection(); pauseAudioP()">Resurrection</button>
+                <button id = "navigationButton" onclick="goDeath(); pauseAudioP()">Death</button>
+                <button id = "navigationButton" onclick="goKarma(); pauseAudioP()">Karma</button>
             </div>
 
             <div id="navigation" class = "P3ba" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="anotherListen()">Listen to another Man</button>
+                <button id = "navigationButton" onclick="anotherListen(); pauseAudioP()">Listen to another Man</button>
             </div>
 
             <div id="navigation" class = "P3bb" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="anotherListen()">Listen to another Man</button>
+                <button id = "navigationButton" onclick="anotherListen(); pauseAudioP()">Listen to another Man</button>
             </div>
 
             <div id="navigation" class = "P3bc" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="anotherListen()">Listen to another Man</button>
+                <button id = "navigationButton" onclick="anotherListen(); pauseAudioP()">Listen to another Man</button>
             </div>
 
             <div id="navigation" class = "continueText" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="goTown(); moveP(40, false)">Continue</button>
+                <button id = "navigationButton" onclick="goTown(); moveP(40, false); pauseAudioP()">Continue</button>
             </div>
             <div id="navigation" class = "P2a" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="goFeathers()">Feathers</button>
-                <button id = "navigationButton" onclick="goStory(); moveP(20, false)">Story</button>
-                <button id = "navigationButton" onclick="goTown(); moveP(40, false)">Town</button>
+                <button id = "navigationButton" onclick="goFeathers(); lightbox_openPEnd()">Feathers</button>
+                <button id = "navigationButton" onclick="goStory(); moveP(20, false); pauseAudioP()">Story</button>
+                <button id = "navigationButton" onclick="goTown(); moveP(40, false); pauseAudioP()">Town</button>
             </div>
 
             <div id="navigation" class = "P3ab" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="goTown(); moveP(20, false)">Town</button>
+                <button id = "navigationButton" onclick="goTown(); moveP(20, false); pauseAudioP()">Town</button>
 
             </div>
 
             <div id="navigation" class = "P3aa" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+                <button id = "navigationButton" onclick="goPrologue(); pauseAudioP()">Choose Another Animal</button>
 
             </div>
 
             <div id="navigation" class = "P4aca" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="goPrologue()">Choose Another Animal</button>
+                <button id = "navigationButton" onclick="goPrologue(); pauseAudioP()">Choose Another Animal</button>
 
             </div>
 
             <div id="navigation" class = "P3ac" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="birdWatch()">Bird Watching</button>
-                <button id = "navigationButton" onclick="mapHelio(); moveP(20, false)">Map of Heliopolis</button>
+                <button id = "navigationButton" onclick="birdWatch(); pauseAudioP(); lightbox_openPEnd()">Bird Watching</button>
+                <button id = "navigationButton" onclick="mapHelio(); moveP(20, false); pauseAudioP()">Map of Heliopolis</button>
             </div>
 
 
             <div id="navigation" class = "P4acb" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="chooseSun(); togglePhoenix(); moveP(15, false)">SUN</button>
-                <button id = "navigationButton" onclick="chooseAlcohol()">ALCOHOL</button>
-                <button id = "navigationButton" onclick="choosePalace()">PALACE</button>
+                <button id = "navigationButton" onclick="chooseSun(); togglePhoenix(); moveP(15, false); pauseAudioP(); checkComplete()">SUN</button>
+                <button id = "navigationButton" onclick="chooseAlcohol(); pauseAudioP()">ALCOHOL</button>
+                <button id = "navigationButton" onclick="choosePalace(); pauseAudioP()">PALACE</button>
             </div>
 
             <div id="navigation" class = "P5accb" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="mapHelio()">Map of Heliopolis</button>
+                <button id = "navigationButton" onclick="mapHelio(); pauseAudioP()">Map of Heliopolis</button>
             </div>
 
             <div id="navigation" class = "P5accc" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="mapHelio()">Map of Heliopolis</button>
+                <button id = "navigationButton" onclick="mapHelio(); pauseAudioP()">Map of Heliopolis</button>
             </div>
 
             <div id="navigation" class = "P5acca" class = "buttona1">
                 <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                <button id = "navigationButton" onclick="enterHydrus()">HYDRUS</button>
-                <button id = "navigationButton" onclick="enterUnicorn()">UNICORN</button>
-                <button id = "navigationButton" onclick="enterBasilisk()">BASILISK</button>
-                <button id = "navigationButton" onclick="enterDragon()">DRAGON</button>
+                <button id = "navigationButton" onclick="enterHydrus(); pauseAudioP()">HYDRUS</button>
+                <button id = "navigationButton" onclick="enterUnicorn(); pauseAudioP()">UNICORN</button>
+                <button id = "navigationButton" onclick="enterBasilisk(); pauseAudioP()">BASILISK</button>
+                <button id = "navigationButton" onclick="enterDragon(); pauseAudioP()">DRAGON</button>
             </div>
 
             <!------------------------------------------------------------------------->
@@ -4305,14 +4514,14 @@
             <div id="navigation" class = "H1" class = "buttona1">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
                     <button id = "navigationButton" onclick="travelEgypt(); moveH(30, false); pauseAudioH()">Egypt</button>
-                    <button id = "navigationButton" onclick="altPlan(); pauseAudioH()">Alternative Plan</button>
+                    <button id = "navigationButton" onclick="altPlan(); pauseAudioH(); lightbox_openHEnd()">Alternative Plan</button>
             </div>
 
             <div id="navigation" class = "H2a" class = "buttona1">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
                     <button id = "navigationButton" onclick="goNile(); moveH(30, false); pauseAudioH()">Nile</button>
-                    <button id = "navigationButton" onclick="goLandmarks(); pauseAudioH()">Ancient Landmarks</button>
-                    <button id = "navigationButton" onclick="goMarkets(); pauseAudioH()">Markets</button>
+                    <button id = "navigationButton" onclick="goLandmarks(); pauseAudioH(); lightbox_openHEnd()">Ancient Landmarks</button>
+                    <button id = "navigationButton" onclick="goMarkets(); pauseAudioH(); lightbox_openHEnd()">Markets</button>
             </div>
 
             <div id="navigation" class = "H2b" class = "buttona1">
@@ -4322,9 +4531,9 @@
 
             <div id="navigation" class = "H3aa" class = "buttona1">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick="waitRiver(); pauseAudioH()">Wait byRiver</button>
+                    <button id = "navigationButton" onclick="waitRiver(); pauseAudioH(); lightbox_openHEnd()">Wait byRiver</button>
                     <button id = "navigationButton" onclick="borrowBoat(); pauseAudioH()">Borrow Boat</button>
-                    <button id = "navigationButton" onclick="stealBoat(); toggleHydrus(); moveH(40, false); pauseAudioH()">Steal Boat</button>
+                    <button id = "navigationButton" onclick="stealBoat(); toggleHydrus(); moveH(40, false); pauseAudioH(); checkComplete()">Steal Boat</button>
             </div>
 
             <div id="navigation" class = "H3ab" class = "buttona1">
@@ -4361,14 +4570,14 @@
             <div id="navigation" class = "B1" class = "buttona1">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
                     <button id = "navigationButton" onclick="wanderForest(); moveB(20, false); pauseAudioB()">Wander Forest</button>
-                    <button id = "navigationButton" onclick="chickenCoop(); moveB(10, false);  pauseAudioB()">Chicken Coop</button>
-                    <button id = "navigationButton" onclick="grotto(); moveB(20, false);  pauseAudioB()">Grotto</button>
+                    <button id = "navigationButton" onclick="chickenCoop(); moveB(10, false); pauseAudioB()">Chicken Coop</button>
+                    <button id = "navigationButton" onclick="grotto(); moveB(20, false); pauseAudioB()">Grotto</button>
             </div>
 
             <div id="navigation" class = "B2a" class = "buttona1">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick="abandonWeasel();  pauseAudioB()">Abandon Weasel</button>
-                    <button id = "navigationButton" onclick="raisePet(); moveB(20, false);  pauseAudioB()">Raise as Pet</button>
+                    <button id = "navigationButton" onclick="abandonWeasel();  pauseAudioB(); lightbox_openBEnd()">Abandon Weasel</button>
+                    <button id = "navigationButton" onclick="raisePet(); moveB(20, false); pauseAudioB()">Raise as Pet</button>
             </div>
 
             <div id="navigation" class = "B2b" class = "buttona1">
@@ -4390,7 +4599,7 @@
 
             <div id="navigation" class = "B3ab" class = "buttona1">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick="sellWeasel(); pauseAudioB()">Sell Weasel</button>
+                    <button id = "navigationButton" onclick="sellWeasel(); pauseAudioB(); lightbox_openBEnd()">Sell Weasel</button>
                     <button id = "navigationButton" onclick="joinCircus(); moveB(20, false); pauseAudioB()">Join Circus</button>
             </div>
 
@@ -4415,7 +4624,7 @@
 
             <div id="navigation" class = "B3cb" class = "buttona1">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick = "goRiver(); pauseAudioB()">River Country</button>
+                    <button id = "navigationButton" onclick = "goRiver(); pauseAudioB(); lightbox_openBEnd()">River Country</button>
                     <button id = "navigationButton" onclick = "goArid(); moveB(20, false); pauseAudioB()">Arid Lands</button>
             </div>
 
@@ -4426,7 +4635,7 @@
 
             <div id="navigation" class = "B4abb" class = "buttona1">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick="onLeash(); pauseAudioB()">On Leash</button>
+                    <button id = "navigationButton" onclick="onLeash(); pauseAudioB(); lightbox_openBEnd()">On Leash</button>
                     <button id = "navigationButton" onclick="offLeash(); moveB(20, false); pauseAudioB()">Off Leash</button>
             </div>
 
@@ -4437,7 +4646,7 @@
 
             <div id="navigation" class = "B4cbb" class = "buttona1">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick="shooWeasel(); pauseAudioB()">Shoo Weasel</button>
+                    <button id = "navigationButton" onclick="shooWeasel(); pauseAudioB(); lightbox_openBEnd()">Shoo Weasel</button>
                     <button id = "navigationButton" onclick="giveWater(); moveB(20, false); pauseAudioB()">Give Water</button>
             </div>
 
@@ -4448,7 +4657,7 @@
 
             <div id="navigation" class = "B5abbb" class = "buttona1">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick="endBasilisk(); moveB(20, false); toggleBasilisk(); pauseAudioB()">Basilisk</button>
+                    <button id = "navigationButton" onclick="endBasilisk(); moveB(20, false); toggleBasilisk(); pauseAudioB(); checkComplete()">Basilisk</button>
             </div>
 
             <div id="navigation" class = "B5cbba" class = "buttona1">
@@ -4458,7 +4667,7 @@
 
             <div id="navigation" class = "B5cbbb" class = "buttona1">
                     <button id = "navigationButton" onclick = "loadOn()">Menu</button>
-                    <button id = "navigationButton" onclick="endBasilisk(); moveB(20, false); toggleBasilisk(); pauseAudioB()">Basilisk</button>
+                    <button id = "navigationButton" onclick="endBasilisk(); moveB(20, false); toggleBasilisk(); pauseAudioB(); checkComplete()">Basilisk</button>
             </div>
 
             <div id="navigation" class = "endB" class = "buttona1">

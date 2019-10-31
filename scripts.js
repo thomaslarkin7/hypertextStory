@@ -31,6 +31,8 @@ function off(){
 function mandarin(){
     document.getElementById("loadOverlay").style.display = "none"; //remove the overlay load screen
     document.getElementById("englishScript").style.display = "none"; //hide the English script HTML
+    //$('#englishScript :input').prop("disabled",true);
+    //$('mandarinScript').removeAttr('disabled');
     document.getElementById("mandarinScript").style.display = "block"; //show the Mandarin Script HTML
 }
 
@@ -38,6 +40,9 @@ function mandarin(){
 function english(){
     document.getElementById("loadOverlay").style.display = "none"; //remove the overlay load screen
     document.getElementById("mandarinScript").style.display = "none"; //hide the mandarin script HTML
+    //$('#mandarinScript :input').prop("disabled",true);
+    //$('mandarinScript').attr("disabled",true);
+    //$('englishScript').removeAttr('disabled');
     document.getElementById("englishScript").style.display = "block"; //show the english Script HTML
 }
 
@@ -600,6 +605,7 @@ function lightbox_openPEnd() {
   }
 
 function enterHydrus(){
+    //console.log("nothing happening");
     document.getElementsByClassName("prologue")[0].style.display="none";
     document.getElementsByClassName("prologue")[1].style.display="none";
     //document.getElementsByClassName("endDragon")[0].style.display="none";
@@ -654,7 +660,8 @@ function enterHydrus(){
     document.getElementById("myProgressB").style.display = "none"; //hide basilisk progress bar
     document.getElementById("myProgressP").style.display = "none"; //hide phoenix progress bar
     document.getElementsByClassName("H4aac")[0].style.display="none";
-    document.getElementsByClassName("H4aac")[1].style.display="none"
+    document.getElementsByClassName("H4aac")[1].style.display="none";
+
     document.getElementsByClassName("H1")[0].style.display="block";
     document.getElementsByClassName("H1")[1].style.display="block";
 }

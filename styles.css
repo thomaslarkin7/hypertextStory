@@ -1422,10 +1422,19 @@ audio{
 /*-------------------------------------------------------------------------*/
 /*--------------------- Mandarin Text Display -----------------------------*/
 /*-------------------------------------------------------------------------*/
+/*MANDARIN Prologue*/
 .prologueM{display:block;}
-.pa1M{display: none;}
-.pa2M{display: none;}
-.pa3M{display: none;}
+
+/*MANDARIN HYDRUS DISPLAY*/
+.H1M{display:none;}
+.H2aM{display:none;}
+.H2bM{display:none;}
+.H3aaM{display:none;}
+.H3abM{display:none;}
+.H3acM{display:none;}
+.H4aaaM{display:none;}
+.H4aabM{display:none;}
+.H4aacM{display:none;}
 
 
 
